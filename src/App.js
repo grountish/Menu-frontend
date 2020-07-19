@@ -14,7 +14,6 @@ export default class App extends Component {
        const Places = lazy(() => import('./Clients/places'))
    
   return (
-   
       <Router>
       <Suspense fallback={<Home />}>
           <Places />

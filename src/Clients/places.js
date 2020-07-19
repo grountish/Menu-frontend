@@ -46,7 +46,7 @@ function Places() {
               <button onClick={()=>setLang("en")}>EN</button>
               <button onClick={()=>setLang("es")}>ES</button>
             </div>
-              <Route path="/:place" exact render={()=><CategoryList lang={lang} />} />
+              <Route path="/:place" exact component={CategoryList} />
               <Route path="/:place/category/:categoryName" exact component={Foodlist} lang={lang} />
             </div>
           )}
