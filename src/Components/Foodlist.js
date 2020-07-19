@@ -3,14 +3,14 @@ import foods from '../foods.json';
 import Foodbox from './Foodbox';
 import './../App.css';
 
+const param = window.location.pathname.slice(1)
+const foundPlace = foods.places.filter(x => x.place === param)
+
 export default class Foodlist extends Component {
   state = {
-    foods: foods,
-    showAdd: false,
+    foods: foods.places,
     inputValue: '',
-    filterFoods: foods,
-    quantity: 0,
-    totalCalories: 0,
+    filterFoods: foods.places,
     listOfFoods: []
   };
 
@@ -32,7 +32,8 @@ export default class Foodlist extends Component {
 
   render() {
     const categoryFoods = this.props.match.params.categoryName;
-    const foundCategory = foods.categorias.find((category) => categoryFoods === category.nombre);
+    console.log(foundPlace[0])
+    const foundCategory = foundPlace[0].categorias.find((category) => categoryFoods === category.nombre);
     return (
       <div className="centered">
         <div className="list-add">
