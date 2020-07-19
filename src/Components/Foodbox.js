@@ -7,9 +7,9 @@ export default class Foodbox extends Component {
       <div className="food-box">
         <div className="left-box">
           <h4>{this.props.nombre}</h4>
-          <small>{this.props.descripcion}</small>
+          <p>{this.props.descripcion}</p>
         </div>
-        <h5>{this.props.precio}</h5>
+      <h4 className="h4-precio">€{this.props.precio}</h4>
       </div>
     );
   }

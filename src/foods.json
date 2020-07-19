@@ -8,6 +8,8 @@
     "color": "#ede1d1",
     "categorias": [{
       "nombre": "cerveses",
+      "nombre_en":"beer",
+      "nombre_es":"cervezas",
       "imagen": "https://okasional-beer.com/blog-cerveza-artesana/wp-content/uploads/2019/04/cerveses-la-pirata-okasional-beer.jpg",
       "data": [{
           "nombre": "1. Guineu Txiripa",
@@ -120,6 +122,7 @@
       ]
     }, {
       "nombre": "plantxats",
+      "nombre_en":"sandwiches",
       "imagen": "https://realfood.tesco.com/media/images/RFO-1400x919-ChickenClubSandwich-0ee77c05-5a77-49ac-a3bd-4d45e3b4dca7-0-1400x919.jpg",
       "data": [{
           "nombre": "Reig i Bonet",
@@ -174,6 +177,7 @@
       ]
     }, {
       "nombre": "tapetes",
+      "nombre_en":"tapas",
       "imagen": "https://entrenosotros.consum.es/public/Image/2019/6/Tapas-CONSUM---Grande.png.jpg",
       "data": [{
           "nombre": "Naxos",

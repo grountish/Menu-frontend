@@ -29,7 +29,7 @@ export default class Foodlist extends Component {
       filterFoods: filteredFoods,
     });
   };
-
+  
   render() {
     const categoryFoods = this.props.match.params.categoryName;
     console.log(foundPlace[0])
@@ -38,6 +38,7 @@ export default class Foodlist extends Component {
       <div className="centered">
         <div className="list-add">
           <ul className="list-food">
+    <h4 className= "title-category">{categoryFoods.toUpperCase()}</h4>
             {
                         foundCategory.data.map((oneFood, index) => {
                             return (
