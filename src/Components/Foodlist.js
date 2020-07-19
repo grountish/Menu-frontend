@@ -37,6 +37,7 @@ export default class Foodlist extends Component {
       <div className="centered">
         <div className="list-add">
           <ul className="list-food">
+    <h4 className= "title-category">{categoryFoods.toUpperCase()}</h4>
             {
                         foundCategory.data.map((oneFood, index) => {
                             return (
