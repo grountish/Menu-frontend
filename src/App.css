@@ -137,10 +137,13 @@ padding: 0.3rem 1rem;
 }
 
 a:link {
-  text-decoration: inherit;
+  text-decoration: none;
 }
 
 a:visited {
-  text-decoration: inherit;
+  text-decoration: none;
 }
 
+.headerCategory{
+  text-transform: uppercase ;
+}
