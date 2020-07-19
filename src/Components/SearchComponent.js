@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import foods from "../foods.json";
 import Foodbox from "./Foodbox";
 import Searchbar from "./Searchbar";
+
 import "./../App.css";
 
 const arrayOfMenu = [];
@@ -53,10 +54,10 @@ export default class SearchComponent extends Component {
           filterOnChange={this.filterOnChange}
           inputValue={this.state.inputValue}
         />
-        <div>
-          <div onClick={() => this.filterByTag("vega")}>Vegà</div>
-          <div onClick={() => this.filterByTag("vegetaria")}>Vegetarià</div>
-          <div onClick={() => this.filterByTag("celiac")}>Celiac</div>
+        <div className="iconos-filter">
+          <div className="iconos-filter-text" onClick={() => this.filterByTag("vega")}>Vegà</div>
+    <div className="iconos-filter-text" onClick={() => this.filterByTag("vegetaria")}>Vegetarià</div>
+          <div className="iconos-filter-text" onClick={() => this.filterByTag("celiac")}>Celiac</div>
         </div>
         <div className="list-add">
           <ul className="list-food">

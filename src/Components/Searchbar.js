@@ -4,7 +4,7 @@ export default class Searchbar extends Component {
     render() {
         return (
             <div>
-                <input className="input" autoFocus = "true" type="text" value={this.props.inputValue} onChange={this.props.filterOnChange} placeholder="Buscar..."/>
+                <input className="input"  autoFocus = {true} type="text" value={this.props.inputValue} onChange={this.props.filterOnChange} placeholder="Buscar..."/>
             </div>
         )
     }

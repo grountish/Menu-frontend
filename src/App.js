@@ -33,6 +33,10 @@ function App() {
           {" "}
           <img src={foods.iso} alt="logo" className="isoTipo" />
         </Link>
+        <div className="lang-buttons">
+              <button onClick={()=>setLang("en")}>EN</button> /
+              <button onClick={()=>setLang("es")}>ES</button>
+            </div>
        <div className="search-bar" type="button"
           onClick={() => setBuscar(!buscar)}
          >
@@ -41,10 +45,7 @@ function App() {
           <SearchComponent />
         ) : (
           <div>
-            <div>
-              <button onClick={()=>setLang("en")}>EN</button>
-              <button onClick={()=>setLang("es")}>ES</button>
-            </div>
+          
 
             <Route path="/" exact render={()=><CategoryList lang={lang}/>} />
             <Route path="/category/:categoryName" exact component={Foodlist}  lang={lang}/>
