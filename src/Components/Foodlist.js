@@ -1,17 +1,14 @@
-import React, { Component } from 'react';
-import foods from '../foods.json';
-import Foodbox from './Foodbox';
-import './../App.css';
-
-const param = window.location.pathname.slice(1)
-const foundPlace = foods.places.filter(x => x.place === param)
+import React, { Component } from "react";
+import foods from "../foods.json";
+import Foodbox from "./Foodbox";
+import "./../App.css";
 
 export default class Foodlist extends Component {
   state = {
     foods: foods.places,
-    inputValue: '',
+    inputValue: "",
     filterFoods: foods.places,
-    listOfFoods: []
+    listOfFoods: [],
   };
 
   filterOnChange = (e) => {
@@ -29,23 +26,28 @@ export default class Foodlist extends Component {
       filterFoods: filteredFoods,
     });
   };
-  
+
   render() {
+    const param = window.location.pathname.slice(1);
+    // const foundPlace = foods.places.filter((x) => x.place === param);
+
+    let placeName = param.split("/")[0]
+  
+const foundPlace = foods.places.filter(x => x.place === param || x.place === placeName)
+
     const categoryFoods = this.props.match.params.categoryName;
-    console.log(foundPlace[0])
-    const foundCategory = foundPlace[0].categorias.find((category) => categoryFoods === category.nombre);
+    const foundCategory = foundPlace[0].categorias.find(
+      (category) => categoryFoods === category.nombre
+    );
+
     return (
       <div className="centered">
         <div className="list-add">
           <ul className="list-food">
-    <h4 className= "title-category">{categoryFoods.toUpperCase()}</h4>
-            {
-                        foundCategory.data.map((oneFood, index) => {
-                            return (
-                                <Foodbox {...oneFood} key={index}/>
-                            );
-                        })
-                    }
+            <h4 className="title-category">{categoryFoods.toUpperCase()}</h4>
+            {foundCategory.data.map((oneFood, index) => {
+              return <Foodbox {...oneFood} key={index} />;
+            })}
           </ul>
         </div>
       </div>

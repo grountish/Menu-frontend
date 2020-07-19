@@ -13,6 +13,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const param = window.location.pathname.slice(1)
+console.log(param);
 const foundPlace = foods.places.filter(x => x.place === param);
 const option1 = foundPlace[0].place || '';
 console.log(foundPlace);
@@ -20,7 +21,7 @@ console.log(foundPlace);
 
 function Places() {
   const [buscar, setBuscar] = useState(false);
-  const [lang, setLang]=useState("es");
+  const [lang, setLang]=useState("ca");
 
   return (
       <div className="App">
@@ -43,10 +44,11 @@ function Places() {
           ) : (
             <div>
             <div>
+              <button onClick={()=>setLang("ca")}>CA</button>
               <button onClick={()=>setLang("en")}>EN</button>
               <button onClick={()=>setLang("es")}>ES</button>
             </div>
-              <Route path="/:place" exact component={CategoryList} />
+              <Route exact path='/:place' render={()=><CategoryList lang={lang}/>} />
               <Route path="/:place/category/:categoryName" exact component={Foodlist} lang={lang} />
             </div>
           )}
