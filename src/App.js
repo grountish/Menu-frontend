@@ -20,6 +20,8 @@ import {
 
 function App() {
   const [buscar, setBuscar] = useState(false);
+  const [lang,setLang]=useState("es")
+
 
   return (
     <div className="App">
@@ -39,8 +41,13 @@ function App() {
           <SearchComponent />
         ) : (
           <div>
-            <Route path="/" exact component={CategoryList} />
-            <Route path="/category/:categoryName" exact component={Foodlist} />
+            <div>
+              <button onClick={()=>setLang("en")}>EN</button>
+              <button onClick={()=>setLang("es")}>ES</button>
+            </div>
+
+            <Route path="/" exact render={()=><CategoryList lang={lang}/>} />
+            <Route path="/category/:categoryName" exact component={Foodlist}  lang={lang}/>
           </div>
         )}
          

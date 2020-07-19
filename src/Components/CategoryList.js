@@ -6,8 +6,10 @@ import { Link } from 'react-router-dom';
 export default class Foodlist extends Component {
   state = {
     foods: foods,
+    lang: ''
   };
 
+ 
   render() {
     return (
       <div className="centered">
@@ -15,7 +17,7 @@ export default class Foodlist extends Component {
             {this.state.foods.categorias.map((category, index) => {
               return (
                   <Link style={{color: foods.color}} key={index} to={`/category/${category.nombre}`}>
-                    <FoodCategory {...category} />
+                    <FoodCategory {...category} lang={this.props.lang} />
                   </Link>
               );
             })}

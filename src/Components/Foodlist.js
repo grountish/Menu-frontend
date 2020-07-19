@@ -29,7 +29,7 @@ export default class Foodlist extends Component {
       filterFoods: filteredFoods,
     });
   };
-
+  
   render() {
     const categoryFoods = this.props.match.params.categoryName;
     const foundCategory = foods.categorias.find((category) => categoryFoods === category.nombre);
