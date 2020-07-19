@@ -10,6 +10,7 @@ ul {
 }
 
 h1 {
+  margin: 0.3rem 0.2rem;
   font-weight:100;
 }
 
@@ -41,15 +42,27 @@ h1 {
 
 .search-bar {
 align-items: center;
+text-align: center;
 margin: auto;
 display: block;
+margin: 0 1rem ;
+
+}
+
+input {
+  color: whitesmoke;
+  font-size: 1.3rem;
+  padding: 10px;
+  padding-bottom: 0.2rem;
+  background-color: black;
+  position: relative;
+  width: 80%;  
+  margin-left: 1rem;
+  border: none;
+  border-bottom: 1px solid oldlace;
+  outline: none;
   
 }
-/* input {
-  margin: 0.1rem;
-  height: 5vh;
-  background-color: whitesmoke;
-} */
 
 
 

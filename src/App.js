@@ -34,7 +34,7 @@ function App() {
        <div className="search-bar" type="button"
           onClick={() => setBuscar(!buscar)}
          >
-        {buscar ? <FontAwesomeIcon icon={faAngleLeft} /> : <FontAwesomeIcon icon={faSearch} />} </div>      
+        {buscar ? <h1><FontAwesomeIcon icon={faAngleLeft} /> Volver</h1> : <h1><FontAwesomeIcon icon={faSearch} />  Buscar </h1>} </div>      
         {buscar ? (
           <SearchComponent />
         ) : (
