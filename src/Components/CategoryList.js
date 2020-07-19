@@ -7,8 +7,10 @@ import { Link } from 'react-router-dom';
 export default class Foodlist extends Component {
   state = {
     foods: foods.places,
+    lang: ''
   };
 
+ 
   render() {
     const foodPlace = this.props.match.params.place;
     const foundPlace = foods.places.find((lugar) => foodPlace === lugar.place);
@@ -19,7 +21,7 @@ export default class Foodlist extends Component {
             {foundPlace.categorias.map((category, index) => {
               return (
                   <Link style={{color: foods.color}} key={index} to={`${foundPlace.place}/category/${category.nombre}`}>
-                    <FoodCategory {...category} />
+                    <FoodCategory {...category} lang={this.props.lang} />
                   </Link>
               );
             })}
