@@ -110,11 +110,11 @@ input {
 }
 
 a:link {
-  text-decoration: inherit;
+  text-decoration: none;
 }
 
 a:visited {
-  text-decoration: inherit;
+  text-decoration: none;
 }
 
 .headerCategory{

@@ -1,10 +1,6 @@
 import React, { Component } from 'react';
 
 export default class Foodbox extends Component {
-  state = {
-    quantity: '',
-    totalCalories: '',
-  };
 
   render() {
     return (
