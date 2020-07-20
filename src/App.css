@@ -118,5 +118,5 @@ a:visited {
 }
 
 .headerCategory{
-  text-transform: uppercase ;
+  text-transform: uppercase  !important;
 }

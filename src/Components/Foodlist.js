@@ -43,12 +43,24 @@ export default class Foodlist extends Component {
       (category) => categoryFoods === category.nombre
     );
 
-    
+  
+      const nameFood = () => {
+        switch (this.props.lang) {
+          case "ca":
+            return foundCategory.nombre.toUpperCase();
+          case "en":
+            return foundCategory.nombre_en.toUpperCase();
+          case "es":
+            return foundCategory.nombre_es.toUpperCase();
+          default: return foundCategory.nombre.toUpperCase();
+         
+        }
+      }
     return (
       <div className="centered">
         <div className="list-add">
           <ul className="list-food">
-            <h4 className="title-category">{categoryFoods.toUpperCase()}</h4>
+            <h4 className="title-category">{nameFood()}</h4>
             {foundCategory.data.map((oneFood, index) => {
               return <Foodbox {...oneFood} key={index} lang={this.props.lang} />;
             })}
