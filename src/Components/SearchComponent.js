@@ -31,7 +31,11 @@ export default class SearchComponent extends Component {
       (food) =>
         food.nombre.toLowerCase().includes(searchValue) ||
         food.descripcion.toLowerCase().includes(searchValue) ||
-        food.tags.toLowerCase().includes(searchValue)
+        food.tags.toLowerCase().includes(searchValue) ||
+        food.nombre_en.toLowerCase().includes(searchValue) ||
+        food.descripcion_en.toLowerCase().includes(searchValue) ||
+        food.nombre_es.toLowerCase().includes(searchValue) ||
+        food.descripcion_es.toLowerCase().includes(searchValue)
     );
 
     this.setState({
@@ -64,7 +68,7 @@ export default class SearchComponent extends Component {
         <div className="list-add">
           <ul className="list-food">
             {this.state.filterFoods.map((e, i) => (
-              <Foodbox {...e} key={i} />
+              <Foodbox {...e} lang={this.props.lang} key={i} />
             ))}
           </ul>
         </div>
