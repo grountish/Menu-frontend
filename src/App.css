@@ -5,11 +5,11 @@
   src: url('./Assets/Tommaso.ttf');
 }
 
-ul {
+.App ul {
   padding: 0;
 }
 
-h1 {
+.App h1 {
   margin: 0.4rem 0.2rem 0.8rem 0.2rem;
   font-weight:100;
 }
