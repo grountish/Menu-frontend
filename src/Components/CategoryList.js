@@ -10,20 +10,18 @@ export default class Foodlist extends Component {
   };
 
   render() {
-    const param = window.location.pathname.slice(1);
-    // const foundPlace = foods.places.filter((x) => x.place === param);
-    let placeName = param.split("/")[0]
-const foundPlace = foods.places.filter(x => x.place === param || x.place === placeName)
+    let placeName = this.props.match.params.place;
+    const foundPlace = foods.places.find((x) => x.place === placeName);
 
     return (
       <div className="centered">
         <ul className="list-food">
-          {foundPlace[0].categorias.map((category, index) => {
+          {foundPlace.categorias.map((category, index) => {
             return (
               <Link
                 style={{ color: foods.color }}
                 key={index}
-                to={`${foundPlace[0].place}/category/${category.nombre}`}
+                to={`${foundPlace.place}/category/${category.nombre}`}
               >
                 <FoodCategory {...category} lang={this.props.lang} />
               </Link>

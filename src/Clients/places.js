@@ -13,10 +13,10 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const param = window.location.pathname.slice(1)
-console.log(param);
+// console.log(param);
 const foundPlace = foods.places.filter(x => x.place === param);
 const option1 = foundPlace[0].place || '';
-console.log(foundPlace);
+// console.log(foundPlace);
 
 
 function Places() {
@@ -48,8 +48,9 @@ function Places() {
               <button onClick={()=>setLang("en")}>EN</button>
               <button onClick={()=>setLang("es")}>ES</button>
             </div>
-              <Route exact path='/:place' render={()=><CategoryList lang={lang}/>} />
-              <Route path="/:place/category/:categoryName" exact component={Foodlist} lang={lang} />
+              <Route exact path='/:place' render={(props)=><CategoryList {...props} lang={lang}/>} />
+              <Route exact path="/:place/category/:categoryName" render={(props)=><Foodlist {...props} lang={lang}/>} />
+
             </div>
           )}
         </Router>

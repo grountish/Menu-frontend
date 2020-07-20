@@ -3,6 +3,7 @@ import foods from "../foods.json";
 import Foodbox from "./Foodbox";
 import "./../App.css";
 
+
 export default class Foodlist extends Component {
   state = {
     foods: foods.places,
@@ -10,8 +11,8 @@ export default class Foodlist extends Component {
     filterFoods: foods.places,
     listOfFoods: [],
   };
-
-  filterOnChange = (e) => {
+  
+    filterOnChange = (e) => {
     this.setState({
       inputValue: e.target.value,
     });
@@ -28,25 +29,28 @@ export default class Foodlist extends Component {
   };
 
   render() {
-    const param = window.location.pathname.slice(1);
-    // const foundPlace = foods.places.filter((x) => x.place === param);
+    console.log(this.props);
 
-    let placeName = param.split("/")[0]
-  
-const foundPlace = foods.places.filter(x => x.place === param || x.place === placeName)
+   
+    let placeName = this.props.match.params.place;
 
-    const categoryFoods = this.props.match.params.categoryName;
+    const foundPlace = foods.places.filter(
+      (x) =>  x.place === placeName
+    );
+
+    const categoryFoods = this.props.match.params.categoryName ;
     const foundCategory = foundPlace[0].categorias.find(
       (category) => categoryFoods === category.nombre
     );
 
+    
     return (
       <div className="centered">
         <div className="list-add">
           <ul className="list-food">
             <h4 className="title-category">{categoryFoods.toUpperCase()}</h4>
             {foundCategory.data.map((oneFood, index) => {
-              return <Foodbox {...oneFood} key={index} />;
+              return <Foodbox {...oneFood} key={index} lang={this.props.lang} />;
             })}
           </ul>
         </div>
