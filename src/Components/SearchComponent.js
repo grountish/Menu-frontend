@@ -5,12 +5,13 @@ import Searchbar from "./Searchbar";
 import "./../App.css";
 
 const param = window.location.pathname.slice(1)
-const foundPlace = foods.places.filter(x => x.place === param)
+let placeName = param.split("/")[0]
+const foundPlace = foods.places.filter(x => x.place === param || x.place === placeName)
+console.log(foundPlace);
 const arrayOfMenu = [];
 foundPlace[0].categorias.map(x => arrayOfMenu.push(x.data))
 const flattened = arrayOfMenu.flat()
 
-console.log(flattened)
 
 export default class SearchComponent extends Component {
   state = {
