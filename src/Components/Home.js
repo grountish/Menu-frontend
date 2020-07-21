@@ -3,7 +3,10 @@ import "./../../src/Home.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons";
+
 import ServicioCards from "./ServicioCard";
+
+import movil from "./../Assets/movil.png"
 
 const Home = () => {
   // --------------------- control carousel de peliculas ------------
@@ -51,8 +54,9 @@ const Home = () => {
     },
   ];
   return (
-    <div id="caca">
+    <div className="home">
       <nav>
+        <div className= "nav-content">
         <div className="logo">Collabo Studio</div>
         <div className="nav-links">
           <ul>
@@ -67,12 +71,13 @@ const Home = () => {
               <a href="#MenuQR">Menu QR</a>
             </li>
             <li>
-              <a href="#Nosotors">Nosotros</a>
+              <a href="#Nosotros">Nosotros</a>
             </li>
             <li>
               <a href="#Contacto">Contacto</a>
             </li>
           </ul>
+        </div>
         </div>
       </nav>
       <main>
@@ -105,11 +110,35 @@ const Home = () => {
           </div>
         </section>
 
-        <section id="MenuQR" className="MenuQR"></section>
+        <section id="MenuQR" className="MenuQR">
+          <div className="texto">
+            <h2>Las cartas seguras llegaron para darle batalla al covid-19</h2>
+            <p>Conoce todas las ventajas sobre esta nueva opción que cuida a las personas y el planeta ahre</p>
+            <button>Quiero saber más</button>
+          </div>
+          <div className="img-container"><img alt="movil" src={movil}></img></div>
+        </section>
 
         <section id="Nosotros" className="Nosotros"></section>
 
-        <section id="Contacto" className="Contacto"></section>
+        <section id="Contacto" className="Contacto">
+          <img alt="img-contact" src="https://images.pexels.com/photos/1416530/pexels-photo-1416530.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"></img>
+          
+                      <div className="footer-right">
+
+<h2>Contactanos</h2>
+
+<form action="#" method="post">
+
+    <input type="text" name="email" placeholder="Email"></input>
+    <textarea name="message" placeholder="Mensaje"></textarea>
+    <button>Enviar</button>
+
+</form>
+
+</div>
+            
+        </section>
       </main>
     </div>
   );

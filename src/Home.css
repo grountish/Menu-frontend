@@ -1,56 +1,62 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color: whitesmoke;
-    font-family: 'Roboto', sans-serif;
-    scroll-behavior: smooth;  
-    scroll-snap-type: y mandatory;
-  
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+.home {
+  color: whitesmoke;
+  font-family: "Roboto", sans-serif;
 }
 
 .main {
-    width: 100%;
-    height: 100vh;
-   
+  width: 100%;
+  height: 100vh;
 }
 
 nav {
-    width: 100%;
-    height: 9vh;
-    position: fixed;
-    margin:auto;
-    padding: 0 5rem;
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    background-color: rgba(47, 70, 88, 0.45);
-    box-shadow: 0px 2px 50px rgba(2, 23, 94, 0.60);
+  width: 100%;
+  height: 9vh;
+  position: fixed;
+  padding: 0 5rem;
+  z-index: 1;
+
+  background-color: rgba(47, 70, 88, 0.45);
+  box-shadow: 0px 2px 50px rgba(2, 23, 94, 0.6);
+}
+
+.nav-content {
+  height: 100%;
+  margin: auto;
+  width: 90%;
+  display: flex;
+  align-items: center;
 }
 
 .logo {
-    flex-basis: 20%;
-    font-size: 2rem;
-    letter-spacing: 2px;
+  flex-basis: 20%;
+  font-size: 2rem;
+  letter-spacing: 2px;
 }
 
 .nav-links {
-    flex: 1;
-    text-align: right;
-    
+  flex: 1;
+  text-align: right;
 }
 
 .nav-links li {
-    list-style: none;
-    display: inline-block;
-    margin: 0 1.6rem;
+  list-style: none;
+  display: inline-block;
+  margin: 0 1.6rem;
 }
 
-
-.nav-links li a{
-   text-decoration: none;
-   font-size: 1.2rem;
-   font-weight: 300;
+.nav-links li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: whitesmoke;
 }
 
 section {
@@ -60,103 +66,234 @@ section {
 }
 
 .Inicio {
-    background: linear-gradient(-215deg, rgba(15, 255, 243, 0.2)5%, rgb(25, 29, 248,.6)150%),
+  background: linear-gradient(
+      -215deg,
+      rgba(15, 255, 243, 0.2) 5%,
+      rgb(25, 29, 248, 0.6) 150%
+    ),
     url(https://images.pexels.com/photos/705164/computer-laptop-work-place-camera-705164.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
-    background-size: cover;
-      
- }
+  background-size: cover;
+}
 
- .frase {
-    
-    font-size: 3rem;
-    position: absolute;
-    text-align: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: black;    
-  }
+.frase {
+  font-size: 3rem;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+}
 
 /* ----------------- --- Carousel --- ----------------*/
 .contenedor-principal {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    position: relative;
-  }
-  
-  .contenedor-principal .flecha-izq,
-  .contenedor-principal .flecha-der {
-    position: absolute;
-    border: none;
-    background-color: rgba(0, 0, 0, 0.315);
-    font-size: 40px;
-    height: 50%;
-    top: calc(50% - 25%);
-    line-height: 40px;
-    width: 50px;
-    color: whitesmoke;
-    z-index: 500;
-    cursor: pointer;
-    transition: 0.2s ease all;
-  }
-  
-  .contenedor-principal .flecha-izq:hover,
-  .contenedor-principal .flecha-der:hover {
-    background-color: rgba(0, 0, 0, 0.9);
-  }
-  
-  .contenedor-principal .flecha-izq {
-    left: 0;
-  }
-  .contenedor-principal .flecha-der {
-    right: 0;
-  }
-  
-  .contenedor-carousel {
-    width: 100%;
-    overflow: hidden;
-    scroll-behavior: smooth;
-  }
-  
-  .carousel {
-    width: 100%;
-  }
-  
-  .serv {
-    transition: 0.3 ease all;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.315);
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-  }
-  
-  .servicio-card {
-    height: 100vh;
-    width: 50px;
-    text-align: center;
-    width: 100%;
-    
-  }
-  
-  .servicio-card li {
-    list-style: none;
-    width: 100%;
-  }
-  
-  
-  .servicio-card img {
-    width: calc(100vw/3);
-    height: 100vh;
-  }
-  
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+}
+
+.contenedor-principal .flecha-izq,
+.contenedor-principal .flecha-der {
+  position: absolute;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.315);
+  font-size: 3rem;
+  height: 10vh;
+  top: calc(100% - 60%);
+  line-height: 40px;
+  width: 10vh;
+  color: whitesmoke;
+  z-index: 500;
+  cursor: pointer;
+  transition: 0.2s ease all;
+}
+
+.contenedor-principal .flecha-izq:hover,
+.contenedor-principal .flecha-der:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.contenedor-principal .flecha-izq {
+  left: 1%;
+}
+.contenedor-principal .flecha-der {
+  right: 1%;
+}
+
+.contenedor-carousel {
+  width: 100%;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.carousel {
+  width: 100%;
+}
+
+.serv {
+  transition: 0.3 ease all;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.315);
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.servicio-card {
+  height: 100vh;
+  text-align: center;
+  width: 100%;
+}
+
+.servicio-card li {
+  list-style: none;
+  width: 100%;
+}
+
+.servicio-card img {
+  width: calc(100vw / 3);
+  height: 100vh;
+}
+
 .servicio-card .object-fit {
   object-fit: cover;
   object-position: center;
 }
 
 .MenuQR {
-    width: 100wh;
-    height: 100vh;
-    background: linear-gradient(-215deg, rgb(15, 255, 243)5%, rgb(25, 29, 248)150%)
+  background: linear-gradient(
+    -215deg,
+    rgb(15, 219, 209) 5%,
+    rgb(5, 8, 148) 150%
+  );
+  display: flex;
+}
+
+.MenuQR .texto {
+  text-align: left;
+  height: 50%;
+  width: 30vw;
+  margin: 30vh 5vw 5vw 15vw;
+}
+
+.MenuQR .texto h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.MenuQR .texto p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.MenuQR .texto button {
+  background-color: transparent;
+  color: whitesmoke;
+  border: 1px solid whitesmoke;
+  border-radius: 5rem;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  padding: 1.7rem 1rem;
+  width: 80%;
+}
+.MenuQR .img-container {
+  height: 100%;
+  margin: auto;
+}
+
+.MenuQR img {
+  display: block;
+  height: 66%;
+  width: auto;
+  margin-top: 25vh;
+}
+
+.Contacto {
+  display: flex;
+  background-color: rgba(1, 0, 3, 0.945);
+  align-items: center;
+}
+
+.Contacto img {
+  width: 55vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.Contacto ul {
+  margin: 10vw;
+  list-style: none;
+}
+
+/* Footer Right */
+
+.Contacto .footer-right {
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  padding-left: 4rem;
+}
+
+.Contacto .footer-right h2 {
+  margin-bottom: 1.5rem;
+}
+
+/* The contact form */
+
+.Contacto .footer-right {
+  width: 40%;
+}
+
+.Contacto form input,
+.Contacto form textarea {
+  display: block;
+  border-radius: 3px;
+  box-sizing: border-box;
+  background-color: #1f2022;
+  box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+  border: none;
+  resize: none;
+
+  font: inherit;
+  font-size: 1.2rem;
+  font-weight: normal;
+  color: whitesmoke;
+
+  width: 100%;
+  padding: 18px;
+}
+
+.Contacto ::-webkit-input-placeholder {
+  color: #5c666b;
+}
+
+.Contacto ::-moz-placeholder {
+  color: #5c666b;
+  opacity: 1;
+}
+
+.Contacto :-ms-input-placeholder {
+  color: #5c666b;
+}
+
+.Contacto form input {
+  height: 4rem;
+  margin-bottom: 1rem;
+}
+
+.Contacto form textarea {
+  height: 40vh;
+  margin-bottom: 1rem;
+}
+
+.Contacto form button {
+  border-radius: 5px;
+  background-color: #33383b;
+  color: whitesmoke;
+  border: 0;
+  padding: 15px 0;
+  font-weight: bold;
+  width: 30%;
+  float: right;
 }

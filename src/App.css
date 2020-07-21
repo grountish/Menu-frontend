@@ -61,7 +61,7 @@ margin: 0 1rem ;
 
 }
 
-input {
+.App input {
   color: whitesmoke;
   font-size: 1.2rem;
   padding: 10px;
