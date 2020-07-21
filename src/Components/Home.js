@@ -12,7 +12,6 @@ const Home = () => {
 
 
   const rigthClick = () => {
-    console.log(serviceRow.scrollLeft)
     if (serviceRow) {
       serviceRow.scrollLeft += serviceRow.offsetWidth;
     }
