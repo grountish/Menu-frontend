@@ -16,7 +16,6 @@
 
 .App{
   margin: 0;
-  margin-top: 1rem;
   justify-self: center;
 }
 
@@ -35,7 +34,7 @@
 .isoTipo{
   max-height: 15vh;
   max-width: 85vw;  
-  margin: 2rem auto 1rem auto;
+  margin: 0.5rem auto 1rem auto;
   justify-self: center;
   display:block
   
@@ -145,5 +144,26 @@ a:visited {
 }
 
 .headerCategory{
-  text-transform: uppercase ;
+  text-transform: uppercase  !important;
+}
+
+.languages {
+  display: flex;
+  flex-direction: row;
+  padding: 4% 7%;
+}
+
+.perLanguage {
+  font-size: 1.3em;
+  padding-bottom: 2px;
+  margin: 1%;
+  border-bottom: 1px solid white;
+}
+
+.buscador {
+  display: flex;
+  flex-flow: row;
+  font-size: 1.7em;
+  margin: 2%;
+  text-align: center;
 }

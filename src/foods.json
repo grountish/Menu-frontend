@@ -13,109 +13,181 @@
       "imagen": "https://okasional-beer.com/blog-cerveza-artesana/wp-content/uploads/2019/04/cerveses-la-pirata-okasional-beer.jpg",
       "data": [{
           "nombre": "1. Guineu Txiripa",
+          "nombre_en":"1. Guineu Txiripa",
+          "nombre_es":"1. Guineu Txiripa",
           "descripcion": "IPA - Catalunya - 6%",
+          "descripcion_en": "IPA - Catalunya - 6%",
+          "descripcion_es": "IPA - Catalunya - 6%",
           "precio": "6 / 3.50",
           "tags": "cerveza afrutada cervesa beer fruity citric bitter afruitada citrica lupulada amarga"
         },
         {
           "nombre": "2. Cloudwater Gyle",
+          "nombre_en":"2. Cloudwater Gyle",
+          "nombre_es":"2. Cloudwater Gyle",
           "descripcion": "DDH Pale Ale - Anglaterra - 5.5%",
+          "descripcion_en": "DDH Pale Ale - England - 5.5%",
+          "descripcion_es": "DDH Pale Ale - Inglaterra - 5.5%",
           "precio": "7.50 / 4.70",
           "tags": "cerveza afrutada cervesa beer fruity hopped fresh afruitada lupulada fresca"
         },
         {
           "nombre": "3. Kusfollin",
+          "nombre_en":"3. Kusfollin",
+          "nombre_es":"3. Kusfollin",
           "descripcion": "APA - Catalunya - 5.5%",
+          "descripcion_en": "APA - Catalunya - 5.5%",
+          "descripcion_es": "APA - Catalunya - 5.5%",
           "precio": "6.10 / 3.60",
           "tags": "cerveza afrutada cervesa beer citric fruity bitter dry citrica afruitada amarga seca"
         },
         {
           "nombre": "4. Oakham Green Devil",
+          "nombre_en":"4. Oakham Green Devil",
+          "nombre_es":"4. Oakham Green Devil",
           "descripcion": "IPA - Anglaterra - 6%",
+          "descripcion_en": "IPA - England - 6%",
+          "descripcion_es": "IPA - Inglaterra - 6%",
           "precio": "6.50 / 3.80",
           "tags": "cerveza afrutada beer fruity citric hopped cervesa afruitada citrica lupulada"
         },
         {
           "nombre": "5. La Salvatge Inframon",
+          "nombre_en":"5. La Salvatge Inframon",
+          "nombre_es":"5. La Salvatge Inframon",
           "descripcion": "Saison Brett - Catalunya - 6%",
+          "descripcion_en": "Saison Brett - Catalunya - 6%",
+          "descripcion_es": "Saison Brett - Catalunya - 6%",
           "precio": "7.50 / 4.70",
           "tags": "cerveza beer acidic cervesa acida"
         },
         {
           "nombre": "6. La Pirata Hazy Primavera",
+          "nombre_en":"6. La Pirata Hazy Primavera",
+          "nombre_es":"6. La Pirata Hazy Primavera",
           "descripcion": "Session IPA - Catalunya - 3.8%",
+          "descripcion_en": "Session IPA - Catalunya - 3.8%",
+          "descripcion_es": "Session IPA - Catalunya - 3.8%",
           "precio": "6.20 / 3.70",
           "tags": "cerveza beer citric cervesa citrica"
         },
         {
           "nombre": "7. Fermun Red Alert",
+          "nombre_en":"7. Fermun Red Alert",
+          "nombre_es":"7. Fermun Red Alert",
           "descripcion": "Irish Red Ale - Catalunya - 3.8%",
+          "descripcion_en": "Irish Red Ale - Catalunya - 3.8%",
+          "descripcion_es": "Irish Red Ale - Catalunya - 3.8%",
           "precio": "6.10 / 3.60",
           "tags": "cerveza tostada dulce beer toasted sweet cervesa torrada dolça"
         },
         {
           "nombre": "8. Beerbliotek I'm so aware",
-          "descripcion": "Doble IPA - Suecia - 7.9%",
+          "nombre_en":"8. Beerbliotek I'm so aware",
+          "nombre_es":"8. Beerbliotek I'm so aware",
+          "descripcion": "Double IPA - Suecia - 7.9%",
+          "descripcion_en": "Double IPA - Sweden - 7.9%",
+          "descripcion_es": "Double IPA - Suecia - 7.9%",
           "precio": "7.20 / 4.5",
           "tags": "cerveza afrutada beer fruity citric hopped cervesa afruitada citrica lupulada"
         },
         {
           "nombre": "9. Brighton Bier Downtown Charlie Brown",
+          "nombre_en":"9. Brighton Bier Downtown Charlie Brown",
+          "nombre_es":"9. Brighton Bier Downtown Charlie Brown",
           "descripcion": "American Brown Stout - Anglaterra - 6%",
+          "descripcion_en": "American Brown Stout - England - 6%",
+          "descripcion_es": "American Brown Stout - Inglaterra - 6%",
           "precio": "6.80 / 4",
           "tags": "cerveza tostada afrutada beer toasted fruity hopped cervesa torrada afruitada lupulada"
         },
         {
           "nombre": "10. Seven Islands Hazelnut Moctezuma",
+          "nombre_en":"10. Seven Islands Hazelnut Moctezuma",
+          "nombre_es":"10. Seven Islands Hazelnut Moctezuma",
           "descripcion": "Imperial Stout - Catalunya - 13%",
+          "descripcion_en": "Imperial Stout - Catalunya - 13%",
+          "descripcion_es": "Imperial Stout - Catalunya - 13%",
           "precio": "6.30",
           "tags": "beer toasted black sweet cerveza tostada dulce cervesa torrada negra dolça"
         },
         {
           "nombre": "11. Guineu Real Fruit",
+          "nombre_en":"11. Guineu Real Fruit",
+          "nombre_es":"11. Guineu Real Fruit",
           "descripcion": "Berliner Weisse - Catalunya - 4.4%",
+          "descripcion_en": "Berliner Weisse - Catalunya - 4.4%",
+          "descripcion_es": "Berliner Weisse - Catalunya - 4.4%",
           "precio": "6.70 / 3.5",
           "tags": "cerveza afrutada beer fruity citric cervesa afruitada citrica"
         },
         {
           "nombre": "12. Agullons Hops and Hopes",
+          "nombre_en":"12. Agullons Hops and Hopes",
+          "nombre_es":"12. Agullons Hops and Hopes",
           "descripcion": "English Pale Ale - Catalunya - 5.5%",
+          "descripcion_en": "English Pale Ale - Catalunya - 5.5%",
+          "descripcion_es": "English Pale Ale - Catalunya - 5.5%",
           "precio": "6 / 3.5",
           "tags": "beer toasted citric cerveza tostada cervesa torrada citrica"
         },
         {
           "nombre": "13. Agullons Runa",
+          "nombre_en":"13. Agullons Runa",
+          "nombre_es":"13. Agullons Runa",
           "descripcion": "Brown Ale - Catalunya - 5%",
+          "descripcion_en": "Brown Ale - Catalunya - 5%",
+          "descripcion_es": "Brown Ale - Catalunya - 5%",
           "precio": "6.30 / 2.80",
           "tags": "cerveza tostada hopped beer toasted cervesa torrada lupulada"
         },
         {
           "nombre": "14. Cierzo Vertigo",
+          "nombre_en":"14. Cierzo Vertigo",
+          "nombre_es":"14. Cierzo Vertigo",
           "descripcion": "Doble IPA - Zaragoza - 9%",
+          "descripcion_en": "Double IPA - Zaragoza - 9%",
+          "descripcion_es": "Doble IPA - Zaragoza - 9%",
           "precio": "6.9 / 4.2",
           "tags": "beer citric hopped cerveza cervesa citrica lupulada"
         },
         {
           "nombre": "15. Oud Beersel",
+          "nombre_en":"15. Oud Beersel",
+          "nombre_es":"15. Oud Beersel",
           "descripcion": "Framboise Fruit Lambic - Belgica - 5%",
+          "descripcion_en": "Framboise Fruit Lambic - Belgium - 5%",
+          "descripcion_es": "Framboise Fruit Lambic - Belgica - 5%",
           "precio": "6.70",
           "tags": "cerveza afrutada beer fruity cervesa afruitada"
         },
         {
           "nombre": "Estrella Galicia Bodega",
+          "nombre_en":"Estrella Galicia Bodega",
+          "nombre_es":"Estrella Galicia Bodega",
           "descripcion": "5.5%",
+          "descripcion_en": "5.5%",
+          "descripcion_es": "5.5%",
           "precio": "2.20 / 2.80 / 4",
           "tags": "cerveza beer cervesa"
         },
         {
           "nombre": "Estrella Galicia 1906",
+          "nombre_en":"Estrella Galicia 1906",
+          "nombre_es":"Estrella Galicia 1906",
           "descripcion": "8%",
+          "descripcion_en": "8%",
+          "descripcion_es": "8%",
           "precio": "2.50 / 2.80 / 4.80",
           "tags": "cerveza beer cervesa"
         },
         {
           "nombre": "Erdinger Weisse",
+          "nombre_en":"Erdinger Weisse",
+          "nombre_es":"Erdinger Weisse",
           "descripcion": "Blat - 5.5%",
+          "descripcion_en": "Wheat - 5.5%",
+          "descripcion_es": "Trigo - 5.5%",
           "precio": "3 / 5",
           "tags": "cerveza celiaco beer cervesa celiac"
         }
@@ -123,57 +195,84 @@
     }, {
       "nombre": "plantxats",
       "nombre_en":"sandwiches",
+      "nombre_es":"bocadillos",
       "imagen": "https://realfood.tesco.com/media/images/RFO-1400x919-ChickenClubSandwich-0ee77c05-5a77-49ac-a3bd-4d45e3b4dca7-0-1400x919.jpg",
       "data": [{
           "nombre": "Reig i Bonet",
+          "nombre_en": "Reig i Bonet",
+          "nombre_es": "Reig i Bonet",
           "descripcion": "Pit de pollastre, avocat, maionesa de chipotle, mozzarella i ceba vermella.",
+          "descripcion_en": "Chicken, avocado, chipotle mayo, mozarella and red onions",
+          "descripcion_es": "Pechuga de pollo, aguacate, mayonesa de chipotle, mozzarella y cebolla morada",
           "precio": 7.5,
           "tags": "plantxat sandwitch bocadillo"
         },
         {
           "nombre": "Verdi",
-          "descripcion": "Botifarra de perol de Can Cruells, cena al forn, formatge urgelia i allioli de codony.",
+          "nombre_en": "Verdi",
+          "nombre_es": "Verdi",
+          "descripcion": "Botifarra de perol de Can Cruells, ceba al forn, formatge urgelia i allioli de codony.",
+          "descripcion_en": "Botifarra de perol (catalan sausage) de Can Cruells, roasted onions, urgelia cheese and quince allioli",
+          "descripcion_es": "Butifarra de perol de Can Cruells, cebolla asada, queso urgelia y allioli de membrillo",
           "precio": 7.5,
           "tags": "plantxat sandwitch bocadillo"
         },
         {
           "nombre": "Joan Blanques",
-          "descripcion": "Sobrassada de mallorca, formatge de menorca i mel.",
+          "nombre_en": "Joan Blanques",
+          "nombre_es": "Joan Blanques",
+          "descripcion": "Sobrassada de Mallorca, formatge de Menorca i mel.",
+          "descripcion_en": "Sobrasada (spicy sausage) from Mallorca, Menorca cheese and honey",
+          "descripcion_es": "Sobrasada de Mallorca, queso de menorca y miel",
           "precio": 6.2,
           "tags": "plantxat sandwitch bocadillo"
         },
         {
           "nombre": "Escorial",
+          "nombre_en": "Escorial",
+          "nombre_es": "Escorial",
           "descripcion": "Biquini rústic de lacón i formatge tetilla.",
+          "descripcion_en": "Grilled sandwitch with galician ham and tetilla cheese",
+          "descripcion_es": "Biquini rústico de lacón y queso tetilla",
           "precio": 6.1,
           "tags": "plantxat sandwitch bocadillo"
         },
         {
           "nombre": "Les Tres Senyores",
+          "nombre_en": "Les Tres Senyores",
+          "nombre_es": "Les Tres Senyores",
           "descripcion": "Formatges (tetilla, maó i formatge blau), ceba rostida i crèixens.",
+          "descripcion_en": "Tetilla cheese, maó cheese and blue cheese, roasted onions and watercress",
+          "descripcion_es": "Quesos tetilla, maó y azul, cebolla asada y berros",
           "precio": 6.20,
           "tags": "plantxat vegetaria vegetarian vegetariano sandwitch bocadillo"
         },
         {
           "nombre": "Alzina",
+          "nombre_en": "Alzina",
+          "nombre_es": "Alzina",
           "descripcion": "Albergínia, olivada, tomàquets secs, ceba al forn i formatge de cabra.",
-          "descripcion_en": "Heura, calabacín, tomates secos, cebolla asada y hummus de judía blanca",
-          "descripcion_es": "Heura, zucchini, sundried tomatoes, grilled onions and white bean hummus",
+          "descripcion_en": "Aubergines, tapenade, sundried tomatoes, grilled onions and goat cheese",
+          "descripcion_es": "Berenjenas, olivada, tomates secos, cebolla asada y queso de cabra",
           "precio": 7,
           "tags": "plantxat vegetaria vegetarian vegetariano sandwitch bocadillo"
 
         },
         {
           "nombre": "Legalitat",
+          "nombre_en": "Legalitat",
+          "nombre_es": "Legalitat",
           "descripcion": "Heura, carabassó, tomáquet sec, ceba al forn i hummus de mongeta blanca",
-          "descripcion_es": "Heura, calabacín, tomates secos, cebolla asada y hummus de judía blanca",
           "descripcion_en": "Heura, zucchini, sundried tomatoes, grilled onions and white bean hummus",
+          "descripcion_es": "Heura, calabacín, tomates secos, cebolla asada y hummus de judía blanca",
           "precio": 7.5,
           "tags": "plantxat vega vegetaria vegano vegan vegetarian vegetariano sandwitch bocadillo"
 
         },
         {
           "nombre": "Martí",
+          "nombre_en": "Martí",
+          "nombre_es": "Martí",
           "descripcion": "Formatge de cabra, escalivada i anxoves",
           "descripcion_en": "Goat cheese, escalivada and anchovies",
           "descripcion_es": "Queso de cabra, escalivada y anchoas",
@@ -188,37 +287,61 @@
       "imagen": "https://entrenosotros.consum.es/public/Image/2019/6/Tapas-CONSUM---Grande.png.jpg",
       "data": [{
           "nombre": "Naxos",
+          "nombre_en": "Nachos",
+          "nombre_es": "Nachos",
           "descripcion": "amb guacamole",
+          "descripcion_en": "with guacamole",
+          "descripcion_es": "con guacamole",
           "precio": 5.5,
           "tags": "tapeta vega vegetaria tapa vegan vegetarian vegano vegetariano"
         },
         {
           "nombre": "Naxos complets",
+          "nombre_en": "Complete Nachos",
+          "nombre_es": "Nachos completos",
           "descripcion": "amb guacamole i formatge",
+          "descripcion_en": "with guacamole and cheese",
+          "descripcion_es": "con guacamole y queso",
           "precio": 6,
           "tags": "tapeta vegetaria tapa vegetarian vegetariano"
         },
         {
           "nombre": "Patates La Rovira",
+          "nombre_en": "La Rovira Potatoes",
+          "nombre_es": "Patatas La Rovira",
           "descripcion": "al mojo amb salsa brava",
+          "descripcion_en": "al mojo with spicy sauce",
+          "descripcion_es": "al mojo con salsa brava",
           "precio": 4.5,
           "tags": "tapeta vegetaria tapa vegetarian vegetariano"
         },
         {
           "nombre": "Pack Vermouth",
+          "nombre_en": "Pack Vermouth",
+          "nombre_es": "Pack Vermouth",
           "descripcion": "1 gilda anxova, 1 gilda seitó, 1 banderilla, 1 pebrot farcit formatge, 1 pebrot farcit tonyina, 1 escarxofa marinada",
+          "descripcion_en": "1 anchovies gilda, 1 seitó gilda, 1 f, 1 cheese stuffed pepper, 1 tuna stuffed pepper, 1 marinated artichoke",
+          "descripcion_es": "1 gilda anchoa, 1 gilda boquerón, 1 banderilla, 1 pimiento relleno de queso, 1 pimiento relleno de atún, 1 alcachofa marinada",
           "precio": 8,
           "tags": "tapeta celiac tapa celiaco"
         },
         {
           "nombre": "Assortit d'olives",
+          "nombre_en": "Assorted Olives",
+          "nombre_es": "Variado de Olivas",
           "descripcion": "La Rovira",
+          "descripcion_en": "La Rovira",
+          "descripcion_es": "La Rovira",
           "precio": 3,
           "tags": "tapeta celiac tapa celiaco"
         },
         {
           "nombre": "Pack la rovira",
+          "nombre_en": "La Rovira pack",
+          "nombre_es": "Pack la rovira",
           "descripcion": "escopinyes, musclos, olives i patates espinaler",
+          "descripcion_en": "Cockles, mussels, olives and potato chips",
+          "descripcion_es": "berberechos, mejillones, olivas y patatas espinaler",
           "precio": 11.5,
           "tags": "tapeta celiac tapa celiaco"
         }
@@ -227,214 +350,348 @@
   }, {
     "restaurant": "La Panxa",
     "place": "LaPanxa",
-    "iso": "https://res.cloudinary.com/grountish/image/upload/v1595088760/larovira_diiku0.png",
+    "iso": "https://fastly.4sqi.net/img/general/600x600/3473887_C4QgmcdbJvtuLQENruGG0R4BFo1MosvtAPJLNHcCDWY.jpg",
     "backgroundColor": "black",
     "font": "Tommaso",
     "color": "#ede1d1",
     "categorias": [{
       "nombre": "cerveses",
+      "nombre_en":"beer",
+      "nombre_es":"cervezas",
       "imagen": "https://okasional-beer.com/blog-cerveza-artesana/wp-content/uploads/2019/04/cerveses-la-pirata-okasional-beer.jpg",
       "data": [{
           "nombre": "1. Guineu Txiripa",
+          "nombre_en":"1. Guineu Txiripa",
+          "nombre_es":"1. Guineu Txiripa",
           "descripcion": "IPA - Catalunya - 6%",
+          "descripcion_en": "IPA - Catalunya - 6%",
+          "descripcion_es": "IPA - Catalunya - 6%",
           "precio": "6 / 3.50",
-          "tags": "cervesa afruitada citrica lupulada amarga"
+          "tags": "cerveza afrutada cervesa beer fruity citric bitter afruitada citrica lupulada amarga"
         },
         {
           "nombre": "2. Cloudwater Gyle",
+          "nombre_en":"2. Cloudwater Gyle",
+          "nombre_es":"2. Cloudwater Gyle",
           "descripcion": "DDH Pale Ale - Anglaterra - 5.5%",
+          "descripcion_en": "DDH Pale Ale - England - 5.5%",
+          "descripcion_es": "DDH Pale Ale - Inglaterra - 5.5%",
           "precio": "7.50 / 4.70",
-          "tags": "cervesa afruitada lupulada fresca"
+          "tags": "cerveza afrutada cervesa beer fruity hopped fresh afruitada lupulada fresca"
         },
         {
           "nombre": "3. Kusfollin",
+          "nombre_en":"3. Kusfollin",
+          "nombre_es":"3. Kusfollin",
           "descripcion": "APA - Catalunya - 5.5%",
+          "descripcion_en": "APA - Catalunya - 5.5%",
+          "descripcion_es": "APA - Catalunya - 5.5%",
           "precio": "6.10 / 3.60",
-          "tags": "cervesa citrica afruitada amarga seca"
+          "tags": "cerveza afrutada cervesa beer citric fruity bitter dry citrica afruitada amarga seca"
         },
         {
           "nombre": "4. Oakham Green Devil",
+          "nombre_en":"4. Oakham Green Devil",
+          "nombre_es":"4. Oakham Green Devil",
           "descripcion": "IPA - Anglaterra - 6%",
+          "descripcion_en": "IPA - England - 6%",
+          "descripcion_es": "IPA - Inglaterra - 6%",
           "precio": "6.50 / 3.80",
-          "tags": "cervesa afruitada citrica lupulada"
+          "tags": "cerveza afrutada beer fruity citric hopped cervesa afruitada citrica lupulada"
         },
         {
           "nombre": "5. La Salvatge Inframon",
+          "nombre_en":"5. La Salvatge Inframon",
+          "nombre_es":"5. La Salvatge Inframon",
           "descripcion": "Saison Brett - Catalunya - 6%",
+          "descripcion_en": "Saison Brett - Catalunya - 6%",
+          "descripcion_es": "Saison Brett - Catalunya - 6%",
           "precio": "7.50 / 4.70",
-          "tags": "cervesa acida"
+          "tags": "cerveza beer acidic cervesa acida"
         },
         {
           "nombre": "6. La Pirata Hazy Primavera",
+          "nombre_en":"6. La Pirata Hazy Primavera",
+          "nombre_es":"6. La Pirata Hazy Primavera",
           "descripcion": "Session IPA - Catalunya - 3.8%",
+          "descripcion_en": "Session IPA - Catalunya - 3.8%",
+          "descripcion_es": "Session IPA - Catalunya - 3.8%",
           "precio": "6.20 / 3.70",
-          "tags": "cervesa citrica"
+          "tags": "cerveza beer citric cervesa citrica"
         },
         {
           "nombre": "7. Fermun Red Alert",
+          "nombre_en":"7. Fermun Red Alert",
+          "nombre_es":"7. Fermun Red Alert",
           "descripcion": "Irish Red Ale - Catalunya - 3.8%",
+          "descripcion_en": "Irish Red Ale - Catalunya - 3.8%",
+          "descripcion_es": "Irish Red Ale - Catalunya - 3.8%",
           "precio": "6.10 / 3.60",
-          "tags": "cervesa torrada dolça"
+          "tags": "cerveza tostada dulce beer toasted sweet cervesa torrada dolça"
         },
         {
           "nombre": "8. Beerbliotek I'm so aware",
-          "descripcion": "Doble IPA - Suecia - 7.9%",
+          "nombre_en":"8. Beerbliotek I'm so aware",
+          "nombre_es":"8. Beerbliotek I'm so aware",
+          "descripcion": "Double IPA - Suecia - 7.9%",
+          "descripcion_en": "Double IPA - Sweden - 7.9%",
+          "descripcion_es": "Double IPA - Suecia - 7.9%",
           "precio": "7.20 / 4.5",
-          "tags": "cervesa afruitada citrica lupulada"
+          "tags": "cerveza afrutada beer fruity citric hopped cervesa afruitada citrica lupulada"
         },
         {
           "nombre": "9. Brighton Bier Downtown Charlie Brown",
+          "nombre_en":"9. Brighton Bier Downtown Charlie Brown",
+          "nombre_es":"9. Brighton Bier Downtown Charlie Brown",
           "descripcion": "American Brown Stout - Anglaterra - 6%",
+          "descripcion_en": "American Brown Stout - England - 6%",
+          "descripcion_es": "American Brown Stout - Inglaterra - 6%",
           "precio": "6.80 / 4",
-          "tags": "cervesa torrada afruitada lupulada"
+          "tags": "cerveza tostada afrutada beer toasted fruity hopped cervesa torrada afruitada lupulada"
         },
         {
           "nombre": "10. Seven Islands Hazelnut Moctezuma",
+          "nombre_en":"10. Seven Islands Hazelnut Moctezuma",
+          "nombre_es":"10. Seven Islands Hazelnut Moctezuma",
           "descripcion": "Imperial Stout - Catalunya - 13%",
+          "descripcion_en": "Imperial Stout - Catalunya - 13%",
+          "descripcion_es": "Imperial Stout - Catalunya - 13%",
           "precio": "6.30",
-          "tags": "cervesa torrada negra dolça"
+          "tags": "beer toasted black sweet cerveza tostada dulce cervesa torrada negra dolça"
         },
         {
           "nombre": "11. Guineu Real Fruit",
+          "nombre_en":"11. Guineu Real Fruit",
+          "nombre_es":"11. Guineu Real Fruit",
           "descripcion": "Berliner Weisse - Catalunya - 4.4%",
+          "descripcion_en": "Berliner Weisse - Catalunya - 4.4%",
+          "descripcion_es": "Berliner Weisse - Catalunya - 4.4%",
           "precio": "6.70 / 3.5",
-          "tags": "cervesa afruitada citrica"
+          "tags": "cerveza afrutada beer fruity citric cervesa afruitada citrica"
         },
         {
           "nombre": "12. Agullons Hops and Hopes",
+          "nombre_en":"12. Agullons Hops and Hopes",
+          "nombre_es":"12. Agullons Hops and Hopes",
           "descripcion": "English Pale Ale - Catalunya - 5.5%",
+          "descripcion_en": "English Pale Ale - Catalunya - 5.5%",
+          "descripcion_es": "English Pale Ale - Catalunya - 5.5%",
           "precio": "6 / 3.5",
-          "tags": "cervesa torrada citrica"
+          "tags": "beer toasted citric cerveza tostada cervesa torrada citrica"
         },
         {
           "nombre": "13. Agullons Runa",
+          "nombre_en":"13. Agullons Runa",
+          "nombre_es":"13. Agullons Runa",
           "descripcion": "Brown Ale - Catalunya - 5%",
+          "descripcion_en": "Brown Ale - Catalunya - 5%",
+          "descripcion_es": "Brown Ale - Catalunya - 5%",
           "precio": "6.30 / 2.80",
-          "tags": "cervesa torrada lupulada"
+          "tags": "cerveza tostada hopped beer toasted cervesa torrada lupulada"
         },
         {
           "nombre": "14. Cierzo Vertigo",
+          "nombre_en":"14. Cierzo Vertigo",
+          "nombre_es":"14. Cierzo Vertigo",
           "descripcion": "Doble IPA - Zaragoza - 9%",
+          "descripcion_en": "Double IPA - Zaragoza - 9%",
+          "descripcion_es": "Doble IPA - Zaragoza - 9%",
           "precio": "6.9 / 4.2",
-          "tags": "cervesa citrica lupulada"
+          "tags": "beer citric hopped cerveza cervesa citrica lupulada"
         },
         {
           "nombre": "15. Oud Beersel",
+          "nombre_en":"15. Oud Beersel",
+          "nombre_es":"15. Oud Beersel",
           "descripcion": "Framboise Fruit Lambic - Belgica - 5%",
+          "descripcion_en": "Framboise Fruit Lambic - Belgium - 5%",
+          "descripcion_es": "Framboise Fruit Lambic - Belgica - 5%",
           "precio": "6.70",
-          "tags": "cervesa afruitada"
+          "tags": "cerveza afrutada beer fruity cervesa afruitada"
         },
         {
           "nombre": "Estrella Galicia Bodega",
+          "nombre_en":"Estrella Galicia Bodega",
+          "nombre_es":"Estrella Galicia Bodega",
           "descripcion": "5.5%",
+          "descripcion_en": "5.5%",
+          "descripcion_es": "5.5%",
           "precio": "2.20 / 2.80 / 4",
-          "tags": "cervesa"
+          "tags": "cerveza beer cervesa"
         },
         {
           "nombre": "Estrella Galicia 1906",
+          "nombre_en":"Estrella Galicia 1906",
+          "nombre_es":"Estrella Galicia 1906",
           "descripcion": "8%",
+          "descripcion_en": "8%",
+          "descripcion_es": "8%",
           "precio": "2.50 / 2.80 / 4.80",
-          "tags": "cervesa"
+          "tags": "cerveza beer cervesa"
         },
         {
           "nombre": "Erdinger Weisse",
+          "nombre_en":"Erdinger Weisse",
+          "nombre_es":"Erdinger Weisse",
           "descripcion": "Blat - 5.5%",
+          "descripcion_en": "Wheat - 5.5%",
+          "descripcion_es": "Trigo - 5.5%",
           "precio": "3 / 5",
-          "tags": "cervesa celiac"
+          "tags": "cerveza celiaco beer cervesa celiac"
         }
       ]
     }, {
       "nombre": "plantxats",
+      "nombre_en":"sandwiches",
+      "nombre_es":"bocadillos",
       "imagen": "https://realfood.tesco.com/media/images/RFO-1400x919-ChickenClubSandwich-0ee77c05-5a77-49ac-a3bd-4d45e3b4dca7-0-1400x919.jpg",
       "data": [{
           "nombre": "Reig i Bonet",
+          "nombre_en": "Reig i Bonet",
+          "nombre_es": "Reig i Bonet",
           "descripcion": "Pit de pollastre, avocat, maionesa de chipotle, mozzarella i ceba vermella.",
+          "descripcion_en": "Chicken, avocado, chipotle mayo, mozarella and red onions",
+          "descripcion_es": "Pechuga de pollo, aguacate, mayonesa de chipotle, mozzarella y cebolla morada",
           "precio": 7.5,
-          "tags": "plantxat"
+          "tags": "plantxat sandwitch bocadillo"
         },
         {
           "nombre": "Verdi",
-          "descripcion": "Botifarra de perol de Can Cruells, cena al forn, formatge urgelia i allioli de codony.",
+          "nombre_en": "Verdi",
+          "nombre_es": "Verdi",
+          "descripcion": "Botifarra de perol de Can Cruells, ceba al forn, formatge urgelia i allioli de codony.",
+          "descripcion_en": "Botifarra de perol (catalan sausage) de Can Cruells, roasted onions, urgelia cheese and quince allioli",
+          "descripcion_es": "Butifarra de perol de Can Cruells, cebolla asada, queso urgelia y allioli de membrillo",
           "precio": 7.5,
-          "tags": "plantxat"
+          "tags": "plantxat sandwitch bocadillo"
         },
         {
           "nombre": "Joan Blanques",
-          "descripcion": "Sobrassada de mallorca, formatge de menorca i mel.",
+          "nombre_en": "Joan Blanques",
+          "nombre_es": "Joan Blanques",
+          "descripcion": "Sobrassada de Mallorca, formatge de Menorca i mel.",
+          "descripcion_en": "Sobrasada (spicy sausage) from Mallorca, Menorca cheese and honey",
+          "descripcion_es": "Sobrasada de Mallorca, queso de menorca y miel",
           "precio": 6.2,
-          "tags": "plantxat"
+          "tags": "plantxat sandwitch bocadillo"
         },
         {
           "nombre": "Escorial",
+          "nombre_en": "Escorial",
+          "nombre_es": "Escorial",
           "descripcion": "Biquini rústic de lacón i formatge tetilla.",
+          "descripcion_en": "Grilled sandwitch with galician ham and tetilla cheese",
+          "descripcion_es": "Biquini rústico de lacón y queso tetilla",
           "precio": 6.1,
-          "tags": "plantxat"
+          "tags": "plantxat sandwitch bocadillo"
         },
         {
           "nombre": "Les Tres Senyores",
+          "nombre_en": "Les Tres Senyores",
+          "nombre_es": "Les Tres Senyores",
           "descripcion": "Formatges (tetilla, maó i formatge blau), ceba rostida i crèixens.",
+          "descripcion_en": "Tetilla cheese, maó cheese and blue cheese, roasted onions and watercress",
+          "descripcion_es": "Quesos tetilla, maó y azul, cebolla asada y berros",
           "precio": 6.20,
-          "tags": "plantxat vegetaria"
+          "tags": "plantxat vegetaria vegetarian vegetariano sandwitch bocadillo"
         },
         {
           "nombre": "Alzina",
+          "nombre_en": "Alzina",
+          "nombre_es": "Alzina",
           "descripcion": "Albergínia, olivada, tomàquets secs, ceba al forn i formatge de cabra.",
+          "descripcion_en": "Aubergines, tapenade, sundried tomatoes, grilled onions and goat cheese",
+          "descripcion_es": "Berenjenas, olivada, tomates secos, cebolla asada y queso de cabra",
           "precio": 7,
-          "tags": "plantxat vegetaria"
+          "tags": "plantxat vegetaria vegetarian vegetariano sandwitch bocadillo"
 
         },
         {
           "nombre": "Legalitat",
+          "nombre_en": "Legalitat",
+          "nombre_es": "Legalitat",
           "descripcion": "Heura, carabassó, tomáquet sec, ceba al forn i hummus de mongeta blanca",
+          "descripcion_en": "Heura, zucchini, sundried tomatoes, grilled onions and white bean hummus",
+          "descripcion_es": "Heura, calabacín, tomates secos, cebolla asada y hummus de judía blanca",
           "precio": 7.5,
-          "tags": "plantxat vega vegetaria"
+          "tags": "plantxat vega vegetaria vegano vegan vegetarian vegetariano sandwitch bocadillo"
 
         },
         {
           "nombre": "Martí",
+          "nombre_en": "Martí",
+          "nombre_es": "Martí",
           "descripcion": "Formatge de cabra, escalivada i anxoves",
+          "descripcion_en": "Goat cheese, escalivada and anchovies",
+          "descripcion_es": "Queso de cabra, escalivada y anchoas",
           "precio": 7,
-          "tags": "plantxat"
+          "tags": "plantxat sandwitch bocadillo"
         }
       ]
     }, {
       "nombre": "tapetes",
+      "nombre_en":"tapas",
+      "nombre_es":"tapas",
       "imagen": "https://entrenosotros.consum.es/public/Image/2019/6/Tapas-CONSUM---Grande.png.jpg",
       "data": [{
           "nombre": "Naxos",
+          "nombre_en": "Nachos",
+          "nombre_es": "Nachos",
           "descripcion": "amb guacamole",
+          "descripcion_en": "with guacamole",
+          "descripcion_es": "con guacamole",
           "precio": 5.5,
-          "tags": "tapeta vega vegetaria"
+          "tags": "tapeta vega vegetaria tapa vegan vegetarian vegano vegetariano"
         },
         {
           "nombre": "Naxos complets",
+          "nombre_en": "Complete Nachos",
+          "nombre_es": "Nachos completos",
           "descripcion": "amb guacamole i formatge",
+          "descripcion_en": "with guacamole and cheese",
+          "descripcion_es": "con guacamole y queso",
           "precio": 6,
-          "tags": "tapeta vegetaria"
+          "tags": "tapeta vegetaria tapa vegetarian vegetariano"
         },
         {
           "nombre": "Patates La Rovira",
+          "nombre_en": "La Rovira Potatoes",
+          "nombre_es": "Patatas La Rovira",
           "descripcion": "al mojo amb salsa brava",
+          "descripcion_en": "al mojo with spicy sauce",
+          "descripcion_es": "al mojo con salsa brava",
           "precio": 4.5,
-          "tags": "tapeta vegetaria"
+          "tags": "tapeta vegetaria tapa vegetarian vegetariano"
         },
         {
           "nombre": "Pack Vermouth",
+          "nombre_en": "Pack Vermouth",
+          "nombre_es": "Pack Vermouth",
           "descripcion": "1 gilda anxova, 1 gilda seitó, 1 banderilla, 1 pebrot farcit formatge, 1 pebrot farcit tonyina, 1 escarxofa marinada",
+          "descripcion_en": "1 anchovies gilda, 1 seitó gilda, 1 f, 1 cheese stuffed pepper, 1 tuna stuffed pepper, 1 marinated artichoke",
+          "descripcion_es": "1 gilda anchoa, 1 gilda boquerón, 1 banderilla, 1 pimiento relleno de queso, 1 pimiento relleno de atún, 1 alcachofa marinada",
           "precio": 8,
-          "tags": "tapeta celiac"
+          "tags": "tapeta celiac tapa celiaco"
         },
         {
           "nombre": "Assortit d'olives",
+          "nombre_en": "Assorted Olives",
+          "nombre_es": "Variado de Olivas",
           "descripcion": "La Rovira",
+          "descripcion_en": "La Rovira",
+          "descripcion_es": "La Rovira",
           "precio": 3,
-          "tags": "tapeta celiac"
+          "tags": "tapeta celiac tapa celiaco"
         },
         {
           "nombre": "Pack la rovira",
+          "nombre_en": "La Rovira pack",
+          "nombre_es": "Pack la rovira",
           "descripcion": "escopinyes, musclos, olives i patates espinaler",
+          "descripcion_en": "Cockles, mussels, olives and potato chips",
+          "descripcion_es": "berberechos, mejillones, olivas y patatas espinaler",
           "precio": 11.5,
-          "tags": "tapeta celiac"
+          "tags": "tapeta celiac tapa celiaco"
         }
       ]
     }]

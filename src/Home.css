@@ -161,6 +161,7 @@ section {
   object-position: center;
 }
 
+
 .MenuQR {
   background: linear-gradient(
     -215deg,
@@ -170,24 +171,29 @@ section {
   display: flex;
 }
 
-.MenuQR .texto {
+.menuQR-1 {
+  display: flex;
+  height: 100%;
+}
+
+.menuQR-1 .texto {
   text-align: left;
   height: 50%;
   width: 30vw;
   margin: 30vh 5vw 5vw 15vw;
 }
 
-.MenuQR .texto h2 {
+.menuQR-1 .texto h2 {
   font-size: 3rem;
   margin-bottom: 1rem;
 }
 
-.MenuQR .texto p {
+.menuQR-1 .texto p {
   font-size: 1.5rem;
   margin-bottom: 2rem;
 }
 
-.MenuQR .texto button {
+.menuQR-1 .texto button {
   background-color: transparent;
   color: whitesmoke;
   border: 1px solid whitesmoke;
@@ -197,16 +203,16 @@ section {
   padding: 1.7rem 1rem;
   width: 80%;
 }
-.MenuQR .img-container {
+.menuQR-1 .img-container {
   height: 100%;
   margin: auto;
 }
 
-.MenuQR img {
-  display: block;
-  height: 66%;
+.menuQR-1 img {
+  height: 30% !important;
   width: auto;
   margin-top: 25vh;
+  object-fit: contain;
 }
 
 .Contacto {

@@ -1,20 +1,18 @@
-import React, { Component } from 'react';
-import foods from '../foods.json';
-import Foodbox from './Foodbox';
-import './../App.css';
+import React, { Component } from "react";
+import foods from "../foods.json";
+import Foodbox from "./Foodbox";
+import "./../App.css";
 
-const param = window.location.pathname.slice(1)
-const foundPlace = foods.places.filter(x => x.place === param)
 
 export default class Foodlist extends Component {
   state = {
     foods: foods.places,
-    inputValue: '',
+    inputValue: "",
     filterFoods: foods.places,
-    listOfFoods: []
+    listOfFoods: [],
   };
-
-  filterOnChange = (e) => {
+  
+    filterOnChange = (e) => {
     this.setState({
       inputValue: e.target.value,
     });
@@ -29,23 +27,43 @@ export default class Foodlist extends Component {
       filterFoods: filteredFoods,
     });
   };
-  
+
   render() {
-    const categoryFoods = this.props.match.params.categoryName;
-    console.log(foundPlace[0])
-    const foundCategory = foundPlace[0].categorias.find((category) => categoryFoods === category.nombre);
+    console.log(this.props);
+
+   
+    let placeName = this.props.match.params.place;
+
+    const foundPlace = foods.places.filter(
+      (x) =>  x.place === placeName
+    );
+
+    const categoryFoods = this.props.match.params.categoryName ;
+    const foundCategory = foundPlace[0].categorias.find(
+      (category) => categoryFoods === category.nombre
+    );
+
+  
+      const nameFood = () => {
+        switch (this.props.lang) {
+          case "ca":
+            return foundCategory.nombre.toUpperCase();
+          case "en":
+            return foundCategory.nombre_en.toUpperCase();
+          case "es":
+            return foundCategory.nombre_es.toUpperCase();
+          default: return foundCategory.nombre.toUpperCase();
+         
+        }
+      }
     return (
       <div className="centered">
         <div className="list-add">
           <ul className="list-food">
-    <h4 className= "title-category">{categoryFoods.toUpperCase()}</h4>
-            {
-                        foundCategory.data.map((oneFood, index) => {
-                            return (
-                                <Foodbox {...oneFood} key={index}/>
-                            );
-                        })
-                    }
+            <h4 className="title-category">{nameFood()}</h4>
+            {foundCategory.data.map((oneFood, index) => {
+              return <Foodbox {...oneFood} key={index} lang={this.props.lang} />;
+            })}
           </ul>
         </div>
       </div>
