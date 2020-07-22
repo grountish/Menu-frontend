@@ -4,7 +4,7 @@ import Carousel from "nuka-carousel";
 import "./../../src/Home.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons";
+import { faAngleLeft, faAngleRight, faAngleDoubleRight } from "@fortawesome/free-solid-svg-icons";
 
 import ServicioCards from "./ServicioCard";
 
@@ -64,7 +64,6 @@ const Home = () => {
     <div className="home">
       <nav>
         <div className="nav-content">
-          <div className="logo">Collabo Studio</div>
           <div className="nav-links">
             <ul>
               <li>
@@ -91,8 +90,7 @@ const Home = () => {
         <section className="Inicio" id="Inicio">
           <div className="frase">
             <h5>
-              In a context of environmental collapse, design can open a space
-              for dialogue between humans and other living beings.
+            COLLABO STUDIO LOGO
             </h5>
           </div>
         </section>
@@ -129,8 +127,8 @@ const Home = () => {
                   las personas y el planeta ahre
                 </p>
                 <div>
-                  <h2>Desliza para saber mas!</h2>
-                  <FontAwesomeIcon icon={faAngleRight} />
+                  <h3>Desliza para saber mas!</h3>
+                  <h3><FontAwesomeIcon icon={faAngleDoubleRight} /></h3>
                 </div>
               </div>
               <div className="img-container">
@@ -176,7 +174,13 @@ const Home = () => {
           </Carousel>
         </section>
 
-        <section id="Nosotros" className="Nosotros"></section>
+        <section id="Nosotros" className="Nosotros">
+        <div className="frase">
+            <h5>
+              Inserte aqui su info vende humo de lo maravillosos que somos
+            </h5>
+          </div>
+        </section>
 
         <section id="Contacto" className="Contacto">
           <img
@@ -186,10 +190,12 @@ const Home = () => {
 
           <div className="footer-right">
             <h2>Contactanos</h2>
+                
 
-            <form action="#" method="post">
-              <input type="text" name="email" placeholder="Email"></input>
-              <textarea name="message" placeholder="Mensaje"></textarea>
+            <form action="https://formspree.io/mknqjepv" method="POST">
+            <input type="text" id="name" name="name" placeholder="Nombre..."></input>
+              <input type="text" id="email" name="email" placeholder="Email..."></input>
+              <textarea id="message" name="message" placeholder="Mensaje..."></textarea>
               <button>Enviar</button>
             </form>
           </div>
