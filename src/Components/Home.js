@@ -1,5 +1,6 @@
 import React from "react";
 import "./../../src/Home.css";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import ServicioCards from "./ServicioCard";
@@ -50,6 +51,7 @@ const Home = () => {
   ];
   return (
     <div id="caca">
+    
       <nav>
         <div className="logo">Collabo Studio</div>
         <div className="nav-links">
@@ -76,10 +78,6 @@ const Home = () => {
       <main>
         <section className="Inicio" id="Inicio">
           <div className="frase">
-            <h5>
-              In a context of environmental collapse, design can open a space
-              for dialogue between humans and other living beings.
-            </h5>
           </div>
         </section>
 
