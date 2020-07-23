@@ -1,9 +1,15 @@
+@font-face {
+  font-family: OPTIImprovNewWideNine;
+  src: url("./Assets/OPTIImprovNewWideNine.ttf");
+}
+
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
+  /* scroll-snap-type: y mandatory; */
   max-width: 98.8vw;
 }
 
@@ -12,11 +18,13 @@
   font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
-
+  background-color: rgb(255,255,255);
+  background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(238,238,238,1) 34%, rgba(255,255,255,1) 53%, rgba(0,0,0,1) 71%, rgba(0,0,0,1) 100%);
+  background-image: url('./Assets/Caparuido.png'), repeat;
 }
 
 main {
-  width: 100vw;
+width: 100vw;
 margin: 0;
 padding: 0;
 }
@@ -28,7 +36,6 @@ padding: 0;
   left:5%;
   cursor: pointer;
   z-index: 5000;
-
 }
 
 .toggle-btn span{
@@ -43,18 +50,18 @@ padding: 0;
   width:40%;
   height: 100vh;
   position: fixed;
-  z-index: 1;
-  background-color: rgba(199, 199, 199, 0.8);
+  z-index: 3;
+  background-color: #000000;
   left: -40%;
   transition: 200ms all;
 }
 
 .nav-active {
-  width:40%;
+  width:100%;
   height: 100vh;
   position: fixed;
   z-index: 1;
-  background-color: rgba(199, 199, 199, 0.8);
+  background-color: #000000;
   left: 0;
   transition: 200ms all;
 }
@@ -71,18 +78,18 @@ padding: 0;
   flex-direction: column;
   text-align: left;
   height: 100%;
-  margin-top: 7vh;
+  margin-top: 20vh;
 }
 
 .nav-links li {
   list-style: none;
   display: inline-block;
-  margin: calc(100vh / 30) 5vw;
+  margin: calc(100vh / 50) 5vw;
 }
 
 .nav-links li a {
   text-decoration: none;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 300;
   color: whitesmoke;
 }
@@ -91,72 +98,12 @@ padding: 0;
   color: rgb(41, 41, 41);
 }
 
-
 section {
   height: 100vh;
   width: 100vw;
   scroll-snap-align: center;
 }
 
-.Inicio {
-  background: linear-gradient(
-      -215deg,
-      rgba(52, 53, 53, 0.8) 5%,
-      rgba(3, 4, 39, 1) 150%
-    ),
-    url(https://images.pexels.com/photos/705164/computer-laptop-work-place-camera-705164.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
-  background-size: cover;
-  display: flex;
-}
-
-
-
-/* ----------------- --- Carousel --- ----------------*/
-.contenedor-principal {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  position: relative;
-}
-
-.contenedor-principal .flecha-izq,
-.contenedor-principal .flecha-der {
-  position: absolute;
-  border: none;
-  border-radius: 50%;
-  background-color: rgba(0, 0, 0, 0.315);
-  font-size: 3rem;
-  height: 10vh;
-  top: calc(100% - 60%);
-  line-height: 40px;
-  width: 10vh;
-  color: whitesmoke;
-  z-index: 500;
-  cursor: pointer;
-  transition: 0.2s ease all;
-}
-
-.contenedor-principal .flecha-izq:hover,
-.contenedor-principal .flecha-der:hover {
-  background-color: rgba(0, 0, 0, 0.9);
-}
-
-.contenedor-principal .flecha-izq {
-  left: 1%;
-}
-.contenedor-principal .flecha-der {
-  right: 1%;
-}
-
-.contenedor-carousel {
-  width: 100%;
-  overflow: hidden;
-  scroll-behavior: smooth;
-}
-
-.carousel {
-  width: 100%;
-}
 
 .serv {
   transition: 0.3 ease all;
@@ -166,101 +113,17 @@ section {
   flex-direction: row;
 }
 
-.servicio-card {
-  height: 100vh;
-  text-align: center;
-  width: 100%;
-}
-
-.servicio-card li {
-  list-style: none;
-  width: 100%;
-}
-
-.servicio-card img {
-  width: calc(100vw / 3);
-  height: 100vh;
-}
-
-.servicio-card .object-fit {
-  object-fit: cover;
-  object-position: center;
-}
 
 
 .MenuQR {
-  background: linear-gradient(
-    -215deg,
-    rgb(15, 219, 209) 5%,
-    rgb(5, 8, 148) 150%
-  );
-  display: flex;
+  
 }
 
-.menuQR-1 {
-  display: flex;
-  align-items: center;
-  height: 100vh;
-  width: 100vw;
-}
-
-.menuQR-1 .texto {
-  text-align: left;
-  height: 55%;
-  width: 30vw;
-  margin: auto;
-}
-
-.menuQR-1 .texto h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-
-.menuQR-1 .texto h3 {
-  font-size: 2.2rem;
-  margin-bottom: 1rem;
-}
-
-.menuQR-1 .texto p {
-  font-size: 1.5rem;
-  margin-bottom: 2rem;
-}
-
-.menuQR-1 .texto button {
-  background-color: transparent;
-  color: whitesmoke;
-  border: 1px solid whitesmoke;
-  border-radius: 5rem;
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  padding: 1.7rem 1rem;
-  width: 80%;
-}
-
-.menuQR-1 .img-container {
-  height: 100%;
-  margin: auto;
-}
-
-.menuQR-1 img {
-  height: 70%;
-  width: auto;
-  margin-top: 50%;
-  object-fit: contain;
-}
 /*  ///////////////////////////////////////////////////// NOSOTROS  ///////////////////////////////// */
 /*  //////////////////////////////////////////////////////////////////////////////////////////////// */
 
 .Nosotros {
-  background: linear-gradient(
-      -215deg,
-      rgba(246, 255, 255, 0.9) 5%,
-      rgba(255, 255, 255, 1) 150%
-    ),
-    url(https://images.pexels.com/photos/705164/computer-laptop-work-place-camera-705164.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
-  background-size: cover;
-  display: flex;
-  filter: blur(50);
+  
 }
 
 .frase {
@@ -269,7 +132,7 @@ section {
   width: 70%;
   margin: auto;
   margin-right: 5rem;
-
+  
 }
 .frase h5 {
   font-weight: 100;
@@ -277,94 +140,17 @@ section {
   text-align: left;
   color: black;
 }
-/*  /////////////////////////////////////////////////////contacto ///////////////////////////////// */
-/*  /////////////////////////////////////////////////////contacto ///////////////////////////////// */
 
-.Contacto {
-  display: flex;
-  background-color: rgba(1, 0, 3, 0.945);
-  align-items: center;
+.nosotres-texto {
+  font-family: OPTIImprovNewWideNine;
+  color: black;
 }
 
-.Contacto img {
-  width: 55vw;
-  height: 100vh;
-  object-fit: cover;
-}
-
-.Contacto ul {
-  margin: 10vw;
-  list-style: none;
-}
-
-/* Footer Right */
-
-.Contacto .footer-right {
-  display: flex;
-  flex-direction: column;
-  height: 80%;
-  padding-left: 4rem;
-}
-
-.Contacto .footer-right h2 {
-  margin-bottom: 1.5rem;
-}
-
-/* The contact form */
-
-.Contacto .footer-right {
-  width: 40%;
-}
-
-.Contacto form input,
-.Contacto form textarea {
-  display: block;
-  border-radius: 3px;
-  box-sizing: border-box;
-  background-color: #1f2022;
-  box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
-  border: none;
-  resize: none;
-
-  font: inherit;
-  font-size: 1.2rem;
-  font-weight: normal;
-  color: whitesmoke;
-
-  width: 100%;
-  padding: 18px;
-}
-
-.Contacto ::-webkit-input-placeholder {
-  color: #5c666b;
-}
-
-.Contacto ::-moz-placeholder {
-  color: #5c666b;
-  opacity: 1;
-}
-
-.Contacto :-ms-input-placeholder {
-  color: #5c666b;
-}
-
-.Contacto form input {
-  height: 4rem;
-  margin-bottom: 1rem;
-}
-
-.Contacto form textarea {
-  height: 40vh;
-  margin-bottom: 1rem;
-}
-
-.Contacto form button {
-  border-radius: 5px;
-  background-color: #33383b;
-  color: whitesmoke;
-  border: 0;
-  padding: 15px 0;
-  font-weight: bold;
-  width: 30%;
-  float: right;
+@media screen and (max-width: 450px) {
+  .nav-links li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: whitesmoke;
+  }
 }
