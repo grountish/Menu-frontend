@@ -52,41 +52,42 @@ const Home = () => {
   ];
   return (
     <div id="caca">
+  
+     <div id="sketch">
+        {/* <h1>alsdaskldjasdklj</h1> */}
+     </div>
       <nav>
         <div className="logo">Collabo Studio</div>
         <div className="nav-links">
           <ul>
             <li>
-              <a href="#Inicio">Inicio</a>
-            </li>
-            
-            <li>
-              <a href="#Servicios">Servicios</a>
+              <a href="">Servicios</a>
             </li>
             <li>
-              <a href="#MenuQR">Menu QR</a>
+              <a href="">Menu QR</a>
             </li>
             <li>
-              <a href="#Nosotors">Nosotros</a>
+              <a href="">Nosotros</a>
             </li>
             <li>
-              <a href="#Contacto">Contacto</a>
+              <a href="">Contacto</a>
             </li>
           </ul>
         </div>
       </nav>
+    
       <main>
-        <section className="Inicio" id="Inicio">
+        {/* <section className="Inicio" id="Inicio">
           <div className="frase">
             <h5>
               In a context of environmental collapse, design can open a space
               for dialogue between humans and other living beings.
             </h5>
           </div>
-        </section>
+        </section> */}
 
         <section id="Servicios" className="Servicios">
-          <div className="contenedor-principal">
+          {/* <div className="contenedor-principal">
             <button id="flecha-izq" className="flecha-izq" onClick={leftClick}>
               <FontAwesomeIcon icon={faAngleLeft} />
             </button>
@@ -102,7 +103,7 @@ const Home = () => {
             <button id="flecha-der" className="flecha-der" onClick={rigthClick}>
               <FontAwesomeIcon icon={faAngleRight} />
             </button>
-          </div>
+          </div> */}
         </section>
 
         <section id="MenuQR" className="MenuQR"></section>

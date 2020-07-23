@@ -7,7 +7,7 @@ import foods from '../foods.json';
 import Helmet from 'react-helmet';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faAngleLeft,faSearch} from "@fortawesome/free-solid-svg-icons";
-// import './../App.css';
+import './../App.css';
 
 const param = window.location.pathname.slice(1)
 const foundPlace = foods.places.filter(x => x.place === param) || foods.places[0];
