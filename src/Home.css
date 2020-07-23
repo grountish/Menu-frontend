@@ -1,60 +1,105 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color: whitesmoke; 
-   font-family: 'Roboto', sans-serif; 
-    scroll-behavior: smooth;  
-    /* scroll-snap-type: y mandatory; */
-    max-width: 98.8vw;
+@font-face {
+  font-family: OPTIImprovNewWideNine;
+  src: url("./Assets/OPTIImprovNewWideNine.ttf");
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  /* scroll-snap-type: y mandatory; */
+  max-width: 98.8vw;
+}
+
+.home {
+  color: whitesmoke;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(255,255,255);
+  background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(238,238,238,1) 34%, rgba(255,255,255,1) 53%, rgba(0,0,0,1) 71%, rgba(0,0,0,1) 100%);
+  background-image: url('./Assets/Caparuido.png'), repeat;
+}
+
+main {
+width: 100vw;
+margin: 0;
+padding: 0;
+}
+
+
+.toggle-btn {
+  position: fixed;
+  top: 5%;
+  left:5%;
+  cursor: pointer;
+  z-index: 5000;
+}
+
+.toggle-btn span{
+ display: block;
+ width: 5vh;
+ height: 5vh;
+ background-color: lawngreen;
+ border-radius: 50%;
 }
 /* body{
   margin: 0 !important;
   overflow-x: hidden;
 } */
 
-.main {
-    width: 9%;
-    height: 100vh;
-   
+.nav {
+  width:40%;
+  height: 100vh;
+  position: fixed;
+  z-index: 3;
+  background-color: #000000;
+  left: -40%;
+  transition: 200ms all;
 }
 
-nav {
-    width: 100%;
-    height: 9vh;
-    position: fixed;
-    margin:auto;
-    padding: 0 5rem;
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    background-color: rgba(47, 70, 88, 0.45);
-    box-shadow: 0px 2px 50px rgba(2, 23, 94, 0.60);
+.nav-active {
+  width:100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 1;
+  background-color: #000000;
+  left: 0;
+  transition: 200ms all;
 }
 
-.logo {
-    flex-basis: 20%;
-    font-size: 2rem;
-    letter-spacing: 2px;
+.nav-content {
+  height: 100%;
+  width: 90%; 
+  align-items: center;
 }
 
-.nav-links {
-    flex: 1;
-    text-align: right;
-    
+
+.nav-links ul {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  height: 100%;
+  margin-top: 20vh;
 }
 
 .nav-links li {
-    list-style: none;
-    display: inline-block;
-    margin: 0 1.6rem;
+  list-style: none;
+  display: inline-block;
+  margin: calc(100vh / 50) 5vw;
 }
 
+.nav-links li a {
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 300;
+  color: whitesmoke;
+}
 
-.nav-links li a{
-   text-decoration: none;
-   font-size: 1.2rem;
-   font-weight: 300;
+.nav-links li a:hover {
+  color: rgb(41, 41, 41);
 }
 
 section {
@@ -63,84 +108,53 @@ section {
   scroll-snap-align: center;
 }
 
-.Inicio {
-    background: linear-gradient(-215deg, rgba(15, 255, 243, 0.2)5%, rgb(25, 29, 248,.6)150%),
-    url(https://images.pexels.com/photos/705164/computer-laptop-work-place-camera-705164.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
-    background-size: cover;
-      
- }
 
- .frase {
-    
-    font-size: 3rem;
-    position: absolute;
-    text-align: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: black;    
-  }
-
-/* ----------------- --- Carousel --- ----------------*/
-.contenedor-principal {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    position: relative;
-  }
-  
-  .contenedor-principal .flecha-izq {
-    left: 0;
-  }
-  .contenedor-principal .flecha-der {
-    right: 0;
-  }
-  
-  .contenedor-carousel {
-    width: 100%;
-    overflow: hidden;
-    scroll-behavior: smooth;
-  }
-  
-  .carousel {
-    width: 100%;
-  }
-  
-  .serv {
-    transition: 0.3 ease all;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.315);
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-  }
-  
-  .servicio-card {
-    height: 100vh;
-    width: 50px;
-    text-align: center;
-    width: 100%;
-    
-  }
-  
-  .servicio-card li {
-    list-style: none;
-    width: 100%;
-  }
-  
-  
-  .servicio-card img {
-    width: calc(100vw/3);
-    height: 100vh;
-  }
-  
-.servicio-card .object-fit {
-  object-fit: cover;
-  object-position: center;
+.serv {
+  transition: 0.3 ease all;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.315);
+  align-items: center;
+  display: flex;
+  flex-direction: row;
 }
 
 
 
-#caca{
-  background-repeat: repeat;
-   background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(238,238,238,1) 34%, rgba(255,255,255,1) 53%, rgba(0,0,0,1) 71%, rgba(0,0,0,1) 100%);
+.MenuQR {
+  
+}
+
+/*  ///////////////////////////////////////////////////// NOSOTROS  ///////////////////////////////// */
+/*  //////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.Nosotros {
+  
+}
+
+.frase {
+  display: flex;
+  align-items: center;
+  width: 70%;
+  margin: auto;
+  margin-right: 5rem;
+  
+}
+.frase h5 {
+  font-weight: 100;
+  font-size: 3em;
+  text-align: left;
+  color: black;
+}
+
+.nosotres-texto {
+  font-family: OPTIImprovNewWideNine;
+  color: black;
+}
+
+@media screen and (max-width: 450px) {
+  .nav-links li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: whitesmoke;
+  }
 }
