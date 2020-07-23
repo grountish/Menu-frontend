@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 
 import Carousel from "nuka-carousel";
 import "./../../src/Home.css";
@@ -13,20 +13,8 @@ import movil from "./../Assets/movil.png";
 const Home = () => {
   // --------------------- control carousel de peliculas ------------
 
-  let serviceRow = document.querySelector(".contenedor-carousel");
+  const [navClass, setNavClass] = useState (true)
 
-  const rigthClick = () => {
-    console.log(serviceRow);
-    if (serviceRow) {
-      serviceRow.scrollLeft += serviceRow.offsetWidth;
-    }
-  };
-
-  const leftClick = () => {
-    if (serviceRow) {
-      serviceRow.scrollLeft -= serviceRow.offsetWidth;
-    }
-  };
 
   let packService = [
     {
@@ -60,10 +48,14 @@ const Home = () => {
         "https://images.pexels.com/photos/3662630/pexels-photo-3662630.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
     },
   ];
+
   return (
     <div className="home">
-      <nav>
-        <div className="nav-content">
+         <div className="toggle-btn" onClick={()=>setNavClass(!navClass)}>
+  <span>{navClass ? "III" : "X"}</span>
+         </div>
+      <nav className={navClass ? "nav" : "nav-active"}>     
+        <div className= "nav-content">
           <div className="nav-links">
             <ul>
               <li>
@@ -88,16 +80,13 @@ const Home = () => {
       </nav>
       <main>
         <section className="Inicio" id="Inicio">
-          <div className="frase">
-            <h5>
-            COLLABO STUDIO LOGO
-            </h5>
-          </div>
+      
+          
         </section>
 
         <section id="Servicios" className="Servicios">
           <div className="contenedor-principal">
-            <button id="flecha-izq" className="flecha-izq" onClick={leftClick}>
+            <button id="flecha-izq" className="flecha-izq" >
               <FontAwesomeIcon icon={faAngleLeft} />
             </button>
             <div className="contenedor-carousel" id="serviceRow">
@@ -109,7 +98,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <button id="flecha-der" className="flecha-der" onClick={rigthClick}>
+            <button id="flecha-der" className="flecha-der" >
               <FontAwesomeIcon icon={faAngleRight} />
             </button>
           </div>
@@ -177,7 +166,8 @@ const Home = () => {
         <section id="Nosotros" className="Nosotros">
         <div className="frase">
             <h5>
-              Inserte aqui su info vende humo de lo maravillosos que somos
+            Collabo studio surge como unión de un colectivo diverso dedicado al sector digital. 
+De las áreas de dirección de arte, estrategia, desarrollo web, creative coding, diseño gráfico, fotografía y community management, nos unimos para dar vida a marcas dinámicas con alto impacto digital.
             </h5>
           </div>
         </section>
