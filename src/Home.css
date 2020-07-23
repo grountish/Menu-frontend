@@ -130,11 +130,7 @@ section {
 
 
 .MenuQR {
-  background: linear-gradient(
-    -215deg,
-    rgb(15, 219, 209) 5%,
-    rgb(5, 8, 148) 150%
-  );
+ background-color: grey;
   display: flex;
 }
 
@@ -153,12 +149,12 @@ section {
 }
 
 .menuQR-1 .texto h2 {
-  font-size: 2.5rem;
+  font-size: 2em;
   margin-bottom: 1rem;
 }
 
 .menuQR-1 .texto h3 {
-  font-size: 2.2rem;
+  font-size: 1.8em;
   margin-bottom: 1rem;
 }
 
@@ -189,6 +185,26 @@ section {
   margin-top: 50%;
   object-fit: contain;
 }
+
+.servicios-list {
+  width: 100%;
+  align-items: center;
+}
+
+.servicios-list li {
+  align-items: center;
+  height: calc(100vh/5);
+  text-align: center;
+  list-style: none;
+  color: lawngreen;
+  font-size: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid lawngreen;
+  border-top: 2px solid lawngreen;
+}
+
+
 /*  ///////////////////////////////////////////////////// NOSOTROS  ///////////////////////////////// */
 /*  //////////////////////////////////////////////////////////////////////////////////////////////// */
 
@@ -219,8 +235,9 @@ section {
   color: black;
 }
 
-.palabra-clave-verde:hover ~ .palabra-clave-verde{
+.palabra-clave-verde{
   color: lawngreen;
+  transition: ease-in 200ms;
 }
 
 
