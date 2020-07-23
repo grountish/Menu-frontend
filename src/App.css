@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: Tommaso;
-  src: url('./Assets/Tommaso.ttf');
+  src: url("./Assets/Tommaso.ttf");
 }
 
 .App ul {
@@ -11,34 +11,32 @@
 
 .App h1 {
   margin: 0.4rem 0.2rem 0.8rem 0.2rem;
-  font-weight:100;
+  font-weight: 100;
 }
 
-.App{
+.App {
   margin: 0;
-  margin-top: 1rem;
   justify-self: center;
 }
 
-.list-food{
+.list-food {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   text-align: center;
-  margin: 0;
+  margin: 2%;
 }
-.box{
+.box {
   width: 100% !important;
   border-top: 1px solid whitesmoke;
   border-bottom: 1px solid whitesmoke;
 }
-.isoTipo{
+.isoTipo {
   max-height: 15vh;
-  max-width: 85vw;  
-  margin: 2rem auto 1rem auto;
+  max-width: 85vw;
+  margin: 0.5rem auto 1rem auto;
   justify-self: center;
-  display:block
-  
+  display: block;
 }
 
 .lang-buttons {
@@ -47,80 +45,85 @@
 
 .lang-buttons button {
   background-color: transparent;
-  color:inherit;
+  color: inherit;
   border: none;
   outline: none;
 }
 
 .search-bar {
-align-items: center;
-text-align: center;
-margin: auto;
-display: block;
-margin: 0 1rem ;
-
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  display: block;
+  margin: 0 1rem;
 }
 
-input {
+.App input {
   color: whitesmoke;
   font-size: 1.2rem;
   padding: 10px;
   padding-bottom: 0.2rem;
   background-color: black;
   position: relative;
-  width: 80%;  
-  margin-left: 1rem;
+  width: 80%;
+  display: block;
+  margin: auto;
   border: none;
   border-bottom: 1px solid oldlace;
   outline: none;
-  
 }
 
 .iconos-filter {
   display: flex;
+
   justify-content: space-around;
   padding-top: 0.4rem;
   margin: 0.5rem;
 }
 
 .iconos-filter-text {
-font-size: x-large;
-border: 1px solid whitesmoke;
-border-radius: 10px;
-padding: 0.3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-size: x-large;
+  padding: 0.3rem 1rem;
+}
 
+.icono-svg {
+  margin: auto;
+  width: 2.5rem;
 }
 
 /*   ---- ---FOOD BOX  ---- ------ */
-.food-box{
+.food-box {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   /* border-bottom: 1px solid whitesmoke; */
   margin: 0.2rem;
   padding: 0.5rem;
-  
 }
 
-.food-box h4{
+.food-box h4 {
   margin: 0;
   padding: 0.2rem;
-  font-size: 2.1rem;  
+  font-size: 2.1rem;
   font-weight: 100;
 }
 
-.food-box .h4-precio{
+.food-box .h4-precio {
   margin: 0;
   padding: 0.2rem;
   padding-left: 1rem;
-  font-size: 1.7rem;  
+  font-size: 1.7rem;
   font-weight: 200;
 }
 
-.food-box p{
+.food-box p {
   font-weight: 100;
   margin: 0.1rem;
-  font-size: 1.6rem;  
+  font-size: 1.6rem;
 }
 
 .title-category {
@@ -144,6 +147,33 @@ a:visited {
   text-decoration: none;
 }
 
+<<<<<<< HEAD
 .headerCategory{
   text-transform: uppercase  !important;
+=======
+.headerCategory {
+  text-transform: uppercase !important;
+}
+
+.languages {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 4% 25%;
+}
+
+.perLanguage {
+  font-size: 1.6em;
+  padding-bottom: 2px;
+  margin: 1%;
+  border-bottom: 1px solid white;
+}
+
+.buscador {
+  display: flex;
+  flex-flow: row;
+  font-size: 1.7em;
+  margin: 2%;
+  text-align: center;
+>>>>>>> 5791c74058340c89e2ad12c719de5092465e02bb
 }

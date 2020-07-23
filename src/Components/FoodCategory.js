@@ -22,7 +22,7 @@ export default class FoodCategory extends Component {
       <div
         className="box"
         style={{
-          height: `calc(75vh/${foundPlace[0].categorias.length})`,
+          height: `calc(73vh/${foundPlace[0].categorias.length})`,
           alignItems: "center",
           display: "flex",
         }}
