@@ -1,5 +1,5 @@
 import React,{ useState } from "react";
-
+import Sketch from './Sketch.jsx'
 import "./../../src/Home.css";
 import mobileqr from './../Assets/mobil-qr.png';
 const Home = () => {
@@ -33,12 +33,12 @@ const Home = () => {
         </div>
       </nav>
          <div className="toggle-btn" onClick={()=>setNavClass(!navClass)}>
-        <span>{navClass ? "III" : "X"}</span>
+        <span style={{fontFamily: 'OPTIImprovNewWideNine', fontSize:'0.7em'}}></span>
          </div>
       <main>
         <section className="Inicio" id="Inicio">
-            <div id="sketch"></div>
-    <img src="./../Assets/ruido.jpg" id="ruido" alt=""/>
+        <Sketch />
+        <img src="./../Assets/ruido.jpg" id="ruido" alt=""/>
         </section>
         <section id="Nosotros" className="Nosotros">
           <p class="nosotres-texto">
@@ -59,7 +59,9 @@ De las áreas de dirección de arte, estrategia, desarrollo web, creative coding
         </section>
 
         <section id="Contacto" className="Contacto">
-
+        <div>
+          
+        </div>
         </section>
       </main>
     </div>
