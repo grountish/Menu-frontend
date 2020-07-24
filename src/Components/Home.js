@@ -1,7 +1,7 @@
 import React,{ useState } from "react";
 
 import "./../../src/Home.css";
-
+import mobileqr from './../Assets/mobil-qr.png';
 const Home = () => {
 
   const [navClass, setNavClass] = useState (true)
@@ -48,7 +48,14 @@ De las áreas de dirección de arte, estrategia, desarrollo web, creative coding
         </section>
 
         <section id="MenuQR" className="MenuQR">
-          
+          <div className="img-qr-container"> <img className="img-qr" src={mobileqr} alt=""/> </div>
+          <div className="buttons-caption-qr-container">
+            <p className="texto-carta-qr">Las cartas QR llegaron para protegernos de la amenaza del COVID-19. Conoce màs sobre la nueva opciòn que además cuida el planeta.</p>
+            <div className="buttons-container-qr">
+              <div className="button-qr QR1">Ver Demo</div>
+              <div className="button-qr QR2">Saber Màs</div>
+            </div>
+          </div>
         </section>
 
         <section id="Contacto" className="Contacto">
