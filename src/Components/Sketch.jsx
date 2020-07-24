@@ -48,12 +48,8 @@ export default class Sketch extends React.Component {
         p.draw = () => {
             if (p.windowWidth > 500) {
                 p.smooth();
-                //let time = p.millis();
+               
                 p.background(255, 0);
-                //  scale(0.14 + (windowWidth / 5000) + 10%( mouseY / windowHeight))
-                //  rotateX(+scrollingY / 10000);
-                // rotateZ(mouseY/ 1134);
-                // rotateY(time/30%2000/800)
                 p.scale(0.4 + p.mouseY / 4000);
                 p.image(c, -340, -30);
                 p.rotateY(p.mouseX / -12000);
@@ -68,17 +64,16 @@ export default class Sketch extends React.Component {
                 p.image(b, 260, -30);
                 p.rotateY(p.mouseX / -12000);
                 p.image(o3, 390, -30);
-                // scale(0.9 + mouseY / 2000 )
                 p.rotateX(p.mouseX / 10000);
                 p.rotateX(p.mouseY / 1134);
 
-                p.image(s, -350, 130);
+                p.image(s, -345, 130);
                 p.rotateY(p.mouseX / -12000);
-                p.image(t, -200, 130);
+                p.image(t, -220, 130);
                 p.rotateY(p.mouseX / 120000);
-                p.image(u, -70, 130);
+                p.image(u, -80, 130);
                 p.rotateY(p.mouseY / 22000);
-                p.image(d, 50, 130);
+                p.image(d, 40, 130);
                 p.rotateY(p.mouseY / 12000);
                 p.image(o3, 210, 130);
                 p.rotateY(p.mouseY / 12000);
@@ -96,39 +91,22 @@ export default class Sketch extends React.Component {
             } else {
                 p.smooth();
                 let time = p.millis();
-                p.background(255, 0);
-                //  p.scale(0.14 + (p.windowWidth / 5000) + 10%( p.mouseY / p.windowHeight))
-                //  p.rotateX(p.mouseX / 10000);
-                // p.rotateZ(p.mouseY/ 1134);
+                p.background(255, 0);            
                 p.rotateY(time / 30 % 2000 / 800)
                 p.translate(-20, -20)
                 p.scale(0.35);
                 p.image(c, -340, -30);
-
                 p.image(o3, -200, -30);
-
                 p.image(l, -80, -30);
-
                 p.image(l2, 30, -30);
-
                 p.image(a, 140, -30);
-
                 p.image(b, 260, -30);
-
-                p.image(o3, 390, -30);
-                // p.scale(0.9 + p.mouseY / 2000 )
-
-
-                p.image(s, -320, 130);
-
-                p.image(t, -200, 130);
-
-                p.image(u, -70, 130);
-
-                p.image(d, 50, 130);
-
+                p.image(o3, 390, -30);             
+                p.image(s, -350, 130);
+                p.image(t, -220, 130);
+                p.image(u, -80, 130);
+                p.image(d, 40, 130);
                 p.image(o3, 210, 130);
-
                 p.image(i, 130, 130);
 
 

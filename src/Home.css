@@ -185,3 +185,14 @@ section {
     text-align: justify;
   }
 }
+
+.carrousel-container{
+  overflow-x: scroll;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+
+}
+.carrousel-section{
+  min-width: 100vw;
+}
