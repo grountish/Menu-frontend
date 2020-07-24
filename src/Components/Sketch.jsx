@@ -19,15 +19,14 @@ export default class Sketch extends React.Component {
     }
 
     componentWillUnmount =()=> {
-        console.log(this)
         this.canvas.remove();
     }
     
-
+    
     sketch = (p) => {
         const self = this;
         let cnv = null;
-       
+      
         p.preload = () => {
             c = p.loadImage("pngs/01.png");
             l = p.loadImage("pngs/03.png");
@@ -51,9 +50,9 @@ export default class Sketch extends React.Component {
             cnv.parent("#root");
         }
 
-        p.windowResized = () => {
-            p.resizeCanvas(p.windowWidth, p.windowHeight);
-        }
+        // p.windowResized = () => {
+        //     p.resizeCanvas(p.windowWidth, p.windowHeight);
+        // }
 
         p.draw = () => {
             if (p.windowWidth > 500) {
