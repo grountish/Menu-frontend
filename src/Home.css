@@ -10,7 +10,6 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   /* scroll-snap-type: y mandatory; */
-  max-width: 98.8vw;
 }
 
 .home {
@@ -52,8 +51,8 @@ padding: 0;
   position: fixed;
   z-index: 3;
   background-color: #000000;
-  left: -40%;
-  transition: 200ms all;
+  left: -60%;
+  transition: 400ms all;
 }
 
 .nav-active {
@@ -63,7 +62,7 @@ padding: 0;
   z-index: 1;
   background-color: #000000;
   left: 0;
-  transition: 200ms all;
+  transition: 400ms all;
 }
 
 .nav-content {
@@ -88,10 +87,16 @@ padding: 0;
 }
 
 .nav-links li a {
+  font-family: OPTIImprovNewWideNine;
   text-decoration: none;
-  font-size: 2rem;
   font-weight: 300;
   color: whitesmoke;
+  font-size: 2em;
+  text-transform: uppercase;
+}
+
+.menuToggle {
+  font-family: OPTIImprovNewWideNine;
 }
 
 .nav-links li a:hover {
@@ -122,29 +127,16 @@ section {
 /*  ///////////////////////////////////////////////////// NOSOTROS  ///////////////////////////////// */
 /*  //////////////////////////////////////////////////////////////////////////////////////////////// */
 
-.Nosotros {
-  
-}
-
-.frase {
-  display: flex;
-  align-items: center;
-  width: 70%;
-  margin: auto;
-  margin-right: 5rem;
-  
-}
-.frase h5 {
-  font-weight: 100;
-  font-size: 3em;
-  text-align: left;
-  color: black;
-}
-
 .nosotres-texto {
   font-family: OPTIImprovNewWideNine;
   color: black;
+  margin: 20px;
+  font-size: 3em;
+  text-align: justify;
 }
+
+
+/*  //////////////////////////////////////////QUERY MOBIL////////////////////////////////////////////////////// */
 
 @media screen and (max-width: 450px) {
   .nav-links li a {
@@ -152,5 +144,11 @@ section {
     font-size: 1.5rem;
     font-weight: 300;
     color: whitesmoke;
+  }
+  .nosotres-texto {
+    font-family: OPTIImprovNewWideNine;
+    color: black;
+    font-size: 1.3em;
+    text-align: justify;
   }
 }
