@@ -5,9 +5,6 @@ import Nosotres from "./Nosotres.jsx"
 import MenuQr from "./MenuQr.jsx"
 import Contacto from "./Contacto.jsx"
 import "./../../src/Home.css";
-import mobileqr from './../Assets/mobil-qr.png';
-
-const param = window.location.pathname.length < 2;
 
 const param = window.location.pathname.length > 2;
 
