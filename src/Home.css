@@ -122,10 +122,43 @@ section {
   flex-direction: row;
 }
 
+/*  ///////////////////////////////////////////////////// MENUQR  ///////////////////////////////// */
+/*  //////////////////////////////////////////////////////////////////////////////////////////////// */
 
+.img-qr{
+  width: 60%;
+  margin: 0 auto;
+}
+.img-qr-container{
+  text-align: center;
+}
 
-.MenuQR {
+.buttons-caption-qr-container{
+  margin: 0px auto;
+  padding: 40px;
   
+}
+.button-qr{
+  margin: 8px auto 8px 0px;
+ 
+  padding: 13px 10px;
+  border-radius: 25px;
+  width: 50%;
+  text-align: center;
+}
+.buttons-container-qr a{
+  text-decoration: none;
+
+}
+.QR1{
+  background-color: yellow;
+  border: 1px solid yellow;
+  color:black
+}
+.QR2{
+  background-color: transparent;
+  color: magenta;
+  border: 1px solid magenta;
 }
 
 /*  ///////////////////////////////////////////////////// NOSOTROS  ///////////////////////////////// */
@@ -149,38 +182,10 @@ section {
     font-weight: 300;
     color: whitesmoke;
   }
-}
-.img-qr{
-  width: 60%;
-  margin: 0 auto;
-}
-.img-qr-container{
-  text-align: center;
-}
-
-.buttons-caption-qr-container{
-  margin: 0px auto;
-  padding: 40px;
-  
-}
-.button-qr{
-  margin: 8px auto 8px 0px;
- 
-  padding: 13px 10px;
-  border-radius: 25px;
-  width: 50%;
-  text-align: center;
-}
-.QR1{
-  background-color: yellow;
-  border: 1px solid yellow;
-  color:black
-}
-.QR2{
-  background-color: transparent;
-  color: magenta;
-  border: 1px solid magenta;
-}
-canvas{
-  z-index: 0 !important;
+  .nosotres-texto {
+    font-family: OPTIImprovNewWideNine;
+    color: black;
+    font-size: 1.3em;
+    text-align: justify;
+  }
 }

@@ -81,7 +81,7 @@ export default class Sketch extends React.Component {
                 p.rotateX(p.mouseX / 10000);
                 p.rotateX(p.mouseY / 1134);
 
-                p.image(s, -320, 130);
+                p.image(s, -350, 130);
                 p.rotateY(p.mouseX / -12000);
                 p.image(t, -200, 130);
                 p.rotateY(p.mouseX / 120000);
@@ -100,7 +100,7 @@ export default class Sketch extends React.Component {
                     p.translate(-200, 32);
                     p.rotateY(1000);
                     p.ambientMaterial(250);
-                    p.sphere(((p.mouseX / 100) % 20) + 3 * i, 25, 23);
+                    p.sphere(((p.mouseX / 100) % 20) + 3 * i, 25, 25);
                 }
             } else {
                 p.smooth();
@@ -147,15 +147,16 @@ export default class Sketch extends React.Component {
                     p.translate(-200, 32);
                     p.rotateY(1000);
                     p.ambientMaterial(250);
-                    p.sphere(time / 30 % 2000 / 800 + 3 * i, 25, 23);
+                    p.sphere(time / 30 % 2000 / 800 + 3 * i, 27, 27);
                 }
             }
         }
     }
-
     
     render() {
-        return (<div ref={this.myRef}> </div>
+        return (
+        <section ref={this.myRef} className="Inicio" id="Inicio">
+        </section>
         )
     }
 }
