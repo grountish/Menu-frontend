@@ -1,60 +1,34 @@
-import React,{ useState } from "react";
-
+import React,{useState} from "react";
+import Sketch from "./Sketch.jsx";
+import Navbar from "./Navbar.js";
+import Nosotres from "./Nosotres.jsx"
+import MenuQr from "./MenuQr.jsx"
+import Contacto from "./Contacto.jsx"
 import "./../../src/Home.css";
+
+const param = window.location.pathname.length > 2;
 
 const Home = () => {
 
-  const [navClass, setNavClass] = useState (true)
+  const [navAct,setNavAct]=useState(true);
 
-
+  const setNavActFunction =(navAct)=>{
+    setNavAct(!navAct);
+  }
   return (
     <div className="home">
-    <nav className={navClass ? "nav" : "nav-active"}>     
-        <div className= "nav-content">
-          <div className="nav-links">
-            <ul>
-              <li>
-                <a href="#Inicio">Inicio</a>
-              </li>
-              <li>
-                <a href="#Servicios">Servicios</a>
-              </li>
-              <li>
-                <a href="#MenuQR">Menu QR</a>
-              </li>
-              <li>
-                <a href="#Nosotros">Nosotros</a>
-              </li>
-              <li>
-                <a href="#Contacto">Contacto</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-         <div className="toggle-btn" onClick={()=>setNavClass(!navClass)}>
-        <span>{navClass ? "III" : "X"}</span>
-         </div>
-      <main>
-        <section className="Inicio" id="Inicio">
-            <div id="sketch"></div>
-    <img src="./../Assets/ruido.jpg" id="ruido" alt=""/>
-        </section>
-        <section id="Nosotros" className="Nosotros">
-          <p class="nosotres-texto">
-          Collabo studio surge como unión de un colectivo diverso dedicado al desarrollo creativo.
-De las áreas de dirección de arte, estrategia, desarrollo web, creative coding, diseño gráfico, fotografía y community management, nos unimos para dar vida a proyectos dinámicos con alto impacto digital.
-          </p>
-        </section>
-
-        <section id="MenuQR" className="MenuQR">
-          
-        </section>
-
-        <section id="Contacto" className="Contacto">
-
-        </section>
-      </main>
+      <Navbar setNavAct={()=>setNavActFunction(navAct)} />
+      <div style={{minHeight:'100vh'}}>
+      {
+       !param && navAct
+        ? <Sketch />
+        : null
+      }
+      </div>
+      <Nosotres />
+      <MenuQr />
+      <Contacto />
+      
     </div>
   );
 };

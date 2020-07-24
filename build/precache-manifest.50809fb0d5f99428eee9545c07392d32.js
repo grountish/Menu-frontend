@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "583a788097e3b47477bb56434a279086",
+    "revision": "e153dd838b7ca35475f1c493fe97a40a",
     "url": "/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/css/4.f4c08464.chunk.css"
   },
   {
-    "revision": "e32438a90d7f4e706bf0",
-    "url": "/static/css/main.d6321503.chunk.css"
+    "revision": "1c9718100fa37469ccbf",
+    "url": "/static/css/main.07d342e5.chunk.css"
   },
   {
     "revision": "9f0d203713a69be01d91",
@@ -28,8 +28,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/4.e2c99ab0.chunk.js"
   },
   {
-    "revision": "e32438a90d7f4e706bf0",
-    "url": "/static/js/main.011cad22.chunk.js"
+    "revision": "1c9718100fa37469ccbf",
+    "url": "/static/js/main.506dce9f.chunk.js"
   },
   {
     "revision": "945e8e420b45545798c7",
@@ -38,6 +38,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "f188d782ba9405accd3c2fe3422e56a4",
     "url": "/static/media/Caparuido.f188d782.png"
+  },
+  {
+    "revision": "448caae740837d111a2ea6730e80b300",
+    "url": "/static/media/OPTIImprovNewWideNine.448caae7.ttf"
   },
   {
     "revision": "6a5c18cdeb951fae79820092db5ddc79",

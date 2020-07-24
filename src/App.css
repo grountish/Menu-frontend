@@ -147,10 +147,6 @@ a:visited {
   text-decoration: none;
 }
 
-<<<<<<< HEAD
-.headerCategory{
-  text-transform: uppercase  !important;
-=======
 .headerCategory {
   text-transform: uppercase !important;
 }
@@ -175,5 +171,4 @@ a:visited {
   font-size: 1.7em;
   margin: 2%;
   text-align: center;
->>>>>>> 5791c74058340c89e2ad12c719de5092465e02bb
 }
