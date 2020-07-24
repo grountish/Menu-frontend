@@ -2,6 +2,9 @@ import React,{ useState } from "react";
 import Sketch from './Sketch.jsx'
 import "./../../src/Home.css";
 import mobileqr from './../Assets/mobil-qr.png';
+
+const param = window.location.pathname.length < 2;
+
 const Home = () => {
 
   const [navClass, setNavClass] = useState (true)
@@ -38,7 +41,7 @@ const Home = () => {
       <main>
         <section className="Inicio" id="Inicio">
         {
-          navClass
+          navClass && param
           ? <Sketch />
           : null
 

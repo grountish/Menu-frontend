@@ -6,7 +6,7 @@ let c, l, l2, a, b, s, t, u, d, i, o3;
 export default class Sketch extends React.Component {
     constructor(props) {
         super(props)
-        this.myRef = React.createRef()
+        this.myRef = React.createRef();
     }
 
     componentDidUpdate() {
@@ -17,10 +17,17 @@ export default class Sketch extends React.Component {
     componentDidMount(){
         this.myP5 = new p5(this.sketch, this.myRef.current);
     }
+
+    componentWillUnmount =()=> {
+        console.log(this)
+        this.canvas.remove();
+    }
+    
+
     sketch = (p) => {
         const self = this;
         let cnv = null;
-
+       
         p.preload = () => {
             c = p.loadImage("pngs/01.png");
             l = p.loadImage("pngs/03.png");
@@ -147,13 +154,7 @@ export default class Sketch extends React.Component {
         }
     }
 
-    componentDidMount = () => {
-        this.myP5 = new p5(this.sketch, this.myRef.current)
-    }
-
-    componentWillUnmount = () => {
-        this.canvas.remove();
-    }
+    
     render() {
         return (<div ref={this.myRef}> </div>
         )
