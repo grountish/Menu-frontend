@@ -13,7 +13,11 @@ export default class Sketch extends React.Component {
         this.canvas.remove();
         this.myP5 = new p5(this.sketch, this.myRef.current);
       }
-    Sketch = (p) => {
+
+    componentDidMount(){
+        this.myP5 = new p5(this.sketch, this.myRef.current);
+    }
+    sketch = (p) => {
         const self = this;
         let cnv = null;
 
@@ -144,7 +148,7 @@ export default class Sketch extends React.Component {
     }
 
     componentDidMount = () => {
-        this.myP5 = new p5(this.Sketch, this.myRef.current)
+        this.myP5 = new p5(this.sketch, this.myRef.current)
     }
 
     componentWillUnmount = () => {

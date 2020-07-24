@@ -181,3 +181,6 @@ section {
   color: magenta;
   border: 1px solid magenta;
 }
+canvas{
+  z-index: 0 !important;
+}

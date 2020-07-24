@@ -37,7 +37,12 @@ const Home = () => {
          </div>
       <main>
         <section className="Inicio" id="Inicio">
-        <Sketch />
+        {
+          navClass
+          ? <Sketch />
+          : null
+
+        }
         <img src="./../Assets/ruido.jpg" id="ruido" alt=""/>
         </section>
         <section id="Nosotros" className="Nosotros">
