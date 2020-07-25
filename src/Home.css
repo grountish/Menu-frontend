@@ -3,6 +3,13 @@
   src: url("./Assets/OPTIImprovNewWideNine.ttf");
 }
 
+@font-face {
+  font-family: Grotta;
+  src: url("./Assets/Grotta-Regular.ttf");
+}
+
+
+
 
 * {
   margin: 0;
@@ -166,6 +173,35 @@ section {
   margin: 20px;
   font-size: 3em;
   text-align: justify;
+}
+
+/*  ///////////////////////////////////////////////////// CONTACTO  ///////////////////////////////// */
+/*  //////////////////////////////////////////////////////////////////////////////////////////////// */
+
+#contacto {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.contact-logo {
+  width: 150px;
+}
+
+.contact-arrow {
+  width: 50px;
+}
+
+.contact-column-1, .contact-column-2, .contact-column-3, .contact-column-4 {
+  display: flex;
+  flex-direction: column;
+}
+
+#contacto h3 {
+  font-family: Grotta;
 }
 
 
