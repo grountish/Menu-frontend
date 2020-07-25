@@ -182,3 +182,6 @@ a:visited {
   margin: 2%;
   text-align: center;
 }
+canvas{
+  z-index: -4 !important;
+}
