@@ -1,11 +1,9 @@
 import React from "react";
 import mobileqr from "./../Assets/mobil-qr.png";
-import { BrowserRouter as Router, Link } from "react-router-dom";
 
 export default function MenuQr() {
   return (
     <section id="MenuQR" className="MenuQR">
-      <Router>
         <div className="carrousel-container">
           <div className="carrousel-section">
             <div className="img-qr-container">
@@ -62,7 +60,6 @@ export default function MenuQr() {
             </div>
           </div>
         </div>
-      </Router>
     </section>
   );
 }

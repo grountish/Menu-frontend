@@ -21,14 +21,11 @@ export default function MenuQr() {
           <a href="https://www.instagram.com/collabostudio/?hl=es"><h3 className="grey">Instagram</h3></a>
           <a href="https://www.facebook.com/Collabo-Studio-106002161205657"><h3 className="grey">Facebook</h3></a> 
         </div>
-        <div className="contact-2020">
-          <h3 className="grey">2020</h3>
-        </div>
       </div>
       <div className="contact-column-3">
         <div className="contact-studio">
           <h3>Studio</h3>
-          <h3 className="grey">Torrent de le flors 158</h3>
+          <h3 className="grey">Torrent de les flors 158</h3>
           <h3 className="grey">08024</h3>
           <h3 className="grey">Barcelona</h3>
         </div>
@@ -37,13 +34,11 @@ export default function MenuQr() {
         </div>
       </div>
       <div class="contact-column-4">
-        <div className="contact-arrow-div">
-         <a href="#Inicio"><img className="contact-arrow" src={arrow} alt=""/></a>
-        </div>
         <div className="contact-allrights">
-          <h3 className="grey">All rights reserved</h3>
+          <h3 className="grey">2020 - All rights reserved</h3>
         </div>
       </div>
+      <a href="#Inicio"><img className="contact-arrow logos" src={arrow} alt=""/></a>
       </div>
     </section>
   );

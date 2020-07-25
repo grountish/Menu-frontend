@@ -330,6 +330,78 @@ section {
   color: #ff1369 !important;
 }
 
+/*  //////////////////////////////////////////SERVICIOS////////////////////////////////////////////////////// */
+
+.marquee-wrap {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+.marquee-wrap,
+.marquee-wrap ul {
+  margin-left: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+.marquee-wrap > li {
+  display: flex;
+  align-items: center;
+  width: var(--scroller-size);
+  will-change: transform;
+  animation: text-scroller 15000ms linear 0ms normal infinite;
+  text-indent: 0;
+  justify-content: space-around;
+  -webkit-transition: all 3000ms linear 0ms;
+  -moz-transition: all 3000ms linear 0ms;
+  -ms-transition: all 3000ms linear 0ms;
+  -o-transition: all 3000ms linear 0ms;
+  transition: all 3000ms linear 0ms;
+  white-space: nowrap;
+}
+@keyframes text-scroller {
+  100% {
+    transform: translateX(calc(var(--scroller-size)*-0.5));
+  }
+}
+.marquee-wrap > li:nth-child(2) {
+  animation-direction: reverse;
+  color: blue;
+}
+
+.marquee-wrap > li:nth-child(4){
+  animation-direction: reverse;
+  color: blue;
+}
+
+.marquee-wrap > li:nth-child(6){
+  animation-direction: reverse;
+  color: blue;
+}
+
+.marquee-wrap > li > ul li {
+  display: inline-block;
+  padding: 0.5vh 4vw;
+  font-size: 13.2vh;
+  text-transform: uppercase;
+}
+
+:root {
+  --scroller-size: 150vw;
+}
+@media only screen and (max-width: 600px) {
+  :root {
+    --scroller-size: 200vw;
+  }
+}
+
+.marquee-wrap li {
+  font-family: Grotta;
+  color: lawngreen;
+  border-bottom: 1px solid lawngreen;
+}
+
 
 /*  //////////////////////////////////////////QUERY MOBIL////////////////////////////////////////////////////// */
 
@@ -347,8 +419,43 @@ section {
     font-size: 1.3em;
     text-align: justify;
   }
-  
+
+
+  #contacto {
+    /* position: relative; */
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 0;
+  }
+
+  .contact-logo {
+    width: 220px;
+    padding: 0 15%;
+  }
+
+  .contact-arrow {
+    width: 13%;
+    /* position: absolute;
+    top: 13%;
+    right: 12%; */
+  }
+
+.contact-info-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
+  height: 400px;
 }
+.contact-general, .contact-social, .contact-studio {
+  padding-bottom: 30px;
+}
+}
+
+/* //////////////////////// MEDIA QUERY IPHONE X   ////////////////////////*/
 
 
 /*  //////////////////////////////////////////LINK PREDETERMINED STYLE OVERWRITE////////////////////////////////////////////////////// */
@@ -360,3 +467,5 @@ a:link {
 a:visited {
   text-decoration: none;
 }
+
+

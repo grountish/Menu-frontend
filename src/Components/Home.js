@@ -4,6 +4,7 @@ import Navbar from "./Navbar.js";
 import Nosotres from "./Nosotres.jsx"
 import MenuQr from "./MenuQr.jsx"
 import Contacto from "./Contacto.jsx"
+import Services from "./Services.jsx"
 import "./../../src/Home.css";
 
 const param = window.location.pathname.length > 2;
@@ -27,6 +28,7 @@ const Home = () => {
       </div>
       <Nosotres />
       <MenuQr />
+      <Services />
       <Contacto />
       
     </div>
