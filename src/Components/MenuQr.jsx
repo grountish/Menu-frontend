@@ -3,10 +3,21 @@ import mobileqr from "./../Assets/mobil-qr.png";
 import { BrowserRouter as Router, Link } from "react-router-dom";
 
 export default function MenuQr() {
+  
+  const scrollToX =()=>{
+    const carrouselContainer = document.getElementById('carrousel-container');
+   if (carrouselContainer.scrollLeft < window.innerWidth * 3){    
+     carrouselContainer.scrollBy(100, 0);   
+    } else{
+      carrouselContainer.scrollBy(-1 * window.innerWidth * 3, 0);
+   }
+  }
+
   return (
     <section id="MenuQR" className="MenuQR">
+    <div onClick={()=>scrollToX()} id="arrow-right">&#65310;</div>
       <Router>
-        <div className="carrousel-container">
+        <div id="carrousel-container" className="carrousel-container">
           <div className="carrousel-section">
             <div className="img-qr-container">
               {" "}
@@ -30,23 +41,27 @@ export default function MenuQr() {
            
              
             <div className="buttons-caption-qr-container">
-                <div className="header-QR">QUE ES <br /> MI QARTA</div>
+                <div className="header-QR">QUÉ ES <br /> MI QARTA</div>
                 {/* <h1 className="header-QR"> </h1> */}
             
             </div>
           </div>
           <div className="carrousel-section">
+          <div className="benefits-container">
             <ul className="benefit-list" style={{margin:'auto'}}>
               <li>Plan de pago mensual</li>
               <li>Diseño de carta interactiva</li>
               <li>Filtros de preferencia</li>
               <li>Revision mensual</li>
+            </ul>
+            <ul className="benefit-list" style={{margin:'auto'}}>
+
               <li>Traducciòn a 3 idiomas</li>
               <li>Barra de Busqueda</li>
               <li>Servidor seguro todo el año</li>
               <li>Codigo QR y enlace propio</li>
               <li>20 Adhesivos para tus mesas</li>
-            </ul>
+            </ul></div>
             <div className="buttons-caption-qr-container">
               <h1 className="header-QR">BENEFICIOS<br /> MI QARTA</h1>
             </div>
@@ -58,7 +73,7 @@ export default function MenuQr() {
               <h6>Mauri, de Polito. </h6>
             </div>
             <div className="buttons-caption-qr-container">
-              <h1 className="header-QR">QUIENES <br /> USAN MI CARTA</h1>
+              <h1 className="header-QR">QUIÉNES <br /> USAN MI QARTA</h1>
             </div>
           </div>
         </div>
