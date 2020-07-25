@@ -164,6 +164,17 @@ section {
   border: 1px solid magenta;
 }
 
+.carrousel-container{
+  overflow-x: scroll;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+
+}
+.carrousel-section{
+  min-width: 100vw;
+}
+
 /*  ///////////////////////////////////////////////////// NOSOTROS  ///////////////////////////////// */
 /*  //////////////////////////////////////////////////////////////////////////////////////////////// */
 
@@ -183,25 +194,47 @@ section {
   height: 100vh;
   display: flex;
   flex-flow: row;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-around;
+  padding-top: 20%;
 }
 
 .contact-logo {
-  width: 150px;
+  width: 350px;
+  padding: 0 20%;
 }
 
 .contact-arrow {
-  width: 50px;
+  width: 60px;
 }
 
-.contact-column-1, .contact-column-2, .contact-column-3, .contact-column-4 {
+.contact-column-2, .contact-column-3, .contact-column-4 {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
+
 
 #contacto h3 {
   font-family: Grotta;
+  font-size: 1.1em
+}
+
+.contact-info-container {
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  justify-content: space-around;
+  margin-left: auto;
+  height: 40vh;
+}
+
+.grey {
+  color: grey !important;
+}
+
+.mail {
+  color: #ff1369 !important;
 }
 
 
@@ -222,13 +255,13 @@ section {
   }
 }
 
-.carrousel-container{
-  overflow-x: scroll;
-  height: 100vh;
-  display: flex;
-  flex-direction: row;
 
+/*  //////////////////////////////////////////LINK PREDETERMINED STYLE OVERWRITE////////////////////////////////////////////////////// */
+
+a:link {
+  text-decoration: none;
 }
-.carrousel-section{
-  min-width: 100vw;
+
+a:visited {
+  text-decoration: none;
 }
