@@ -1,6 +1,6 @@
 import React from "react";
 import mobileqr from "./../Assets/mobil-qr.png";
-import { BrowserRouter as Router, Link } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 
 export default function MenuQr() {
   
@@ -42,7 +42,7 @@ export default function MenuQr() {
              
             <div className="buttons-caption-qr-container">
                 <div className="header-QR">QUÉ ES <br /> MI QARTA</div>
-                {/* <h1 className="header-QR"> </h1> */}
+             
             
             </div>
           </div>

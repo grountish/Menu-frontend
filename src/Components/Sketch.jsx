@@ -57,8 +57,8 @@ export default class Sketch extends React.Component {
         p.draw = () => {
             if (p.windowWidth > 500) {
                 p.smooth();
-               
                 p.background(255, 0);
+    
                 p.scale(0.4 + p.mouseY / 4000);
                 p.image(c, -340, -30);
                 p.rotateY(p.mouseX / -12000);
@@ -75,20 +75,18 @@ export default class Sketch extends React.Component {
                 p.image(o3, 390, -30);
                 p.rotateX(p.mouseX / 10000);
                 p.rotateX(p.mouseY / 1134);
-
-                p.image(s, -345, 130);
+                p.image(s, -350, 130);
                 p.rotateY(p.mouseX / -12000);
-                p.image(t, -220, 130);
+                p.image(t, -200, 130);
                 p.rotateY(p.mouseX / 120000);
-                p.image(u, -80, 130);
+                p.image(u, -70, 130);
                 p.rotateY(p.mouseY / 22000);
-                p.image(d, 40, 130);
+                p.image(d, 50, 130);
                 p.rotateY(p.mouseY / 12000);
                 p.image(o3, 210, 130);
                 p.rotateY(p.mouseY / 12000);
                 p.image(i, 130, 130);
                 p.rotateY(p.mouseY / 12000);
-
                 p.ambientLight(0, 255, 30);
 
                 for (let i = 0; i < 10; i++) {
@@ -100,27 +98,23 @@ export default class Sketch extends React.Component {
             } else {
                 p.smooth();
                 let time = p.millis();
-                p.background(255, 0);            
-                p.rotateY(time / 30 % 2000 / 800)
+                p.background(255, 0); p.rotateY(time / 30 % 2000 / 800)
                 p.translate(-20, -20)
                 p.scale(0.35);
-                p.image(c, -340, -30);
-                p.image(o3, -200, -30);
+                p.image(c, -340, -30); 
+                  p.image(o3, -200, -30);
                 p.image(l, -80, -30);
                 p.image(l2, 30, -30);
                 p.image(a, 140, -30);
-                p.image(b, 260, -30);
-                p.image(o3, 390, -30);             
-                p.image(s, -350, 130);
-                p.image(t, -220, 130);
-                p.image(u, -80, 130);
-                p.image(d, 40, 130);
+               p.image(b, 260, -30);
+                p.image(o3, 390, -30);
+                p.image(s, -320, 130);
+                p.image(t, -200, 130);
+                p.image(u, -70, 130);
+                p.image(d, 50, 130);
                 p.image(o3, 210, 130);
                 p.image(i, 130, 130);
-
-
                 p.ambientLight(0, 255, 30);
-
                 for (let i = 0; i < 10; i++) {
                     p.translate(-200, 32);
                     p.rotateY(1000);
@@ -130,7 +124,8 @@ export default class Sketch extends React.Component {
             }
         }
     }
-    
+
+
     render() {
         return (
         <section ref={this.myRef} className="Inicio" id="Inicio">

@@ -29,7 +29,6 @@ export default class Foodlist extends Component {
   };
 
   render() {
-    console.log(this.props);
 
    
     let placeName = this.props.match.params.place;

@@ -11,7 +11,7 @@ import './../App.css';
 
 const param = window.location.pathname.slice(1)
 const foundPlace = foods.places.filter(x => x.place === param) || foods.places[0];
-const option1 = foundPlace[0].place || '';
+const option1 =foods.places[0].place || foundPlace[0].place ;
 
 function Places() {
   const [buscar, setBuscar] = useState(false);
@@ -19,6 +19,8 @@ function Places() {
 
   return (
       <div className="App">
+
+      
          <Router>
           <Helmet>
             <style>{`body { background-color: ${foundPlace[0].backgroundColor}; min-height:100vh; font-family: ${foundPlace[0].font}; color: ${foundPlace[0].color}}`}</style>

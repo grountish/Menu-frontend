@@ -6,6 +6,7 @@ import MenuQr from "./MenuQr.jsx"
 import Contacto from "./Contacto.jsx"
 import "./../../src/Home.css";
 
+
 const param = window.location.pathname.length > 2;
 
 const Home = () => {
