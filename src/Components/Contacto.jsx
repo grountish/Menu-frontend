@@ -5,7 +5,7 @@ import arrow from './../Assets/contact-arrow.png'
 
 export default function MenuQr() {
   return (
-    <section id="contacto" className="contacto">
+    <section id="Contacto" className="contacto">
       <div className="contact-column-1">
         <img className="contact-logo" src={logo} alt="" />
       </div>
@@ -33,7 +33,7 @@ export default function MenuQr() {
           <h3 className="grey">Created by Collabo Studio</h3>
         </div>
       </div>
-      <div class="contact-column-4">
+      <div className="contact-column-4">
         <div className="contact-allrights">
           <h3 className="grey">2020 - All rights reserved</h3>
         </div>
