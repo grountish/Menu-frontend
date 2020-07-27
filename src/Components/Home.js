@@ -28,8 +28,8 @@ const Home = () => {
       }
       </div>
       <Nosotres />
-      <MenuQr />
       <Services />
+      <MenuQr />
       <Contacto />
     </div>
   );
