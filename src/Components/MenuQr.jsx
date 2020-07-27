@@ -25,8 +25,8 @@ export default function MenuQr() {
               <img className="img-qr" src={mobileqr} alt="" />{" "}
             </div>
             <div className="buttons-caption-qr-container">
-              <h1 className="header-QR">
-                Mi <br /> Qarta
+              <h1 className="mi-qarta-header">
+                MI <br /> QARTA
               </h1>
               <p className="QR-text">
                 {" "}
@@ -37,7 +37,7 @@ export default function MenuQr() {
             </div>
           </div>
           <div className="carrousel-section">
-            <ul class="grid-container">
+            <ul className="grid-container">
               <li>Plan de pago mensual</li>
               <li>Diseño de carta interactiva</li>
               <li>Filtros de preferencia</li>
