@@ -2,3 +2,5 @@
 node_modules
 db/*
 exports/*
+# Local Netlify folder
+.netlify

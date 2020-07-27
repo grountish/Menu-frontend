@@ -24,9 +24,9 @@ function Places() {
             <style>{`body { background-color: ${foundPlace[0].backgroundColor}; min-height:100vh; font-family: ${foundPlace[0].font}; color: ${foundPlace[0].color}}`}</style>
           </Helmet>
             <div className="languages">
-              <div className="perLanguage" onClick={()=>setLang("ca")}>CA</div>
-              <div className="perLanguage" onClick={()=>setLang("en")}>EN</div>
-              <div className="perLanguage" onClick={()=>setLang("es")}>ES</div>
+              <div className={lang === "ca"? "perLanguage-act":"perLanguage"} onClick={()=>setLang("ca")}>CA</div>
+              <div className={lang === "en"? "perLanguage-act":"perLanguage"} onClick={()=>setLang("en")}>EN</div>
+              <div className={lang === "es"? "perLanguage-act":"perLanguage"} onClick={()=>setLang("es")}>ES</div>
             </div>
           <Link to={`/${option1}`}>
             {' '}
