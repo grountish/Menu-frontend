@@ -293,14 +293,14 @@ h6 {
 /*  ///////////////////////////////////////////////////// CONTACTO  ///////////////////////////////// */
 /*  //////////////////////////////////////////////////////////////////////////////////////////////// */
 
-#Contacto {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-flow: row;
-  align-items: flex-start;
-  justify-content: space-around;
-  padding-top: 15%;
+#Contacto-container {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  grid-template-columns: 20% 20% 18% 18% 18%;
+  grid-template-rows: 25% 25%;
+  gap: 1px 1px;
+  grid-template-areas: ". . . . ." ". . . . .";
 }
 
 .contact-logo {
@@ -312,26 +312,20 @@ h6 {
   width: 60px;
 }
 
-.contact-column-2,
-.contact-column-3,
-.contact-column-4 {
+.social {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  flex-flow: column;
 }
 
-#Contacto h3 {
-  font-family: Grotta;
-  font-size: 1.1em;
-}
-
-.contact-info-container {
+.bottom {
   display: flex;
   flex-direction: row;
-  width: 60%;
-  justify-content: space-around;
-  margin-left: auto;
-  height: 40vh;
+  align-items: flex-end;
+}
+
+#Contacto-container h3 {
+  font-family: Grotta;
+  font-size: 1.1em;
 }
 
 .grey {
