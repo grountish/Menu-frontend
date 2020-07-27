@@ -12,23 +12,24 @@ const Navbar = (props) => {
 
   return (
     <div className="nav-content">
-      <nav className={navClass ? "nav-active" : "nav"}>
+      <nav onClick={() => settingNav()} className={navClass ? "nav-active" : "nav"}>
         <div className="nav-links">
           <ul>
             <li>
-              <a href="#Inicio">Inicio</a>
+              <a onClick={() => settingNav()}  href="#Inicio">Inicio</a>
             </li>
             <li>
-              <a href="#Servicios">Servicios</a>
+              <a onClick={() => settingNav()} href="#Nosotros">Nosotros</a>
+            </li>
+          
+            <li>
+              <a onClick={() => settingNav()} href="#MenuQR">Menu QR</a>
             </li>
             <li>
-              <a href="#MenuQR">Menu QR</a>
+              <a onClick={() => settingNav()} href="#Servicios">Servicios</a>
             </li>
             <li>
-              <a href="#Nosotros">Nosotros</a>
-            </li>
-            <li>
-              <a href="#Contacto">Contacto</a>
+              <a onClick={() => settingNav()} href="#contacto">Contacto</a>
             </li>
           </ul>
         </div>

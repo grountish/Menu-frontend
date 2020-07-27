@@ -29,16 +29,14 @@ export default function MenuQr() {
           <h3 className="grey">08024</h3>
           <h3 className="grey">Barcelona</h3>
         </div>
-        <div className="contact-created-by">
-          <h3 className="grey">Created by Collabo Studio</h3>
-        </div>
+        
       </div>
-      <div class="contact-column-4">
+      <div className="contact-column-4">
         <div className="contact-allrights">
-          <h3 className="grey">2020 - All rights reserved</h3>
+          <h3 className="grey">All rights reserved.</h3>
         </div>
       </div>
-      <a href="#Inicio"><img className="contact-arrow logos" src={arrow} alt=""/></a>
+      <a  href="#Inicio"><img className="contact-arrow logos" src={arrow} alt=""/></a>
       </div>
     </section>
   );

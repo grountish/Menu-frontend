@@ -19,7 +19,9 @@
           "descripcion_en": "IPA - Catalunya - 6%",
           "descripcion_es": "IPA - Catalunya - 6%",
           "precio": "6 / 3.50",
-          "tags": "cerveza afrutada cervesa beer fruity citric bitter afruitada citrica lupulada amarga"
+          "tags": "cerveza afrutada cervesa beer fruity citric bitter afruitada citrica lupulada amarga",
+          "tags_en": "cerveza afrutada cervesa beer fruity citric bitter afruitada citrica lupulada amarga",
+          "tags_es": "cerveza afrutada cervesa beer fruity citric bitter afruitada citrica lupulada amarga"
         },
         {
           "nombre": "2. Cloudwater Gyle",
@@ -29,7 +31,9 @@
           "descripcion_en": "DDH Pale Ale - England - 5.5%",
           "descripcion_es": "DDH Pale Ale - Inglaterra - 5.5%",
           "precio": "7.50 / 4.70",
-          "tags": "cerveza afrutada cervesa beer fruity hopped fresh afruitada lupulada fresca"
+          "tags": "cerveza afrutada cervesa beer fruity hopped fresh afruitada lupulada fresca",
+          "tags_en": "cerveza afrutada cervesa beer fruity citric bitter afruitada citrica lupulada amarga",
+          "tags_es": "cerveza afrutada cervesa beer fruity citric bitter afruitada citrica lupulada amarga"
         },
         {
           "nombre": "3. Kusfollin",
@@ -39,7 +43,9 @@
           "descripcion_en": "APA - Catalunya - 5.5%",
           "descripcion_es": "APA - Catalunya - 5.5%",
           "precio": "6.10 / 3.60",
-          "tags": "cerveza afrutada cervesa beer citric fruity bitter dry citrica afruitada amarga seca"
+          "tags": "cerveza afrutada cervesa beer citric fruity bitter dry citrica afruitada amarga seca",
+          "tags_en": "cerveza afrutada cervesa beer fruity citric bitter afruitada citrica lupulada amarga",
+          "tags_es": "cerveza afrutada cervesa beer fruity citric bitter afruitada citrica lupulada amarga"
         },
         {
           "nombre": "4. Oakham Green Devil",
@@ -49,7 +55,9 @@
           "descripcion_en": "IPA - England - 6%",
           "descripcion_es": "IPA - Inglaterra - 6%",
           "precio": "6.50 / 3.80",
-          "tags": "cerveza afrutada beer fruity citric hopped cervesa afruitada citrica lupulada"
+          "tags": "cerveza afrutada beer fruity citric hopped cervesa afruitada citrica lupulada",
+          "tags_en": "cerveza afrutada cervesa beer fruity citric bitter afruitada citrica lupulada amarga",
+          "tags_es": "cerveza afrutada cervesa beer fruity citric bitter afruitada citrica lupulada amarga"
         },
         {
           "nombre": "5. La Salvatge Inframon",
@@ -59,7 +67,9 @@
           "descripcion_en": "Saison Brett - Catalunya - 6%",
           "descripcion_es": "Saison Brett - Catalunya - 6%",
           "precio": "7.50 / 4.70",
-          "tags": "cerveza beer acidic cervesa acida"
+          "tags": "cerveza beer acidic cervesa acida",
+          "tags_en": "cerveza afrutada cervesa beer fruity citric bitter afruitada citrica lupulada amarga",
+          "tags_es": "cerveza afrutada cervesa beer fruity citric bitter afruitada citrica lupulada amarga"
         },
         {
           "nombre": "6. La Pirata Hazy Primavera",
@@ -69,7 +79,9 @@
           "descripcion_en": "Session IPA - Catalunya - 3.8%",
           "descripcion_es": "Session IPA - Catalunya - 3.8%",
           "precio": "6.20 / 3.70",
-          "tags": "cerveza beer citric cervesa citrica"
+          "tags": "cerveza beer citric cervesa citrica",
+          "tags_en": "cerveza afrutada cervesa beer fruity citric bitter afruitada citrica lupulada amarga",
+          "tags_es": "cerveza afrutada cervesa beer fruity citric bitter afruitada citrica lupulada amarga"
         },
         {
           "nombre": "7. Fermun Red Alert",
@@ -79,7 +91,9 @@
           "descripcion_en": "Irish Red Ale - Catalunya - 3.8%",
           "descripcion_es": "Irish Red Ale - Catalunya - 3.8%",
           "precio": "6.10 / 3.60",
-          "tags": "cerveza tostada dulce beer toasted sweet cervesa torrada dolça"
+          "tags": "cerveza tostada dulce beer toasted sweet cervesa torrada dolça",
+          "tags_en": "cerveza afrutada cervesa beer fruity citric bitter afruitada citrica lupulada amarga",
+          "tags_es": "cerveza afrutada cervesa beer fruity citric bitter afruitada citrica lupulada amarga"
         },
         {
           "nombre": "8. Beerbliotek I'm so aware",
@@ -89,7 +103,9 @@
           "descripcion_en": "Double IPA - Sweden - 7.9%",
           "descripcion_es": "Double IPA - Suecia - 7.9%",
           "precio": "7.20 / 4.5",
-          "tags": "cerveza afrutada beer fruity citric hopped cervesa afruitada citrica lupulada"
+          "tags": "cerveza afrutada beer fruity citric hopped cervesa afruitada citrica lupulada",
+          "tags_en": "cerveza afrutada cervesa beer fruity citric bitter afruitada citrica lupulada amarga",
+          "tags_es": "cerveza afrutada cervesa beer fruity citric bitter afruitada citrica lupulada amarga"
         },
         {
           "nombre": "9. Brighton Bier Downtown Charlie Brown",
@@ -99,7 +115,9 @@
           "descripcion_en": "American Brown Stout - England - 6%",
           "descripcion_es": "American Brown Stout - Inglaterra - 6%",
           "precio": "6.80 / 4",
-          "tags": "cerveza tostada afrutada beer toasted fruity hopped cervesa torrada afruitada lupulada"
+          "tags": "cerveza tostada afrutada beer toasted fruity hopped cervesa torrada afruitada lupulada",
+          "tags_en": "cerveza afrutada cervesa beer fruity citric bitter afruitada citrica lupulada amarga",
+          "tags_es": "cerveza afrutada cervesa beer fruity citric bitter afruitada citrica lupulada amarga"
         },
         {
           "nombre": "10. Seven Islands Hazelnut Moctezuma",
@@ -109,7 +127,9 @@
           "descripcion_en": "Imperial Stout - Catalunya - 13%",
           "descripcion_es": "Imperial Stout - Catalunya - 13%",
           "precio": "6.30",
-          "tags": "beer toasted black sweet cerveza tostada dulce cervesa torrada negra dolça"
+          "tags": "beer toasted black sweet cerveza tostada dulce cervesa torrada negra dolça",
+          "tags_en": "cerveza afrutada cervesa beer fruity citric bitter afruitada citrica lupulada amarga",
+          "tags_es": "cerveza afrutada cervesa beer fruity citric bitter afruitada citrica lupulada amarga"
         },
         {
           "nombre": "11. Guineu Real Fruit",
@@ -119,7 +139,9 @@
           "descripcion_en": "Berliner Weisse - Catalunya - 4.4%",
           "descripcion_es": "Berliner Weisse - Catalunya - 4.4%",
           "precio": "6.70 / 3.5",
-          "tags": "cerveza afrutada beer fruity citric cervesa afruitada citrica"
+          "tags": "cerveza afrutada beer fruity citric cervesa afruitada citrica",
+          "tags_en": "cerveza afrutada cervesa beer fruity citric bitter afruitada citrica lupulada amarga",
+          "tags_es": "cerveza afrutada cervesa beer fruity citric bitter afruitada citrica lupulada amarga"
         },
         {
           "nombre": "12. Agullons Hops and Hopes",
@@ -129,7 +151,9 @@
           "descripcion_en": "English Pale Ale - Catalunya - 5.5%",
           "descripcion_es": "English Pale Ale - Catalunya - 5.5%",
           "precio": "6 / 3.5",
-          "tags": "beer toasted citric cerveza tostada cervesa torrada citrica"
+          "tags": "beer toasted citric cerveza tostada cervesa torrada citrica",
+          "tags_en": "cerveza afrutada cervesa beer fruity citric bitter afruitada citrica lupulada amarga",
+          "tags_es": "cerveza afrutada cervesa beer fruity citric bitter afruitada citrica lupulada amarga"
         },
         {
           "nombre": "13. Agullons Runa",
@@ -139,7 +163,9 @@
           "descripcion_en": "Brown Ale - Catalunya - 5%",
           "descripcion_es": "Brown Ale - Catalunya - 5%",
           "precio": "6.30 / 2.80",
-          "tags": "cerveza tostada hopped beer toasted cervesa torrada lupulada"
+          "tags": "cerveza tostada hopped beer toasted cervesa torrada lupulada",
+          "tags_en": "cerveza afrutada cervesa beer fruity citric bitter afruitada citrica lupulada amarga",
+          "tags_es": "cerveza afrutada cervesa beer fruity citric bitter afruitada citrica lupulada amarga"
         },
         {
           "nombre": "14. Cierzo Vertigo",
@@ -149,7 +175,9 @@
           "descripcion_en": "Double IPA - Zaragoza - 9%",
           "descripcion_es": "Doble IPA - Zaragoza - 9%",
           "precio": "6.9 / 4.2",
-          "tags": "beer citric hopped cerveza cervesa citrica lupulada"
+          "tags": "beer citric hopped cerveza cervesa citrica lupulada",
+          "tags_en": "cerveza afrutada cervesa beer fruity citric bitter afruitada citrica lupulada amarga",
+          "tags_es": "cerveza afrutada cervesa beer fruity citric bitter afruitada citrica lupulada amarga"
         },
         {
           "nombre": "15. Oud Beersel",
@@ -159,7 +187,9 @@
           "descripcion_en": "Framboise Fruit Lambic - Belgium - 5%",
           "descripcion_es": "Framboise Fruit Lambic - Belgica - 5%",
           "precio": "6.70",
-          "tags": "cerveza afrutada beer fruity cervesa afruitada"
+          "tags": "cerveza afrutada beer fruity cervesa afruitada",
+          "tags_en": "cerveza afrutada cervesa beer fruity citric bitter afruitada citrica lupulada amarga",
+          "tags_es": "cerveza afrutada cervesa beer fruity citric bitter afruitada citrica lupulada amarga"
         },
         {
           "nombre": "Estrella Galicia Bodega",
@@ -169,7 +199,9 @@
           "descripcion_en": "5.5%",
           "descripcion_es": "5.5%",
           "precio": "2.20 / 2.80 / 4",
-          "tags": "cerveza beer cervesa"
+          "tags": "cerveza beer cervesa",
+          "tags_en": "cerveza afrutada cervesa beer fruity citric bitter afruitada citrica lupulada amarga",
+          "tags_es": "cerveza afrutada cervesa beer fruity citric bitter afruitada citrica lupulada amarga"
         },
         {
           "nombre": "Estrella Galicia 1906",
@@ -179,7 +211,9 @@
           "descripcion_en": "8%",
           "descripcion_es": "8%",
           "precio": "2.50 / 2.80 / 4.80",
-          "tags": "cerveza beer cervesa"
+          "tags": "cerveza beer cervesa",
+          "tags_en": "cerveza afrutada cervesa beer fruity citric bitter afruitada citrica lupulada amarga",
+          "tags_es": "cerveza afrutada cervesa beer fruity citric bitter afruitada citrica lupulada amarga"
         },
         {
           "nombre": "Erdinger Weisse",
@@ -189,7 +223,9 @@
           "descripcion_en": "Wheat - 5.5%",
           "descripcion_es": "Trigo - 5.5%",
           "precio": "3 / 5",
-          "tags": "cerveza celiaco beer cervesa celiac"
+          "tags": "cerveza celiaco beer cervesa celiac",
+          "tags_en": "cerveza afrutada cervesa beer fruity citric bitter afruitada citrica lupulada amarga",
+          "tags_es": "cerveza afrutada cervesa beer fruity citric bitter afruitada citrica lupulada amarga"
         }
       ]
     }, {
@@ -367,7 +403,9 @@
           "descripcion_en": "IPA - Catalunya - 6%",
           "descripcion_es": "IPA - Catalunya - 6%",
           "precio": "6 / 3.50",
-          "tags": "cerveza afrutada cervesa beer fruity citric bitter afruitada citrica lupulada amarga"
+          "tags": "cervesa afruitada citrica lupulada amarga",
+          "tags_en": "beer fruity citric bitter ",
+          "tags_es": "cerveza afrutada citrica lupulada amarga"
         },
         {
           "nombre": "2. Cloudwater Gyle",

@@ -2,8 +2,8 @@ import React from "react";
 
 export default function MenuQr() {
   return (
-    <section id="services" className="services">
-      <ul class="marquee-wrap">
+    <section id="Servicios" className="services">
+      <ul className="marquee-wrap">
         <li>
           <ul>
             <li>BRANDING</li>
