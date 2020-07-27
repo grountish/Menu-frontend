@@ -33,13 +33,6 @@ body {
     rgba(0, 0, 0, 1) 71%,
     rgba(0, 0, 0, 1) 100%
   );
-  background-image: url("./Assets/Caparuido.png"), repeat;
-}
-
-main {
-  width: 100vw;
-  margin: 0;
-  padding: 0;
 }
 
 .toggle-btn {
@@ -47,7 +40,7 @@ main {
   top: 5%;
   left: 5%;
   cursor: pointer;
-  z-index: 5000;
+  z-index: 5;
 }
 
 .toggle-btn span {
@@ -96,6 +89,12 @@ main {
   list-style: none;
   display: inline-block;
   margin: calc(100vh / 50) 5vw;
+  font-family: OPTIImprovNewWideNine;
+  text-decoration: none;
+  font-weight: 300;
+  color: whitesmoke;
+  font-size: 1em;
+  text-transform: uppercase;
 }
 
 .nav-links li a {
@@ -105,10 +104,6 @@ main {
   color: whitesmoke;
   font-size: 2em;
   text-transform: uppercase;
-}
-
-.menuToggle {
-  font-family: OPTIImprovNewWideNine;
 }
 
 .nav-links li a:hover {
@@ -121,25 +116,18 @@ section {
   scroll-snap-align: center;
 }
 
-.serv {
-  transition: 0.3 ease all;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.315);
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-}
-
 /*  ///////////////////////////////////////////////////// MENUQR  ///////////////////////////////// */
 /*  //////////////////////////////////////////////////////////////////////////////////////////////// */
 
 .img-qr {
   width: 250px;
   margin: 0 auto;
-  padding-top: 30px;
+  padding-top: 10%;
 }
 
 .header-QR {
   font-size: 2.9em !important;
+  font-family: Grotta;
 }
 
 .QR-text {
@@ -285,9 +273,11 @@ h6 {
 
 
 .Nosotros {
-  margin: 10% 2%;
-  padding: 8% 2%;
+  margin: 10% auto;
+  padding-top: 10%;
   height: 100vh;
+  max-width: 90vw;
+  align-self: baseline;
 }
 
 
@@ -297,7 +287,7 @@ h6 {
   word-wrap: break-word;
   letter-spacing: 0.04em;
   line-height: 1em;
-  font-size: 3.2em;
+  font-size: 3em;
 }
 
 /*  ///////////////////////////////////////////////////// CONTACTO  ///////////////////////////////// */
