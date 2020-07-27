@@ -1,325 +1,507 @@
 @font-face {
-    font-family: OPTIImprovNewWideNine;
-    src: url("./Assets/OPTIImprovNewWideNine.ttf");
+  font-family: OPTIImprovNewWideNine;
+  src: url("./Assets/OPTIImprovNewWideNine.ttf");
 }
 
 @font-face {
-    font-family: Grotta;
-    src: url("./Assets/Grotta-Regular.ttf");
+  font-family: Grotta;
+  src: url("./Assets/Grotta-Regular.ttf");
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-    /* scroll-snap-type: y mandatory; */
-    /* scroll-snap-type: mandatory; */
-    /* max-width: 98.6vw; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 .home {
-    color: whitesmoke;
-    font-family: "Roboto", sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: rgb(255, 255, 255);
-    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(238, 238, 238, 1) 34%, rgba(255, 255, 255, 1) 53%, rgba(0, 0, 0, 1) 71%, rgba(0, 0, 0, 1) 100%);
-    background-image: url('./Assets/Caparuido.png'), repeat;
+  color: whitesmoke;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(238, 238, 238, 1) 34%,
+    rgba(255, 255, 255, 1) 53%,
+    rgba(0, 0, 0, 1) 71%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  background-image: url("./Assets/Caparuido.png"), repeat;
 }
 
 main {
-    width: 100vw;
-    margin: 0;
-    padding: 0;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
 }
 
 .toggle-btn {
-    position: fixed;
-    top: 5%;
-    left: 5%;
-    cursor: pointer;
-    z-index: 5000;
+  position: fixed;
+  top: 5%;
+  left: 5%;
+  cursor: pointer;
+  z-index: 5000;
 }
 
 .toggle-btn span {
-    display: block;
-    width: 5vh;
-    height: 5vh;
-    background-color: lawngreen;
-    border-radius: 50%;
+  display: block;
+  width: 5vh;
+  height: 5vh;
+  background-color: lawngreen;
+  border-radius: 50%;
 }
 
-/* body{
-  margin: 0 !important;
-  overflow-x: hidden;
-} */
 .nav {
-    width: 40%;
-    height: 100vh;
-    position: fixed;
-    z-index: 3;
-    background-color: #000000;
-    left: -60%;
-    transition: 400ms all;
+  width: 40%;
+  height: 100vh;
+  position: fixed;
+  z-index: 3;
+  background-color: #000000;
+  left: -60%;
+  transition: 400ms all;
 }
 
 .nav-active {
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    z-index: 1;
-    background-color: #000000;
-    left: 0;
-    transition: 400ms all;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 1;
+  background-color: #000000;
+  left: 0;
+  transition: 400ms all;
 }
 
 .nav-content {
-    height: 100%;
-    width: 90%;
-    align-items: center;
+  height: 100%;
+  width: 90%;
+  align-items: center;
 }
 
 .nav-links ul {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    height: 100%;
-    margin-top: 20vh;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  height: 100%;
+  margin-top: 20vh;
 }
 
 .nav-links li {
-    list-style: none;
-    display: inline-block;
-    margin: calc(100vh / 50) 5vw;
+  list-style: none;
+  display: inline-block;
+  margin: calc(100vh / 50) 5vw;
 }
 
 .nav-links li a {
-    font-family: OPTIImprovNewWideNine;
-    text-decoration: none;
-    font-weight: 300;
-    color: whitesmoke;
-    font-size: 2em;
-    text-transform: uppercase;
+  font-family: OPTIImprovNewWideNine;
+  text-decoration: none;
+  font-weight: 300;
+  color: whitesmoke;
+  font-size: 2em;
+  text-transform: uppercase;
 }
 
 .menuToggle {
-    font-family: OPTIImprovNewWideNine;
+  font-family: OPTIImprovNewWideNine;
 }
 
 .nav-links li a:hover {
-    color: rgb(41, 41, 41);
+  color: rgb(41, 41, 41);
 }
 
 section {
-    height: 100vh;
-    width: 100vw;
-    scroll-snap-align: center;
+  height: 100vh;
+  width: 100vw;
+  scroll-snap-align: center;
 }
 
 .serv {
-    transition: 0.3 ease all;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.315);
-    align-items: center;
-    display: flex;
-    flex-direction: row;
+  transition: 0.3 ease all;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.315);
+  align-items: center;
+  display: flex;
+  flex-direction: row;
 }
 
 /*  ///////////////////////////////////////////////////// MENUQR  ///////////////////////////////// */
 /*  //////////////////////////////////////////////////////////////////////////////////////////////// */
 .img-qr {
-    width: 65%;
-    margin: 0 auto;
-    padding-top: 80px;
-}
-
-@media screen and (min-width: 450px) {
-    .img-qr {
-        width: 250px;
-        margin: 0 auto;
-        padding-top: 30px;
-    }
-
-    .header-QR {
-        font-size: 2.9em !important;
-    }
-
-    .QR-text {
-        font-size: 1.3em !important;
-    }
-    .benefit-list{
-        padding: 0px 15px;
-    }
-    .benefit-list li{
-        font-size:1.5em;
-      
-
-    }
+  width: 65%;
+  margin: 0 auto;
+  padding-top: 80px;
 }
 
 .img-qr-container {
-    text-align: center;
+  text-align: center;
 }
 
 .buttons-caption-qr-container {
-    /* margin: 50px auto; */
-    background-color: #000000;
-    display: flex;
-    flex-direction: row;
-    margin-top: auto !important;
-    height: 30%;
-    max-height: 170px;
-    width: 100%;
-    position: relative;
+  background-color: #000000;
+  display: flex;
+  flex-direction: row;
+  margin-top: auto !important;
+  height: 30%;
+  max-height: 170px;
+  width: 100%;
+  position: relative;
 }
 
 .button-qr {
-    margin: auto;
-    margin-top: 200px;
-    padding: 13px 10px;
-    border-radius: 25px;
-    width: 50%;
-    text-align: center;
+  margin: auto;
+  margin-top: 200px;
+  padding: 13px 10px;
+  border-radius: 25px;
+  width: 50%;
+  text-align: center;
 }
 
 .buttons-container-qr a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .header-QR {
-    font-family: Grotta !important;
-    margin: auto;
-    font-size: 2em;
-    border-bottom: 1px solid wheat;
-    border-top: 1px solid wheat;
+  font-family: Grotta !important;
+  margin: auto;
+  font-size: 2em;
+  border-bottom: 1px solid wheat;
+  border-top: 1px solid wheat;
 }
 
 .QR-text {
-    width: 62%;
-    font-size: small;
-    margin: auto;
-    font-weight: 200;
+  width: 62%;
+  font-size: small;
+  margin: auto;
+  font-weight: 200;
 }
 
 .QR1 {
-    background-color: yellow;
-    border: 1px solid yellow;
-    color: black
+  background-color: yellow;
+  border: 1px solid yellow;
+  color: black;
 }
 
 .QR2 {
-    background-color: transparent;
-    color: #ff1369;
-    border: 1px solid #ff1369;
+  background-color: transparent;
+  color: #ff1369;
+  border: 1px solid #ff1369;
 }
 
 .carrousel-container {
-    overflow-x: scroll;
-    height: 100vh;
-    display: flex;
-    flex-direction: row;
-    background-image: url('./Assets/fondo\ menú\ mobile\ entero.png');
-    background-position: center;
-    background-repeat: repeat;
-    background-attachment: local;
-    background-size: cover;
-    scroll-snap-type: x mandatory;
-    scrollbar-width: none;
+  overflow-x: scroll;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  background-image: url("./Assets/fondo\ menú\ mobile\ entero.png");
+  background-position: center;
+  background-repeat: repeat;
+  background-attachment: local;
+  background-size: cover;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
 }
 
 .carrousel-container::-webkit-scrollbar {
-    display: none !important;
+  display: none !important;
 }
 
 .carrousel-section {
-    min-width: 100vw;
-    display: flex;
-    flex-direction: column;
-    scroll-snap-align: center;
+  min-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  scroll-snap-align: center;
 }
 
 .benefit-list {
-    /* padding: 60px 0; */
-    /* list-style-type; */
-    width:231px;
-   
-    list-style: url('./Assets/plus-list.png')
-    
+  width: 231px;
+  list-style: url("./Assets/plus-list.png");
 }
-.benefits-container{
+
+.benefits-container {
   margin-top: auto;
-  display:flex;
-  justify-content:center;
- 
-  flex-direction:column;
+  display: flex;
+  justify-content: center;
+
+  flex-direction: column;
 }
+
 .benefit-list * {
-    font-size: 1.1em;
-   padding: 6px 0px;
-   margin-top:auto;
+  font-size: 1.1em;
+  padding: 6px 0px;
+  margin-top: auto;
 }
 
 .references-container {
-    margin: auto auto 0 auto;
-    background-color: white;
-    width: 70%;
-    padding: 40px 20px;
-    border-radius: 25px;
-    height: 380px;
-    display: flex;
-    flex-direction: column;
+  margin: auto auto 0 auto;
+  background-color: white;
+  width: 70%;
+  padding: 40px 20px;
+  border-radius: 25px;
+  height: 380px;
+  display: flex;
+  flex-direction: column;
 }
 
 .references-container * {
-    margin: auto auto auto 0;
+  margin: auto auto auto 0;
 }
 
 .references-container h1 {
-    color: #ff1369;
+  color: #ff1369;
 }
 
-.references-container p , h6 {
-    color: #3e3b3b;
+.references-container p,
+h6 {
+  color: #3e3b3b;
 }
 
 #arrow-right {
-    position: absolute;
-    right: 10px;
-    margin: auto;
-    width: 10px;
-    z-index: 3;
-    font-size: 1.3em;
-    transform: translate(-20px, 93vh);
-    cursor: pointer;
+  position: absolute;
+  right: 10px;
+  margin: auto;
+  width: 10px;
+  z-index: 3;
+  font-size: 1.3em;
+  transform: translate(-20px, 93vh);
+  cursor: pointer;
+}
+
+.carrousel-container {
+  overflow-x: scroll;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+.carrousel-section {
+  min-width: 100vw;
 }
 
 /*  ///////////////////////////////////////////////////// NOSOTROS  ///////////////////////////////// */
 /*  //////////////////////////////////////////////////////////////////////////////////////////////// */
 .nosotres-texto {
-    font-family: OPTIImprovNewWideNine;
-    color: black;
-    margin: 20px;
-    font-size: 3em;
-    text-align: justify;
+  font-family: OPTIImprovNewWideNine;
+  color: black;
+  margin: 20px;
+  font-size: 3em;
+  text-align: justify;
+}
+
+/*  ///////////////////////////////////////////////////// CONTACTO  ///////////////////////////////// */
+/*  //////////////////////////////////////////////////////////////////////////////////////////////// */
+
+#Contacto {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-flow: row;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding-top: 20%;
+}
+
+.contact-logo {
+  width: 350px;
+  padding: 0 20%;
+}
+
+.contact-arrow {
+  width: 60px;
+}
+
+.contact-column-2,
+.contact-column-3,
+.contact-column-4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#Contacto h3 {
+  font-family: Grotta;
+  font-size: 1.1em;
+}
+
+.contact-info-container {
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  justify-content: space-around;
+  margin-left: auto;
+  height: 40vh;
+}
+
+.grey {
+  color: grey !important;
+}
+
+.mail {
+  color: #ff1369 !important;
+}
+
+/*  //////////////////////////////////////////SERVICIOS////////////////////////////////////////////////////// */
+
+.marquee-wrap {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+.marquee-wrap,
+.marquee-wrap ul {
+  margin-left: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+.marquee-wrap > li {
+  display: flex;
+  align-items: center;
+  width: var(--scroller-size);
+  will-change: transform;
+  animation: text-scroller 15000ms linear 0ms normal infinite;
+  text-indent: 0;
+  justify-content: space-around;
+  -webkit-transition: all 3000ms linear 0ms;
+  -moz-transition: all 3000ms linear 0ms;
+  -ms-transition: all 3000ms linear 0ms;
+  -o-transition: all 3000ms linear 0ms;
+  transition: all 3000ms linear 0ms;
+  white-space: nowrap;
+}
+
+@keyframes text-scroller {
+  100% {
+    transform: translateX(calc(var(--scroller-size) * -0.5));
+  }
+}
+.marquee-wrap > li:nth-child(2) {
+  animation-direction: reverse;
+  color: blue;
+}
+
+.marquee-wrap > li:nth-child(4) {
+  animation-direction: reverse;
+  color: blue;
+}
+
+.marquee-wrap > li:nth-child(6) {
+  animation-direction: reverse;
+  color: blue;
+}
+
+.marquee-wrap > li > ul li {
+  display: inline-block;
+  padding: 0.5vh 4vw;
+  font-size: 13.2vh;
+  text-transform: uppercase;
+}
+
+:root {
+  --scroller-size: 150vw;
+}
+
+@media only screen and (max-width: 600px) {
+  :root {
+    --scroller-size: 200vw;
+  }
+}
+
+.marquee-wrap li {
+  font-family: Grotta;
+  color: lawngreen;
+  border-bottom: 1px solid lawngreen;
 }
 
 /*  //////////////////////////////////////////QUERY MOBIL////////////////////////////////////////////////////// */
 @media screen and (max-width: 450px) {
-    .nav-links li a {
-        text-decoration: none;
-        font-size: 1.5rem;
-        font-weight: 300;
-        color: whitesmoke;
-    }
+  .nav-links li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: whitesmoke;
+  }
 
-    .nosotres-texto {
-        font-family: OPTIImprovNewWideNine;
-        color: black;
-        font-size: 1.3em;
-        text-align: justify;
-    }
+  .nosotres-texto {
+    font-family: OPTIImprovNewWideNine;
+    color: black;
+    font-size: 1.3em;
+    text-align: justify;
+  }
+
+  #contacto {
+    /* position: relative; */
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 0;
+  }
+
+  .contact-logo {
+    width: 220px;
+    padding: 0 15%;
+  }
+
+  .contact-arrow {
+    width: 13%;
+    /* position: absolute;
+    top: 13%;
+    right: 12%; */
+  }
+
+  .contact-info-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    height: 400px;
+  }
+  .contact-general,
+  .contact-social,
+  .contact-studio {
+    padding-bottom: 30px;
+  }
+}
+
+/*  //////////////////////////////////////////QUERY DESKTOP////////////////////////////////////////////////////// */
+
+
+@media screen and (min-width: 450px) {
+  .img-qr {
+    width: 250px;
+    margin: 0 auto;
+    padding-top: 30px;
+  }
+
+  .header-QR {
+    font-size: 2.9em !important;
+  }
+
+  .QR-text {
+    font-size: 1.3em !important;
+  }
+  .benefit-list {
+    padding: 0px 15px;
+  }
+  .benefit-list li {
+    font-size: 1.5em;
+  }
+}
+
+/* //////////////////////// MEDIA QUERY IPHONE X   ////////////////////////*/
+
+/*  //////////////////////////////////////////LINK PREDETERMINED STYLE OVERWRITE////////////////////////////////////////////////////// */
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
 }
