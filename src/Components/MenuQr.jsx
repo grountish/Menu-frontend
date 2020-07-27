@@ -3,14 +3,15 @@ import mobileqr from "./../Assets/mobil-qr.png";
 import { BrowserRouter as Router } from "react-router-dom";
 
 export default function MenuQr() {
-  const scrollToX = () => {
-    const carrouselContainer = document.getElementById("carrousel-container");
-    if (carrouselContainer.scrollLeft < window.innerWidth * 1.7) {
-      carrouselContainer.scrollBy(window.innerWidth, 0);
-    } else {
+  
+  const scrollToX =()=>{
+    const carrouselContainer = document.getElementById('carrousel-container');
+   if (carrouselContainer.scrollLeft < window.innerWidth * 1.7){    
+     carrouselContainer.scrollBy(window.innerWidth, 0);   
+    } else{
       carrouselContainer.scrollBy(-1 * window.innerWidth * 2, 0);
-    }
-  };
+   }
+  }
 
   return (
     <section id="MenuQR" Name="MenuQR">
@@ -19,7 +20,7 @@ export default function MenuQr() {
       </div>
       <Router>
         <div id="carrousel-container" className="carrousel-container">
-          <div className="carrousel-section">
+          <div className="section-qr-container ">
             <div className="img-qr-container">
               {" "}
               <img className="img-qr" src={mobileqr} alt="" />{" "}
@@ -34,10 +35,12 @@ export default function MenuQr() {
                 COVID-19. Conoce más sobre la nueva opción que además cuida
                 nuestro planeta.
               </p>
+            
             </div>
           </div>
-          <div className="carrousel-section">
-            <ul className="grid-container">
+         
+          <div className="section-qr-container ">
+          <ul className="grid-container">
               <li>Plan de pago mensual</li>
               <li>Diseño de carta interactiva</li>
               <li>Filtros de preferencia</li>
@@ -55,7 +58,7 @@ export default function MenuQr() {
               </h1>
             </div>
           </div>
-          <div className="carrousel-section">
+          <div className="section-qr-container ">
             <div className="references-container">
               <h1>REFERENCIAS</h1>
               <p>
