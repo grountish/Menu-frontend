@@ -23,13 +23,13 @@ const Navbar = (props) => {
               <AnchorLink onClick={() => hidenav()} href="#Inicio">Inicio</AnchorLink>
             </li>
             <li>
+              <AnchorLink onClick={() => hidenav()} href="#Nosotros">Quiénes somos</AnchorLink>
+            </li>
+            <li>
               <AnchorLink onClick={() => hidenav()} href="#Servicios">Servicios</AnchorLink>
             </li>
             <li>
               <AnchorLink onClick={() => hidenav()} href="#MenuQR">Menu QR</AnchorLink>
-            </li>
-            <li>
-              <AnchorLink onClick={() => hidenav()} href="#Nosotros">Nosotros</AnchorLink>
             </li>
             <li>
               <AnchorLink onClick={() => hidenav()} href="#Contacto">Contacto</AnchorLink>

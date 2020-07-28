@@ -48,7 +48,6 @@ export default function MenuQr() {
               </p>
             </div>
           </div>
-
           <div className="section-qr-container ">
             <ul className="grid-container">
               <li>Plan de pago mensual</li>
