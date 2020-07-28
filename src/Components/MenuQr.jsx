@@ -3,14 +3,15 @@ import mobileqr from "./../Assets/mobil-qr.png";
 import { BrowserRouter as Router } from "react-router-dom";
 
 export default function MenuQr() {
-  const scrollToX = () => {
-    const carrouselContainer = document.getElementById("carrousel-container");
-    if (carrouselContainer.scrollLeft < window.innerWidth * 1.7) {
-      carrouselContainer.scrollBy(window.innerWidth, 0);
-    } else {
+  
+  const scrollToX =()=>{
+    const carrouselContainer = document.getElementById('carrousel-container');
+   if (carrouselContainer.scrollLeft < window.innerWidth * 1.7){    
+     carrouselContainer.scrollBy(window.innerWidth, 0);   
+    } else{
       carrouselContainer.scrollBy(-1 * window.innerWidth * 2, 0);
-    }
-  };
+   }
+  }
 
   return (
     <section id="MenuQR" className="MenuQR">
@@ -46,9 +47,9 @@ export default function MenuQr() {
                 COVID-19. Conoce màs sobre la nueva opciòn que además cuida
                 nuestro planeta.
               </p>
+            
             </div>
           </div>
-
           <div className="section-qr-container ">
             <ul className="grid-container">
               <li>Plan de pago mensual</li>

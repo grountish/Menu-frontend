@@ -112,7 +112,6 @@ section {
 
 /*  ///////////////////////////////////////////////////// MENUQR  ///////////////////////////////// */
 /*  //////////////////////////////////////////////////////////////////////////////////////////////// */
-
 .img-qr-container {
   text-align: center;
   display: flex;
@@ -456,7 +455,11 @@ h6 {
     font-weight: 300;
     color: whitesmoke;
   }
+ .header-QR {
+    font-size: 1.8em !important;
+    margin: auto;
 
+  }
   .nosotres-texto {
     font-size: 1.5em;
     margin: 10% 2%;
