@@ -33,13 +33,6 @@ body {
     rgba(0, 0, 0, 1) 71%,
     rgba(0, 0, 0, 1) 100%
   );
-  background-image: url("./Assets/Caparuido.png"), repeat;
-}
-
-main {
-  width: 100vw;
-  margin: 0;
-  padding: 0;
 }
 
 .toggle-btn {
@@ -47,7 +40,7 @@ main {
   top: 5%;
   left: 5%;
   cursor: pointer;
-  z-index: 5000;
+  z-index: 5;
 }
 
 .toggle-btn span {
@@ -59,12 +52,12 @@ main {
 }
 
 .nav {
-  width: 40%;
+  width: 100%;
   height: 100vh;
   position: fixed;
   z-index: 3;
   background-color: #000000;
-  left: -60%;
+  left: -100%;
   transition: 400ms all;
 }
 
@@ -72,7 +65,7 @@ main {
   width: 100%;
   height: 100vh;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   background-color: #000000;
   left: 0;
   transition: 400ms all;
@@ -107,10 +100,6 @@ main {
   text-transform: uppercase;
 }
 
-.menuToggle {
-  font-family: OPTIImprovNewWideNine;
-}
-
 .nav-links li a:hover {
   color: rgb(41, 41, 41);
 }
@@ -121,42 +110,32 @@ section {
   scroll-snap-align: center;
 }
 
-.serv {
-  transition: 0.3 ease all;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.315);
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-}
-
 /*  ///////////////////////////////////////////////////// MENUQR  ///////////////////////////////// */
 /*  //////////////////////////////////////////////////////////////////////////////////////////////// */
-.img-qr{
-  width: 65%;
-  margin: 0 auto;
-  padding-top: 80px;
-
-}
 .img-qr-container {
   text-align: center;
+  display: flex;
+  flex-direction: row;
 }
 
 .buttons-caption-qr-container {
   background-color: #000000;
   display: flex;
   flex-direction: row;
-  
-  
   width: 100%;
   position: relative;
 }
 
 .button-qr {
-  margin: auto;
-  padding: 13px 10px;
+  margin: auto auto auto 9%;
+  padding: 10px 30px; 
+  height: 30px;
   border-radius: 25px;
-  width: 50%;
+  width: 10%;
   text-align: center;
+  background-color: transparent;
+  color: #ff00d2;
+  border: 1px solid ;
 }
 
 .buttons-container-qr a {
@@ -165,17 +144,18 @@ section {
 
 .header-QR {
   font-family: Grotta !important;
-  font-size: 2em;
-  margin-right: auto;
 
+  font-size: 2.7em;
+    margin: auto auto auto 7%;
 
 }
 
-.QR-text {
+.QR-text-mobile {
   width: 42%;
+  color:white;
   margin:auto;
   font-size: small;
-  
+  display: none;
   font-weight: 200;
 }
 
@@ -192,7 +172,7 @@ section {
   overflow-x: scroll;
   height: 100vh;
 
-  background-image: url("./Assets/fondo\ menú\ mobile\ entero.png");
+  background-image: url("./Assets/fondo-web.png");
   background-position: center;
   background-repeat: repeat;
   background-attachment: local;
@@ -267,6 +247,7 @@ h6 {
 #arrow-right {
   position: absolute;
   right: 10px;
+  color:white;
   margin: auto;
   width: 10px;
   z-index: 3;
@@ -283,29 +264,80 @@ h6 {
 }
 .carrousel-section {
   min-width: 100vw;
-}
+} 
+ 
+ .img-qr {
+    width: calc( 200px + 5vw ) ;
+    margin: auto auto auto 0;
+    /* padding-top: 30px; */
+  }
+
+
+  .header-QR-mobile {
+    font-size: 2.4em !important;
+    color:white;
+     margin-right: auto;
+     margin-left:6%;
+     margin-top: auto;
+     margin-bottom:auto;
+      display: none;
+  }
+
+ .QR-desktop{
+   display: flex;
+   flex-direction: column;
+   width: 30%;
+   margin: auto;
+   text-align:left;
+ }
+ .QR-desktop *{
+   margin-right: auto;
+  font-size: 1.7em;
+ }
+
+ 
+
+ 
+  .benefit-list {
+    padding: 0px 15px;
+  }
+  .benefit-list li {
+    font-size: 1em;
+  }
 
 /*  ///////////////////////////////////////////////////// NOSOTROS  ///////////////////////////////// */
 /*  //////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+.Nosotros {
+  margin: 10% auto;
+  padding-top: 10%;
+  height: 100vh;
+  max-width: 90vw;
+  align-self: baseline;
+}
+
+
 .nosotres-texto {
   font-family: OPTIImprovNewWideNine;
   color: black;
-  margin: 20px;
+  word-wrap: break-word;
+  letter-spacing: 0.08em;
+  line-height: 1em;
   font-size: 3em;
-  text-align: justify;
 }
 
 /*  ///////////////////////////////////////////////////// CONTACTO  ///////////////////////////////// */
 /*  //////////////////////////////////////////////////////////////////////////////////////////////// */
 
 #Contacto {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-flow: row;
-  align-items: flex-start;
-  justify-content: space-around;
-  padding-top: 20%;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  grid-template-columns: 20% 20% 18% 18% 18%;
+  grid-template-rows: 25% 25%;
+  gap: 1px 1px;
+  grid-template-areas: ". . . . ." ". . . . .";
 }
 
 .contact-logo {
@@ -317,26 +349,20 @@ h6 {
   width: 60px;
 }
 
-.contact-column-2,
-.contact-column-3,
-.contact-column-4 {
+.social {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  flex-flow: column;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
 }
 
 #Contacto h3 {
   font-family: Grotta;
   font-size: 1.1em;
-}
-
-.contact-info-container {
-  display: flex;
-  flex-direction: row;
-  width: 60%;
-  justify-content: space-around;
-  margin-left: auto;
-  height: 40vh;
 }
 
 .grey {
@@ -367,7 +393,7 @@ h6 {
   align-items: center;
   width: var(--scroller-size);
   will-change: transform;
-  animation: text-scroller 15000ms linear 0ms normal infinite;
+  animation: text-scroller 7500ms linear 0ms normal infinite;
   text-indent: 0;
   justify-content: space-around;
   -webkit-transition: all 3000ms linear 0ms;
@@ -435,33 +461,9 @@ h6 {
 
   }
   .nosotres-texto {
-    font-family: OPTIImprovNewWideNine;
-    color: black;
-    font-size: 1.3em;
-    text-align: justify;
-  }
-
-  .grid-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0 auto;
-    list-style: url("./Assets/plus-list.png");
-  }
-
-  .grid-container > li {
-    align-self: baseline;
-    
-  }
-  #contacto {
-    /* position: relative; */
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-flow: column;
-    align-items: flex-start;
-    justify-content: space-around;
-    padding: 0;
+    font-size: 1.5em;
+    margin: 10% 2%;
+    padding: 10% 2%;
   }
 
   .contact-logo {
@@ -469,60 +471,115 @@ h6 {
     padding: 0 15%;
   }
 
-
   .contact-arrow {
-    width: 13%;
-    /* position: absolute;
-    top: 13%;
-    right: 12%; */
+    width: 50%;
   }
 
-  .contact-info-container {
-    display: flex;
-    flex-direction: column;
-    margin-left: 10%;
-    height: 400px;
-  }
-  .contact-general,
-  .contact-social,
-  .contact-studio {
-    padding-bottom: 30px;
-  }
-}
-
-/*  //////////////////////////////////////////QUERY DESKTOP////////////////////////////////////////////////////// */
-
-
-@media screen and (min-width: 450px) {
-  .img-qr {
+  .img-qr{
     width: 250px;
-    margin: 0 auto;
-    padding-top: 30px;
+    margin: auto ;
+  
+  
   }
+   .header-QR {
+      font-size: 1.8em !important;
+      margin: auto;
+  
+    }
+   
+    .grid-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 0 auto;
+      list-style: url("./Assets/plus-list.png");
+    }
+  
+    .grid-container > li {
+      align-self: baseline;
+  
+    }
+    .QR-desktop, .button-qr {
+      display:none;
+    }
 
-  .header-QR {
-    font-size: 2.4em !important;
-     margin-right: auto;
-     margin-left:6%;
-     margin-top: auto;
-     margin-bottom:auto;
-
-  }
-
- 
-
-  .QR-text {
-    font-size: 1.3em !important;
-  }
-  .benefit-list {
-    padding: 0px 15px;
-  }
-  .benefit-list li {
-    font-size: 1em;
-  }
 }
 
 /* //////////////////////// MEDIA QUERY IPHONE X   ////////////////////////*/
+@media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3) { 
+  .nosotres-texto {
+    font-size: 1.68em;
+    margin: 10% 2%;
+    padding: 10% 2%;
+  }
+    }
+
+/* //////////////////////// MEDIA QUERY IPHONE 5   ////*/
+
+@media screen and (device-aspect-ratio: 40/71) {
+  .nosotres-texto {
+    font-size: 1.35em;
+    margin: 10% 2%;
+    padding: 10% 2%;
+  }
+}
+
+/* //////////////////////// MEDIA QUERY IPHONEPLUS   ////*/
+
+@media only screen 
+and (min-device-width : 414px) 
+and (max-device-width : 736px) {
+    .nosotres-texto {
+    font-size: 1.65em;
+    margin: 10% 2%;
+    padding: 10% 2%;
+  }
+}
+
+/* //////////////////////// MEDIA QUERY GALAXY   ////*/
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) 
+  and (orientation: portrait) {
+    .nosotres-texto {
+    font-size: 1.5em;
+    margin: 9% 2%;
+    padding: 9% 2%;
+  }
+}
+
+/* //////////////////////// MEDIA QUERY IPADPRO  ////*/
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)
+and (-webkit-min-device-pixel-ratio: 2) {
+  .nosotres-texto {
+  font-size: 3.6em;
+  margin: 8% 2%;
+  padding: 8% 2%;
+}
+}
+
+
+/* //////////////////////// MEDIA QUERY 600  ////*/
+
+@media screen and (max-width: 600px) {
+
+  .QR-desktop, .button-qr  {
+     display: none;
+   }
+   .img-qr{
+     margin: auto;
+   }
+ .QR-text-mobile, .header-QR-mobile{
+   display: inline;
+ }
+ }
 
 /*  //////////////////////////////////////////LINK PREDETERMINED STYLE OVERWRITE////////////////////////////////////////////////////// */
 
