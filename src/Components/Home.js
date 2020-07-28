@@ -1,4 +1,4 @@
-import React,{useState, useEffect} from "react";
+import React,{ useState } from "react";
 import Sketch from "./Sketch.jsx";
 import Navbar from "./Navbar.js";
 import Nosotres from "./Nosotres.jsx"

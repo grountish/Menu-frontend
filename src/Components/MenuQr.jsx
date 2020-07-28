@@ -14,7 +14,7 @@ export default function MenuQr() {
   }
 
   return (
-    <section id="MenuQR" Name="MenuQR">
+    <section id="MenuQR" name="MenuQR">
       <div onClick={() => scrollToX()} id="arrow-right">
         &#65310;
       </div>
