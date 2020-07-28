@@ -1,16 +1,16 @@
-import React,{useState} from "react";
+import React,{useState, useEffect} from "react";
 import Sketch from "./Sketch.jsx";
 import Navbar from "./Navbar.js";
 import Nosotres from "./Nosotres.jsx"
 import MenuQr from "./MenuQr.jsx"
-import Contacto from "./Contacto.jsx"
+import Contact from "./Contact.jsx"
 import Services from "./Services.jsx"
 import "./../../src/Home.css";
 
-const param = window.location.pathname.length > 2;
+const param = window.location.pathname[0] === '#';
+
 
 const Home = () => {
-
   const [navAct,setNavAct]=useState(true);
 
   const setNavActFunction =(navAct)=>{
@@ -20,6 +20,7 @@ const Home = () => {
     <div className="home">
       <Navbar setNavAct={()=>setNavActFunction(navAct)} />
       <div style={{minHeight:'100vh'}}>
+
       {
        !param && navAct
         ? <Sketch />
@@ -27,10 +28,9 @@ const Home = () => {
       }
       </div>
       <Nosotres />
-      <MenuQr />
       <Services />
-      <Contacto />
-      
+      <MenuQr />
+      <Contact />
     </div>
   );
 };

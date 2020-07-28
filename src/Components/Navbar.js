@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Plus from './../Assets/plus.png'
-
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 const Navbar = (props) => {
   const [navClass, setNavClass] = useState(false);
@@ -10,26 +10,30 @@ const Navbar = (props) => {
    props.setNavAct();
   }
 
+  const hidenav = () => {
+    setNavClass(false)
+  }
+
   return (
     <div className="nav-content">
       <nav onClick={() => settingNav()} className={navClass ? "nav-active" : "nav"}>
         <div className="nav-links">
           <ul>
             <li>
-              <a onClick={() => settingNav()}  href="#Inicio">Inicio</a>
+              <AnchorLink onClick={() => hidenav()} href="#Inicio">Inicio</AnchorLink>
             </li>
             <li>
-              <a onClick={() => settingNav()} href="#Nosotros">Nosotros</a>
+              <AnchorLink onClick={() => hidenav()} href="#Nosotros">Quiénes somos</AnchorLink>
             </li>
           
             <li>
-              <a onClick={() => settingNav()} href="#MenuQR">Menu QR</a>
+              <AnchorLink onClick={() => hidenav()} href="#Servicios">Servicios</AnchorLink>
             </li>
             <li>
-              <a onClick={() => settingNav()} href="#Servicios">Servicios</a>
+              <AnchorLink onClick={() => hidenav()} href="#MenuQR">Menu QR</AnchorLink>
             </li>
             <li>
-              <a onClick={() => settingNav()} href="#contacto">Contacto</a>
+              <AnchorLink onClick={() => hidenav()} href="#Contacto">Contacto</AnchorLink>
             </li>
           </ul>
         </div>
