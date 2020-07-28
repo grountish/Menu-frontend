@@ -7,7 +7,7 @@ import Contact from "./Contact.jsx"
 import Services from "./Services.jsx"
 import "./../../src/Home.css";
 
-const param = window.location.pathname[0] === '#';
+const param = window.location.pathname.length > 2;
 
 
 const Home = () => {

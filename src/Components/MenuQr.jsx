@@ -14,7 +14,7 @@ export default function MenuQr() {
   }
 
   return (
-    <section id="MenuQR" name="MenuQR">
+    <section id="MenuQR" className="MenuQR">
       <div onClick={() => scrollToX()} id="arrow-right">
         &#65310;
       </div>
@@ -23,24 +23,35 @@ export default function MenuQr() {
           <div className="section-qr-container ">
             <div className="img-qr-container">
               {" "}
+              <div className="QR-desktop">
+                <h1 className="header-QR-desktop">
+                  Mi <br /> Qarta
+                </h1>
+                <p className="QR-text-desktop">
+                  {" "}
+                  Las cartas QR llegaron para protegernos de la amenaza del
+                  COVID-19. Conoce màs sobre la nueva opciòn que además cuida
+                  nuestro planeta.
+                </p>
+              </div>
               <img className="img-qr" src={mobileqr} alt="" />{" "}
             </div>
             <div className="buttons-caption-qr-container">
-              <h1 className="mi-qarta-header">
-                MI <br /> QARTA
+              <h1 className="header-QR-mobile">
+                Mi <br /> Qarta
               </h1>
-              <p className="QR-text">
+              <button className="button-qr">Ver Demo</button>
+              <p className="QR-text-mobile">
                 {" "}
                 Las cartas QR llegaron para protegernos de la amenaza del
-                COVID-19. Conoce más sobre la nueva opción que además cuida
+                COVID-19. Conoce màs sobre la nueva opciòn que además cuida
                 nuestro planeta.
               </p>
             
             </div>
           </div>
-         
           <div className="section-qr-container ">
-          <ul className="grid-container">
+            <ul className="grid-container">
               <li>Plan de pago mensual</li>
               <li>Diseño de carta interactiva</li>
               <li>Filtros de preferencia</li>

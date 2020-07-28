@@ -1,33 +1,33 @@
 {
   "files": {
-    "main.css": "/static/css/main.897403b2.chunk.css",
-    "main.js": "/static/js/main.cf2f8211.chunk.js",
-    "main.js.map": "/static/js/main.cf2f8211.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.2826f97d.js",
-    "runtime-main.js.map": "/static/js/runtime-main.2826f97d.js.map",
+    "main.css": "/static/css/main.a18e06a3.chunk.css",
+    "main.js": "/static/js/main.0187538e.chunk.js",
+    "main.js.map": "/static/js/main.0187538e.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.197ddeb0.js",
+    "runtime-main.js.map": "/static/js/runtime-main.197ddeb0.js.map",
     "static/js/2.8294158c.chunk.js": "/static/js/2.8294158c.chunk.js",
     "static/js/2.8294158c.chunk.js.map": "/static/js/2.8294158c.chunk.js.map",
     "static/js/3.e5292a40.chunk.js": "/static/js/3.e5292a40.chunk.js",
     "static/js/3.e5292a40.chunk.js.map": "/static/js/3.e5292a40.chunk.js.map",
-    "static/css/4.b7d045f3.chunk.css": "/static/css/4.b7d045f3.chunk.css",
+    "static/css/4.a99a9c05.chunk.css": "/static/css/4.a99a9c05.chunk.css",
     "static/js/4.c2663b92.chunk.js": "/static/js/4.c2663b92.chunk.js",
     "static/js/4.c2663b92.chunk.js.map": "/static/js/4.c2663b92.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.d2b441a51ed4fa92b1973392c69b50dc.js": "/precache-manifest.d2b441a51ed4fa92b1973392c69b50dc.js",
+    "precache-manifest.baef7824b1bcff9ebd0f3bb66a74436d.js": "/precache-manifest.baef7824b1bcff9ebd0f3bb66a74436d.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/4.b7d045f3.chunk.css.map": "/static/css/4.b7d045f3.chunk.css.map",
-    "static/css/main.897403b2.chunk.css.map": "/static/css/main.897403b2.chunk.css.map",
+    "static/css/4.a99a9c05.chunk.css.map": "/static/css/4.a99a9c05.chunk.css.map",
+    "static/css/main.a18e06a3.chunk.css.map": "/static/css/main.a18e06a3.chunk.css.map",
     "static/js/2.8294158c.chunk.js.LICENSE.txt": "/static/js/2.8294158c.chunk.js.LICENSE.txt",
-    "static/media/Home.css": "/static/media/fondo menú mobile entero.0503cbb5.png",
+    "static/media/Home.css": "/static/media/fondo-web.458fdcd1.png",
     "static/media/App.css": "/static/media/Tommaso.6a5c18cd.ttf",
     "static/media/logo-blanco.png": "/static/media/logo-blanco.7b882aef.png",
     "static/media/mobil-qr.png": "/static/media/mobil-qr.2cdd6161.png",
     "static/media/plus.png": "/static/media/plus.063b4119.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.2826f97d.js",
+    "static/js/runtime-main.197ddeb0.js",
     "static/js/2.8294158c.chunk.js",
-    "static/css/main.897403b2.chunk.css",
-    "static/js/main.cf2f8211.chunk.js"
+    "static/css/main.a18e06a3.chunk.css",
+    "static/js/main.0187538e.chunk.js"
   ]
 }

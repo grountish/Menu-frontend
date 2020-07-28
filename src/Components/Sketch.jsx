@@ -50,9 +50,9 @@ export default class Sketch extends React.Component {
             cnv.parent("#root");
         }
 
-        // p.windowResized = () => {
-        //     p.resizeCanvas(p.windowWidth, p.windowHeight);
-        // }
+        p.windowResized = () => {
+            p.resizeCanvas(p.windowWidth, p.windowHeight);
+        }
 
         p.draw = () => {
             if (p.windowWidth > 500) {

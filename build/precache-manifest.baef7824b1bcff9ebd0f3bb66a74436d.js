@@ -1,15 +1,15 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6a46b2cd2fa3fce41120cff237c26178",
+    "revision": "e57eca9efc22fc220089952c0f57de55",
     "url": "/index.html"
   },
   {
-    "revision": "849cf552703190686353",
-    "url": "/static/css/4.b7d045f3.chunk.css"
+    "revision": "5e327a24b7bb9d6ca3c3",
+    "url": "/static/css/4.a99a9c05.chunk.css"
   },
   {
-    "revision": "1102cfda8d91dad82654",
-    "url": "/static/css/main.897403b2.chunk.css"
+    "revision": "388f99e1eaf2814e4706",
+    "url": "/static/css/main.a18e06a3.chunk.css"
   },
   {
     "revision": "9475d008efa363c158d5",
@@ -24,20 +24,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/3.e5292a40.chunk.js"
   },
   {
-    "revision": "849cf552703190686353",
+    "revision": "5e327a24b7bb9d6ca3c3",
     "url": "/static/js/4.c2663b92.chunk.js"
   },
   {
-    "revision": "1102cfda8d91dad82654",
-    "url": "/static/js/main.cf2f8211.chunk.js"
+    "revision": "388f99e1eaf2814e4706",
+    "url": "/static/js/main.0187538e.chunk.js"
   },
   {
-    "revision": "a7cef8f52c971d01c1a2",
-    "url": "/static/js/runtime-main.2826f97d.js"
-  },
-  {
-    "revision": "f188d782ba9405accd3c2fe3422e56a4",
-    "url": "/static/media/Caparuido.f188d782.png"
+    "revision": "2e79f266d07b69172a8a",
+    "url": "/static/js/runtime-main.197ddeb0.js"
   },
   {
     "revision": "9158340e4c863c5dde275469df86c43d",
@@ -52,8 +48,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/Tommaso.6a5c18cd.ttf"
   },
   {
-    "revision": "0503cbb5a0ee8fafe9e689c43d3a6b73",
-    "url": "/static/media/fondo menú mobile entero.0503cbb5.png"
+    "revision": "458fdcd13b41396491c497201f4a7601",
+    "url": "/static/media/fondo-web.458fdcd1.png"
   },
   {
     "revision": "7b882aefab557607939d3e133684d906",
