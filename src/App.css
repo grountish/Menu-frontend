@@ -181,7 +181,9 @@ a:visited {
   font-size: 1.7em;
   margin: 2%;
   text-align: center;
+  justify-content: center;
 }
-canvas{
-  z-index: -4 !important;
+
+.buscador p {
+  margin-left: 2%;
 }

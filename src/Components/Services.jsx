@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function MenuQr() {
+export default function Services() {
   return (
     <section id="Servicios" className="services">
       <ul className="marquee-wrap">

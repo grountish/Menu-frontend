@@ -4,7 +4,7 @@ import arrow from "./../Assets/contact-arrow.png";
 
 export default function Contact() {
   return (
-    <section id="Contacto-container" className="contacto">
+    <section id="Contacto" className="contacto">
       <div>
         <img className="contact-logo" src={logo} alt="" />
       </div>

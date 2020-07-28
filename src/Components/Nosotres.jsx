@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Nosotres(){
+const Nosotres = () => {
     return (
         <section id="Nosotros" className="Nosotros">
         <p className="nosotres-texto">
@@ -13,3 +13,5 @@ export default function Nosotres(){
       </section>
     )
 }
+
+export default Nosotres;
