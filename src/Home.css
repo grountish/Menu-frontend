@@ -139,6 +139,8 @@ section {
 }
 .img-qr-container {
   text-align: center;
+  display: flex;
+  flex-direction: row;
 }
 
 .buttons-caption-qr-container {
@@ -152,11 +154,15 @@ section {
 }
 
 .button-qr {
-  margin: auto;
-  padding: 13px 10px;
-  border-radius: 25px;
-  width: 50%;
-  text-align: center;
+  margin: auto auto auto 9%;
+    padding: 13px 10px;
+    border-radius: 25px;
+    width: 10%;
+    height: 10%;
+    text-align: center;
+    background-color: transparent;
+    color: #ff00d2;
+    border: 1px solid ;
 }
 
 .buttons-container-qr a {
@@ -451,7 +457,10 @@ h6 {
 
   .grid-container > li {
     align-self: baseline;
-    
+
+  }
+  .QR-desktop {
+    display:none;
   }
   #contacto {
     /* position: relative; */
@@ -495,9 +504,9 @@ h6 {
 
 @media screen and (min-width: 450px) {
   .img-qr {
-    width: 250px;
-    margin: 0 auto;
-    padding-top: 30px;
+    width: 20vw;
+    margin: auto auto auto 0;
+    /* padding-top: 30px; */
   }
 
   .header-QR {
@@ -509,10 +518,24 @@ h6 {
 
   }
 
- 
+ .QR-desktop{
+   display: flex;
+   flex-direction: column;
+   width: 30%;
+   margin: auto;
+   text-align:left;
+ }
+ .QR-desktop *{
+   margin-right: auto;
+  font-size: 1.7em;
+ }
+
+ .desktop{
+   display: none;
+ }
 
   .QR-text {
-    font-size: 1.3em !important;
+    display: none;
   }
   .benefit-list {
     padding: 0px 15px;
