@@ -58,12 +58,12 @@ main {
 }
 
 .nav {
-  width: 100%;
+  width: 40%;
   height: 100vh;
   position: fixed;
   z-index: 3;
-  background-color:transparent;
-  left: -100%;
+  background-color: #000000;
+  left: -60%;
   transition: 400ms all;
 }
 
@@ -118,10 +118,34 @@ section {
 
 /*  ///////////////////////////////////////////////////// MENUQR  ///////////////////////////////// */
 /*  //////////////////////////////////////////////////////////////////////////////////////////////// */
+.img-qr{
+  width: 65%;
+  margin: 0 auto;
+  padding-top: 80px;
+
+}
 .img-qr-container {
   text-align: center;
-  display: flex;
-  flex-direction: row;
+  height: 80vh;
+}
+
+/*grid desktop contact*/
+
+.grid-container { height: 100%; margin: 0; }
+
+.grid-container {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: 
+    ". . ." ". . ." ". . .";
+}
+
+.grid-container > li {
+  text-align: center;
+  list-style-type: none;
 }
 
 .buttons-caption-qr-container {
@@ -129,56 +153,48 @@ section {
   display: flex;
   flex-direction: row;
   width: 100%;
+  height: 20vh;
   position: relative;
 }
 
 .button-qr {
-  margin: auto auto auto 9%;
-  padding: 10px 30px; 
-  height: 30px;
+  margin: auto;
+  padding: 13px 10px;
   border-radius: 25px;
-  width: 10%;
+  width: 50%;
   text-align: center;
-  background-color: transparent;
-  color: #ff00d2;
-  border: 1px solid ;
 }
 
 .buttons-container-qr a {
   text-decoration: none;
 }
 
-.header-QR {
+.mi-qarta-header {
   font-family: Grotta !important;
-
-  font-size: 2.7em;
-    margin: auto auto auto 7%;
-
+  font-size: 2em;
+  margin-right: auto;
 }
 
-.QR-text-mobile {
+.QR-text {
   width: 42%;
-  color:white;
   margin:auto;
-  font-size: small;
-  display: none;
+  font-size: small;  
   font-weight: 200;
 }
-
 
 .QR2 {
   background-color: transparent;
   color: #ff1369;
   border: 1px solid #ff1369;
 }
+
 .MenuQR *{
   box-sizing:content-box
 }
 .carrousel-container {
   overflow-x: scroll;
   height: 100vh;
-
-  background-image: url("./Assets/fondo-web.png");
+  background-image: url("./Assets/fondo\ menú\ mobile\ entero.png");
   background-position: center;
   background-repeat: repeat;
   background-attachment: local;
@@ -188,7 +204,6 @@ section {
 }
 
 .section-qr-container {
- 
   min-width: 100vw;
   max-width: 100vw;
   margin: 0;
@@ -207,23 +222,6 @@ section {
 .benefit-list {
   width: 231px;
   list-style: url("./Assets/plus-list.png");
-}
-
-.grid-container { height: 100%; margin: 0; }
-
-.grid-container {
-  display: grid;
-  align-items: center;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 1px 1px;
-  grid-template-areas: 
-    ". . ." ". . ." ". . .";
-}
-
-.grid-container > li {
-  text-align: center;
-  list-style-type: none;
 }
 
 .references-container {
@@ -253,10 +251,9 @@ h6 {
 #arrow-right {
   position: absolute;
   right: 10px;
-  color:white;
   margin: auto;
   width: 10px;
-  z-index: 3;
+  z-index: 1 !important;
   font-size: 1.3em;
   transform: translate(-20px, 93vh);
   cursor: pointer;
@@ -270,46 +267,7 @@ h6 {
 }
 .carrousel-section {
   min-width: 100vw;
-} 
- 
- .img-qr {
-    width: calc( 200px + 5vw ) ;
-    margin: auto auto auto 0;
-    /* padding-top: 30px; */
-  }
-
-
-  .header-QR-mobile {
-    font-size: 2.4em !important;
-    color:white;
-     margin-right: auto;
-     margin-left:6%;
-     margin-top: auto;
-     margin-bottom:auto;
-      display: none;
-  }
-
- .QR-desktop{
-   display: flex;
-   flex-direction: column;
-   width: 30%;
-   margin: auto;
-   text-align:left;
- }
- .QR-desktop *{
-   margin-right: auto;
-  font-size: 1.7em;
- }
-
- 
-
- 
-  .benefit-list {
-    padding: 0px 15px;
-  }
-  .benefit-list li {
-    font-size: 1em;
-  }
+}
 
 /*  ///////////////////////////////////////////////////// NOSOTROS  ///////////////////////////////// */
 /*  //////////////////////////////////////////////////////////////////////////////////////////////// */
@@ -328,7 +286,7 @@ h6 {
   font-family: OPTIImprovNewWideNine;
   color: black;
   word-wrap: break-word;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.04em;
   line-height: 1em;
   font-size: 3em;
 }
@@ -336,7 +294,7 @@ h6 {
 /*  ///////////////////////////////////////////////////// CONTACTO  ///////////////////////////////// */
 /*  //////////////////////////////////////////////////////////////////////////////////////////////// */
 
-#Contacto {
+#Contacto-container {
   display: grid;
   align-content: center;
   justify-content: center;
@@ -360,13 +318,22 @@ h6 {
   flex-flow: column;
 }
 
+<<<<<<< HEAD
+#contacto h3 {
+  font-family: Grotta;
+  font-size: 1.1em;
+}
+
+.contact-info-container {
+=======
 .bottom {
+>>>>>>> yolaresofia-master
   display: flex;
   flex-direction: row;
   align-items: flex-end;
 }
 
-#Contacto h3 {
+#Contacto-container h3 {
   font-family: Grotta;
   font-size: 1.1em;
 }
@@ -381,6 +348,44 @@ h6 {
 
 /*  //////////////////////////////////////////SERVICIOS////////////////////////////////////////////////////// */
 
+<<<<<<< HEAD
+  .marquee-wrap {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+  }
+  .marquee-wrap,
+  .marquee-wrap ul {
+    margin-left: 0;
+    padding-left: 0;
+    list-style-type: none;
+  }
+  .marquee-wrap > li {
+    display: flex;
+    align-items: center;
+    width: var(--scroller-size);
+    will-change: transform;
+    animation: text-scroller 15000ms linear 0ms normal infinite;
+    text-indent: 0;
+    justify-content: space-around;
+    -webkit-transition: all 3000ms linear 0ms;
+    -moz-transition: all 3000ms linear 0ms;
+    -ms-transition: all 3000ms linear 0ms;
+    -o-transition: all 3000ms linear 0ms;
+    transition: all 3000ms linear 0ms;
+    white-space: nowrap;
+  }
+  @keyframes text-scroller {
+    100% {
+      transform: translateX(calc(var(--scroller-size) * -0.5));
+    }
+  }
+  .marquee-wrap > li:nth-child(2) {
+    animation-direction: reverse;
+    color: blue;
+=======
 .marquee-wrap {
   position: relative;
   display: block;
@@ -413,13 +418,20 @@ h6 {
 @keyframes text-scroller {
   100% {
     transform: translateX(calc(var(--scroller-size) * -0.5));
+>>>>>>> yolaresofia-master
   }
-}
-.marquee-wrap > li:nth-child(2) {
-  animation-direction: reverse;
-  color: blue;
-}
 
+<<<<<<< HEAD
+  .marquee-wrap > li:nth-child(4) {
+    animation-direction: reverse;
+    color: blue;
+  }
+
+  .marquee-wrap > li:nth-child(6) {
+    animation-direction: reverse;
+    color: blue;
+  }
+=======
 .marquee-wrap > li:nth-child(4) {
   animation-direction: reverse;
   color: blue;
@@ -429,40 +441,41 @@ h6 {
   animation-direction: reverse;
   color: blue;
 }
+>>>>>>> yolaresofia-master
 
-.marquee-wrap > li > ul li {
-  display: inline-block;
-  padding: 0.5vh 4vw;
-  font-size: 13.2vh;
-  text-transform: uppercase;
-}
+  .marquee-wrap > li > ul li {
+    display: inline-block;
+    padding: 0.5vh 4vw;
+    font-size: 13.2vh;
+    text-transform: uppercase;
+  }
 
+<<<<<<< HEAD
+=======
 :root {
   --scroller-size: 150vw;
 }
 
 @media only screen and (max-width: 600px) {
+>>>>>>> yolaresofia-master
   :root {
-    --scroller-size: 200vw;
+    --scroller-size: 150vw;
   }
-}
+  @media only screen and (max-width: 600px) {
+    :root {
+      --scroller-size: 200vw;
+    }
+  }
 
-.marquee-wrap li {
-  font-family: Grotta;
-  color: lawngreen;
-  border-bottom: 1px solid lawngreen;
-}
+<<<<<<< HEAD
+  .marquee-wrap li {
+    font-family: Grotta;
+    color: lawngreen;
+    border-bottom: 1px solid lawngreen;
+  }
 
-/*  //////////////////////////////////////////LINK PREDETERMINED STYLE OVERWRITE////////////////////////////////////////////////////// */
-
-a:link {
-  text-decoration: none;
-}
-
-a:visited {
-  text-decoration: none;
-}
-
+=======
+>>>>>>> yolaresofia-master
 /*  //////////////////////////////////////////QUERY MOBIL////////////////////////////////////////////////////// */
 @media screen and (max-width: 450px) {
   .nav-links li a {
@@ -471,61 +484,91 @@ a:visited {
     font-weight: 300;
     color: whitesmoke;
   }
+ .header-QR {
+    font-size: 1.8em !important;
+    margin: auto;
 
+  }
   .nosotres-texto {
     font-size: 1.5em;
     margin: 10% 2%;
     padding: 10% 2%;
   }
 
+<<<<<<< HEAD
+  #contacto {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    /* flex-flow: column; */
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 0;
+    flex-flow: row;
+    padding-top: 30%;
+  }
+
   .contact-logo {
-    width: 220px;
+    width: 200px;
     padding: 0 15%;
   }
 
   .contact-arrow {
+    width: 13%;
+    position: absolute;
+    bottom: 30%;
+    left: 10%;
+  }
+
+  .contact-info-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    height: 400px;
     width: 50%;
+    justify-content: start;
   }
 
-  .img-qr{
-    width: 250px;
-    margin: auto ;
-  
-  
+  #contacto h3 {
+    font-size: small;
   }
-   .header-QR {
-      font-size: 1.8em !important;
-      margin: auto;
-  
-    }
-   
-    .grid-container {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      margin: 0 auto;
-      list-style: url("./Assets/plus-list.png");
-    }
-  
-    .grid-container > li {
-      align-self: baseline;
-  
-    }
-    .QR-desktop, .button-qr {
-      display:none;
-    }
 
-}
+  .contact-column-1 {
+    width: 50vw;
+  }
 
-/* //////////////////////// MEDIA QUERY IPHONE X   ////////////////////////*/
-@media only screen 
-    and (device-width : 375px) 
-    and (device-height : 812px) 
-    and (-webkit-device-pixel-ratio : 3) { 
-  .nosotres-texto {
-    font-size: 1.68em;
-    margin: 10% 2%;
-    padding: 10% 2%;
+  .contact-general,
+  .contact-social,
+  .contact-studio {
+    padding-bottom: 50px;
+=======
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    list-style: url("./Assets/plus-list.png");
+  }
+
+  .grid-container > li {
+    align-self: baseline;
+    
+  }
+
+  .mi-qarta-header {
+    font-family: Grotta !important;
+    font-size: 2.3em;
+    padding: 5%;
+  }
+
+  .header-QR {
+    font-size: 2.4em !important;
+     margin-right: auto;
+     margin-left:6%;
+     margin-top: auto;
+     margin-bottom:auto;
+
   }
     }
 
@@ -549,6 +592,7 @@ and (max-device-width : 736px) {
     margin: 10% 2%;
     padding: 10% 2%;
   }
+
 }
 
 /* //////////////////////// MEDIA QUERY GALAXY   ////*/
@@ -561,37 +605,22 @@ and (max-device-width : 736px) {
     font-size: 1.5em;
     margin: 9% 2%;
     padding: 9% 2%;
+>>>>>>> yolaresofia-master
   }
 }
 
-/* //////////////////////// MEDIA QUERY IPADPRO  ////*/
+/* //////////////////////// MEDIA QUERY IPADPRO   ////*/
 
 @media only screen 
 and (min-device-width : 768px) 
 and (max-device-width : 1024px)
 and (-webkit-min-device-pixel-ratio: 2) {
-  .nosotres-texto {
-  font-size: 3.6em;
-  margin: 8% 2%;
-  padding: 8% 2%;
+    .nosotres-texto {
+    font-size: 3.6em;
+    margin: 8% 2%;
+    padding: 8% 2%;
+  }
 }
-}
-
-
-/* //////////////////////// MEDIA QUERY 600  ////*/
-
-@media screen and (max-width: 600px) {
-
-  .QR-desktop, .button-qr  {
-     display: none;
-   }
-   .img-qr{
-     margin: auto;
-   }
- .QR-text-mobile, .header-QR-mobile{
-   display: inline;
- }
- }
 
 /*  //////////////////////////////////////////LINK PREDETERMINED STYLE OVERWRITE////////////////////////////////////////////////////// */
 
@@ -602,3 +631,7 @@ a:link {
 a:visited {
   text-decoration: none;
 }
+<<<<<<< HEAD
+
+=======
+>>>>>>> yolaresofia-master

@@ -62,6 +62,7 @@ export default class SearchComponent extends Component {
         <Searchbar
           filterOnChange={this.filterOnChange}
           inputValue={this.state.inputValue}
+          lang={this.props.lang}
         />
         <div className="iconos-filter">
           <div className="iconos-filter-text" onClick={() => this.filterByTag("vega")}>

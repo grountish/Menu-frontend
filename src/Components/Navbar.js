@@ -38,8 +38,10 @@ const Navbar = (props) => {
           </ul>
         </div>
       </nav>
-      <div className="toggle-btn" onClick={() => settingNav()}> {navClass ? <span style={{ fontFamily: "OPTIImprovNewWideNine", fontSize: "0.7em" }}></span> : <img style={{width:'30px'}} src={Plus} alt="a"/>}
-        
+      <div className="toggle-btn" onClick={() => settingNav()}> 
+       
+       <span className={navClass ? "bottonPlus1-active" : "bottonPlus" } ></span> 
+       <span className={navClass ? "bottonPlus2-active" : "bottonPlus2"}></span> 
       </div>
     </div>
   );
