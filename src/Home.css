@@ -241,7 +241,6 @@ section {
   display: flex;
   align-self: center;
   justify-content: center;
-  width: 60%;
   margin: auto;
   font-size: 1.3em;
   list-style-type: none;
@@ -524,7 +523,7 @@ h4 {
       flex-direction: column;
       justify-content: center;
       margin: 0 auto;
-      list-style: url("./Assets/plus-list.png");
+      list-style: url("./Assets/plus-list.png") !important;
     }
   
     .grid-container > li {
@@ -548,6 +547,7 @@ h4 {
     
   #Contacto > div {
       display: flex;
+      font-size: 0.75em
     }
   .createdby {
   grid-area: createdby;
@@ -594,6 +594,7 @@ justify-content: flex-end;
 .allrights {
   grid-area: allrights;
   align-self: flex-start;
+  margin-top: 15%
 }
 
 .header-QR {
