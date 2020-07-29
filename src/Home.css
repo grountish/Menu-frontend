@@ -7,6 +7,18 @@
   font-family: Grotta;
   src: url("./Assets/Grotta-Regular.ttf");
 }
+@font-face {
+  font-family: Agrandir-GrandHeavy;
+  src: url("./Assets/Agrandir-GrandHeavy.ttf");
+}
+@font-face {
+  font-family: Agrandir-GrandLight;
+  src: url("./Assets/Agrandir-GrandLight.ttf");
+}
+@font-face {
+  font-family: Agrandir-WideLight;
+  src: url("./Assets/Agrandir-WideLight.ttf");
+}
 
 * {
   margin: 0;
@@ -92,7 +104,7 @@ body {
 }
 
 .nav-links li a {
-  font-family: OPTIImprovNewWideNine;
+  font-family: Agrandir-GrandHeavy;
   text-decoration: none;
   font-weight: 300;
   color: whitesmoke;
@@ -155,10 +167,8 @@ section {
   color:white;
   margin:auto;
   font-size: 0.9em;
-  
   display: none;
   font-weight: 300;
-
 }
 
 
@@ -328,7 +338,7 @@ h4 {
 
 
 .nosotres-texto {
-  font-family: OPTIImprovNewWideNine;
+  font-family: Agrandir-GrandHeavy;
   color: black;
   word-wrap: break-word;
   letter-spacing: 0.08em;
@@ -372,7 +382,7 @@ h4 {
 }
 
 #Contacto h3 {
-  font-family: Grotta;
+  font-family: Agrandir-WideLight;
   font-size: 1.1em;
 }
 
@@ -393,12 +403,14 @@ h4 {
   width: 100vw;
   height: 100vh;
 }
+
 .marquee-wrap,
 .marquee-wrap ul {
   margin-left: 0;
   padding-left: 0;
   list-style-type: none;
 }
+
 .marquee-wrap > li {
   display: flex;
   align-items: center;
@@ -413,6 +425,8 @@ h4 {
   -o-transition: all 3000ms linear 0ms;
   transition: all 3000ms linear 0ms;
   white-space: nowrap;
+  font-family: Agrandir-WideLight;
+  color: lawngreen;
 }
 
 @keyframes text-scroller {
@@ -420,25 +434,28 @@ h4 {
     transform: translateX(calc(var(--scroller-size) * -0.5));
   }
 }
+
+.border {
+  border-top: 2px solid lawngreen;
+}
+
 .marquee-wrap > li:nth-child(2) {
   animation-direction: reverse;
-  color: blue;
 }
 
 .marquee-wrap > li:nth-child(4) {
   animation-direction: reverse;
-  color: blue;
 }
 
 .marquee-wrap > li:nth-child(6) {
   animation-direction: reverse;
-  color: blue;
+  border-bottom: 2px solid lawngreen;
 }
 
 .marquee-wrap > li > ul li {
   display: inline-block;
   padding: 0.5vh 4vw;
-  font-size: 13.2vh;
+  font-size: 11.6vh;
   text-transform: uppercase;
 }
 
@@ -450,12 +467,6 @@ h4 {
   :root {
     --scroller-size: 200vw;
   }
-}
-
-.marquee-wrap li {
-  font-family: Grotta;
-  color: lawngreen;
-  border-bottom: 1px solid lawngreen;
 }
 
 /*  //////////////////////////////////////////QUERY MOBIL////////////////////////////////////////////////////// */
