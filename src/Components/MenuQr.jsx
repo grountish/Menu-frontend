@@ -45,7 +45,7 @@ export default function MenuQr() {
               <h1 className="header-QR-mobile">
                 Mi <br /> Qarta
               </h1>
-              <Link to=""className="button-qr">Ver Demo</Link>
+              <Link to="/larovira"className="button-qr">Ver Demo</Link>
               <p className="QR-text-mobile">
                 {" "}
                 Las cartas QR llegaron para protegernos de la amenaza del
