@@ -9,18 +9,18 @@ export default function Contact() {
         <img className="contact-logo" src={logo} alt="" />
       </div>
       <div className="div-vacio1"></div>
-      <div className="general">
-        <h3>General</h3>
-        <a href="mailto:yolaresofia@gmail.com">
-          <h3 className="mail">hello@collabo.studio</h3>
-        </a>
-        <h3 className="grey">+34 665 895 314</h3>
-      </div>
       <div className="studio">
         <h3>Studio</h3>
-        <h3 className="grey">Torrent de les flors 158</h3>
+        <h3 className="grey">Calle No existe 1234</h3>
         <h3 className="grey">08024</h3>
         <h3 className="grey">Barcelona</h3>
+      </div>
+      <div className="general">
+        <h3>General</h3>
+        <a href="mailto:info.collabostudio@gmail.com">
+          <h3 className="mail">info.collabostudio@gmail.com</h3>
+        </a>
+        <h3 className="grey">+34 600 377 679</h3>
       </div>
       <div className="logo-flecha">
         <a href="#Inicio">

@@ -139,14 +139,15 @@ section {
 }
 
 .button-qr {
-  margin: auto auto auto 9%;
+  margin: auto auto auto 14%;
+  font-family: Agrandir-GrandLight;
+  font-size: 0.8em;
   padding: 10px 30px; 
-  height: 30px;
   border-radius: 25px;
   width: 10%;
   text-align: center;
   background-color: transparent;
-  color: #ff00d2;
+  color: lawngreen;
   border: 1px solid ;
 }
 
@@ -155,8 +156,19 @@ section {
 }
 
 .header-QR {
-  font-family: Agrandir-WideLight !important;
-  font-size: 2.7em;
+  font-family: Agrandir-GrandHeavy !important;
+  font-size: 2em;
+  margin:auto 7%;
+}
+
+.header-QR-desktop {
+  font-family: Agrandir-GrandHeavy;
+  font-size: 2.3em !important;
+}
+
+.QR-text-desktop {
+  font-family: Agrandir-WideLight;
+  font-size: 1em !important;
 }
 
 .QR-text-mobile {
@@ -216,6 +228,7 @@ section {
 .grid-container {
   display: grid;
   align-items: center;
+  justify-content: center;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 1px 1px;
@@ -225,6 +238,12 @@ section {
 
 .grid-container > li {
   text-align: center;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  width: 60%;
+  margin: auto;
+  font-size: 1.3em;
   list-style-type: none;
   font-family: Agrandir-WideLight;
 }
@@ -232,7 +251,7 @@ section {
 .references-container {
   margin: auto;
   background-color: white;
-  width: 65vw;
+  width: 40vw;
   padding: 40px 20px;
   border-radius: 25px;
   height: 50%;
@@ -245,15 +264,18 @@ section {
 }
 
 .references-container h1 {
- color: #7dff00;
+  color: #7dff00;
     text-decoration: underline;
-    font-size: 1.7em;
+    font-size: 1.5em;
     letter-spacing: 3px;
+    font-family: Agrandir-WideLight;
 }
 
 .references-container p,
 h4 {
   color: #3e3b3b;
+  font-style: italic;
+  font-family: Agrandir-WideLight;
 }
 
 .arrow-png-menuqr {
@@ -303,7 +325,7 @@ h4 {
    display: flex;
    flex-direction: column;
    width: 30%;
-   margin: auto;
+   margin: auto auto auto 15%;
    text-align:left;
  }
  .QR-desktop *{
@@ -509,7 +531,6 @@ h4 {
       align-self: baseline;
       margin:7px;
       font-size: 1em;
-  
     }
 
 
@@ -580,6 +601,14 @@ justify-content: flex-end;
   font-size: 2em !important;
  }
 
+ .references-container {
+  width: 60vw;
+}
+
+.references-container h1 {
+    font-size: 1.5em;
+    letter-spacing: 3px;
+}
 }
 
 /* //////////////////////// MEDIA QUERY IPHONE X   ////////////////////////*/
