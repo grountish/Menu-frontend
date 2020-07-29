@@ -20,7 +20,8 @@ export default function MenuQr() {
       <Router>
         <div id="carrousel-container" className="carrousel-container">
           <div className="section-qr-container ">
-            <div className="img-qr-container">
+            <div className="img-qr-container"> <a href="https://www.collabo.studio/larovira"><div className="QRbutton" >Ver DEMO</div></a>
+            
               {" "}
               <div className="QR-desktop">
                 <h1 className="header-QR-desktop">
@@ -41,6 +42,7 @@ export default function MenuQr() {
               }
             
             </div>
+            
             <div className="buttons-caption-qr-container">
               <h1 className="header-QR-mobile">
                 Mi <br /> Qarta

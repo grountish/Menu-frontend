@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Plus from './../Assets/plus.png'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 const Navbar = (props) => {
@@ -40,8 +39,8 @@ const Navbar = (props) => {
       </nav>
       <div className="toggle-btn" onClick={() => settingNav()}> 
        
-       <span className={navClass ? "bottonPlus1-active" : "bottonPlus" } ></span> 
-       <span className={navClass ? "bottonPlus2-active" : "bottonPlus2"}></span> 
+       <span className={navClass ? "abierto1" : "cerrado1" } ></span> 
+       <span className={navClass ? "abierto1" : "cerrado2"}></span> 
       </div>
     </div>
   );
