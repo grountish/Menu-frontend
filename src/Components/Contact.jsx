@@ -39,7 +39,7 @@ export default function Contact() {
         </a>
       </div>
       <div className="createdby bottom">
-        <h3 className="grey">Created by Collabo Studio</h3>
+        <h3 className="grey collabostudio">Created by Collabo Studio</h3>
       </div>
       <div className="allrights bottom">
         <h3 className="grey">2020 - All rights reserved</h3>

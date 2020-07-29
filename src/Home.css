@@ -516,19 +516,36 @@ h6 {
       gap: 1px 1px;
       grid-template-areas: "logo general" "div-vacio1 social" "div-vacio2 studio" "div-vacio3 createdby" "logo-flecha allrights";
     }
-    .createdby {
+  
+    
+  #Contacto > div {
+      display: flex;
+    }
+  .createdby {
   grid-area: createdby;
 }
+
+.collabostudio {
+  display: none;
+}
+
 .logo{
   grid-area: logo;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-bottom: 4%;
 }
 
 .general {
   grid-area: general;
+  flex-flow: column;
+  justify-content: flex-end;
 }
 
 .social {
   grid-area: social;
+  flex-flow: column;
+  justify-content: flex-end;
 }
 
 .div-vacio2 {
@@ -537,6 +554,8 @@ h6 {
 
 .studio {
   grid-area: studio;
+  flex-flow: column;
+justify-content: flex-end;
 }
 
 .logo-flecha {
@@ -546,6 +565,7 @@ h6 {
 
 .allrights {
   grid-area: allrights;
+  align-self: flex-start;
 }
 }
 
