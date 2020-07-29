@@ -164,8 +164,8 @@ section {
 
 .QR2 {
   background-color: transparent;
-  color: #ff1369;
-  border: 1px solid #ff1369;
+  color: lawngreen;
+  border: 1px solid lawngreen;
 }
 .MenuQR *{
   box-sizing:content-box
@@ -381,7 +381,7 @@ h4 {
 }
 
 .mail {
-  color: #ff1369 !important;
+  color: lawngreen !important;
 }
 
 /*  //////////////////////////////////////////SERVICIOS////////////////////////////////////////////////////// */
@@ -507,9 +507,6 @@ h4 {
       margin:7px;
       font-size: 1.3em;
   
-    }
-    .QR-desktop, .button-qr {
-      display:none;
     }
 
 

@@ -1,6 +1,6 @@
 import React from "react";
 import mobileqr from "./../Assets/mobil-qr.png";
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router, Link } from "react-router-dom";
 
 export default function MenuQr() {
   const scrollToX = () => {
