@@ -34,7 +34,13 @@ export default function MenuQr() {
                   nuestro planeta.
                 </p>
               </div>
-              <img className="img-qr" src={mobileqr} alt="" />{" "}
+
+              {
+                window.innerWidth > 500
+                ?   <img className="img-qr" src={mobileqr} alt="" />
+                :   <img className="img-qr-test" src={mobileqr} alt="" />
+              }
+            
             </div>
             <div className="buttons-caption-qr-container">
               <h1 className="header-QR-mobile">
@@ -81,7 +87,7 @@ export default function MenuQr() {
                   de comida que les gusten en su idioma.
                 </i>
               </p>
-              <h6>Mauri, de Polito. </h6>
+              <h4>Mauri, de Polito. </h4>
             </div>
             <div className="buttons-caption-qr-container">
               <h1 className="header-QR">
