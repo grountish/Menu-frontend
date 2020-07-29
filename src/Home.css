@@ -154,16 +154,18 @@ section {
   width: 42%;
   color:white;
   margin:auto;
-  font-size: small;
+  font-size: 0.9em;
+  
   display: none;
-  font-weight: 200;
+  font-weight: 300;
+
 }
 
 
 .QR2 {
   background-color: transparent;
-  color: #ff1369;
-  border: 1px solid #ff1369;
+  color: lawngreen;
+  border: 1px solid lawngreen;
 }
 .MenuQR *{
   box-sizing:content-box
@@ -171,7 +173,7 @@ section {
 .carrousel-container {
   overflow-x: scroll;
   height: 100vh;
-
+  max-height: 100vh;
   background-image: url("./Assets/fondo-web.png");
   background-position: center;
   background-repeat: repeat;
@@ -182,7 +184,7 @@ section {
 }
 
 .section-qr-container {
- 
+  max-height: 100vh;
   min-width: 100vw;
   max-width: 100vw;
   margin: 0;
@@ -223,7 +225,7 @@ section {
 .references-container {
   margin: auto;
   background-color: white;
-  width: 55vw;
+  width: 65vw;
   padding: 40px 20px;
   border-radius: 25px;
   height: 50%;
@@ -236,11 +238,14 @@ section {
 }
 
 .references-container h1 {
-  color: #ff1369;
+ color: #7dff00;
+    text-decoration: underline;
+    font-size: 1.7em;
+    letter-spacing: 3px;
 }
 
 .references-container p,
-h6 {
+h4 {
   color: #3e3b3b;
 }
 
@@ -271,7 +276,11 @@ h6 {
     margin: auto auto auto 0;
     /* padding-top: 30px; */
   }
-
+  .img-qr-test{
+    width: 270px;
+    height: 490px;
+    margin: auto;
+  }
 
   .header-QR-mobile {
     font-size: 2.4em !important;
@@ -372,7 +381,7 @@ h6 {
 }
 
 .mail {
-  color: #ff1369 !important;
+  color: lawngreen !important;
 }
 
 /*  //////////////////////////////////////////SERVICIOS////////////////////////////////////////////////////// */
@@ -457,11 +466,7 @@ h6 {
     font-weight: 300;
     color: whitesmoke;
   }
- .header-QR {
-    font-size: 1.8em !important;
-    margin: auto;
 
-  }
   .nosotres-texto {
     font-size: 1.5em;
     margin: 10% 2%;
@@ -484,7 +489,7 @@ h6 {
   
   }
    .header-QR {
-      font-size: 1.8em !important;
+      font-size: 2.6em !important;
       margin: auto;
   
     }
@@ -499,10 +504,9 @@ h6 {
   
     .grid-container > li {
       align-self: baseline;
+      margin:7px;
+      font-size: 1.3em;
   
-    }
-    .QR-desktop, .button-qr {
-      display:none;
     }
 
 
