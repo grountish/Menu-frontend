@@ -1,7 +1,7 @@
 import React from "react";
 import mobileqr from "./../Assets/mobil-qr.png";
 import { BrowserRouter as Router, Link } from "react-router-dom";
-
+import flecha from './../Assets/flecha.png'
 export default function MenuQr() {
   const scrollToX = () => {
     const carrouselContainer = document.getElementById("carrousel-container");
@@ -15,7 +15,7 @@ export default function MenuQr() {
   return (
     <section id="MenuQR" className="MenuQR">
       <div onClick={() => scrollToX()} id="arrow-right">
-        &#65310;
+        <img className="arrow-png-menuqr"src={flecha} alt=""/>
       </div>
       <Router>
         <div id="carrousel-container" className="carrousel-container">
@@ -24,7 +24,7 @@ export default function MenuQr() {
               {" "}
               <div className="QR-desktop">
                 <h1 className="header-QR-desktop">
-                  Mi <br /> Qarta
+                  MI <br /> QARTA
                 </h1>
                 <p className="QR-text-desktop">
                   {" "}
@@ -43,9 +43,9 @@ export default function MenuQr() {
             </div>
             <div className="buttons-caption-qr-container">
               <h1 className="header-QR-mobile">
-                Mi <br /> Qarta
+                MI <br /> QARTA
               </h1>
-              <Link to="/larovira"className="button-qr">Ver Demo</Link>
+              <Link to="/larovira" className="button-qr">Ver Demo</Link>
               <p className="QR-text-mobile">
                 {" "}
                 Las cartas QR llegaron para protegernos de la amenaza del
@@ -89,7 +89,7 @@ export default function MenuQr() {
             </div>
             <div className="buttons-caption-qr-container">
               <h1 className="header-QR">
-                QUIÉNES <br /> USAN MI QARTA
+                NUESTROS <br /> CLIENTES
               </h1>
             </div>
           </div>
