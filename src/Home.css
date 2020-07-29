@@ -339,7 +339,9 @@ h4 {
 /*  ///////////////////////////////////////////////////// CONTACTO  ///////////////////////////////// */
 /*  //////////////////////////////////////////////////////////////////////////////////////////////// */
 
-#Contacto {
+
+
+#Contacto{
   display: grid;
   align-content: center;
   justify-content: center;
@@ -356,17 +358,17 @@ h4 {
 
 .contact-arrow {
   width: 60px;
+  text-align: right;
 }
 
-.social {
-  display: flex;
-  flex-flow: column;
+.logo-flecha {
+  text-align: center;
 }
 
 .bottom {
   display: flex;
-  flex-direction: row;
-  align-items: flex-end;
+  flex-flow: column;
+  justify-content: flex-end;
 }
 
 #Contacto h3 {
@@ -510,6 +512,68 @@ h4 {
       display:none;
     }
 
+
+    #Contacto {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+      align-content: center;
+      justify-content: center;
+      max-width: 90%;
+      gap: 1px 1px;
+      grid-template-areas: "logo general" "div-vacio1 social" "div-vacio2 studio" "div-vacio3 createdby" "logo-flecha allrights";
+    }
+  
+    
+  #Contacto > div {
+      display: flex;
+    }
+  .createdby {
+  grid-area: createdby;
+}
+
+.collabostudio {
+  display: none;
+}
+
+.logo{
+  grid-area: logo;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-bottom: 4%;
+}
+
+.general {
+  grid-area: general;
+  flex-flow: column;
+  justify-content: flex-end;
+}
+
+.social {
+  grid-area: social;
+  flex-flow: column;
+  justify-content: flex-end;
+}
+
+.div-vacio2 {
+  grid-area: div-vacio2;
+}
+
+.studio {
+  grid-area: studio;
+  flex-flow: column;
+justify-content: flex-end;
+}
+
+.logo-flecha {
+  grid-area: logo-flecha;
+  width: 60%;
+}
+
+.allrights {
+  grid-area: allrights;
+  align-self: flex-start;
+}
 }
 
 /* //////////////////////// MEDIA QUERY IPHONE X   ////////////////////////*/
@@ -586,6 +650,43 @@ and (-webkit-min-device-pixel-ratio: 2) {
  .QR-text-mobile, .header-QR-mobile{
    display: inline;
  }
+ #Contacto {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "logo general" "div-vacio1 social" "div-vacio2 studio" "div-vacio3 createdby" "logo-flecha allrights";
+}
+.createdby {
+grid-area: createdby;
+}
+.logo{
+grid-area: logo;
+}
+
+.general {
+grid-area: general;
+}
+
+.social {
+grid-area: social;
+}
+
+.div-vacio2 {
+grid-area: div-vacio2;
+}
+
+.studio {
+grid-area: studio;
+}
+
+.logo-flecha {
+grid-area: logo-flecha;
+}
+
+.allrights {
+grid-area: allrights;
+}
  }
 
 /*  //////////////////////////////////////////LINK PREDETERMINED STYLE OVERWRITE////////////////////////////////////////////////////// */
