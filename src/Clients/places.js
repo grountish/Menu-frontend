@@ -27,7 +27,6 @@ function Places() {
       case "es":
         return "Buscar";
       default: return this.props.nombre;
-     
     }
   };
  

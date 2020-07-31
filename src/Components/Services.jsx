@@ -5,7 +5,7 @@ export default function Services() {
     <section id="Servicios" className="services">
       <ul className="marquee-wrap">
         <li>
-          <ul>
+          <ul className="border">
             <li>BRANDING</li>
             <li>DISEÑO GRÁFICO</li>
             <li>NAMING</li>
@@ -13,7 +13,7 @@ export default function Services() {
           </ul>
         </li>
         <li>
-          <ul>
+          <ul className="border">
             <li>COMMUNITY MANAGEMENT</li>
             <li>ESTRATEGIA</li>
             <li>POSICIONAMIENTO</li>
@@ -21,7 +21,7 @@ export default function Services() {
           </ul>
         </li>
         <li>
-          <ul>
+          <ul className="border">
             <li>DESARROLLO WEB</li>
             <li>RESPONSIVE WEB DESIGN</li>
             <li>CREATIVE CODING</li>
@@ -30,7 +30,7 @@ export default function Services() {
           </ul>
         </li>
         <li>
-          <ul>
+          <ul className="border">
             <li>FOTOGRAFÍA</li>
             <li>EDICIÓN</li>
             <li>FOTO PRODUCTO</li>
@@ -38,7 +38,7 @@ export default function Services() {
           </ul>
         </li>
         <li>
-          <ul>
+          <ul className="border">
             <li>PRODUCCION AUDIOVISUAL</li>
             <li>CURADURIA</li>
             <li>DISEÑO 3D</li>
@@ -46,7 +46,7 @@ export default function Services() {
           </ul>
         </li>
         <li>
-          <ul>
+          <ul className="border">
             <li>ARDUINO</li>
             <li>VISUALES</li>
             <li>INSTALACIONES INTERACTIVAS</li>

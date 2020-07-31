@@ -7,6 +7,18 @@
   font-family: Grotta;
   src: url("./Assets/Grotta-Regular.ttf");
 }
+@font-face {
+  font-family: Agrandir-GrandHeavy;
+  src: url("./Assets/Agrandir-GrandHeavy.ttf");
+}
+@font-face {
+  font-family: Agrandir-GrandLight;
+  src: url("./Assets/Agrandir-GrandLight.ttf");
+}
+@font-face {
+  font-family: Agrandir-WideLight;
+  src: url("./Assets/Agrandir-WideLight.ttf");
+}
 
 * {
   margin: 0;
@@ -92,7 +104,7 @@ body {
 }
 
 .nav-links li a {
-  font-family: OPTIImprovNewWideNine;
+  font-family: Agrandir-GrandHeavy;
   text-decoration: none;
   font-weight: 300;
   color: whitesmoke;
@@ -127,14 +139,15 @@ section {
 }
 
 .button-qr {
-  margin: auto auto auto 9%;
+  margin: auto auto auto 14%;
+  font-family: Agrandir-GrandLight;
+  font-size: 0.8em;
   padding: 10px 30px; 
-  height: 30px;
   border-radius: 25px;
   width: 10%;
   text-align: center;
   background-color: transparent;
-  color: #ff00d2;
+  color: lawngreen;
   border: 1px solid ;
 }
 
@@ -143,22 +156,27 @@ section {
 }
 
 .header-QR {
-  font-family: Grotta !important;
+  font-family: Agrandir-GrandHeavy !important;
+  font-size: 2em;
+  margin:auto 7%;
+}
 
-  font-size: 2.7em;
-    margin: auto auto auto 7%;
+.header-QR-desktop {
+  font-family: Agrandir-GrandHeavy;
+  font-size: 2.3em !important;
+}
 
+.QR-text-desktop {
+  font-family: Agrandir-WideLight;
+  font-size: 1em !important;
 }
 
 .QR-text-mobile {
   width: 42%;
   color:white;
-  margin:auto;
-  font-size: 0.9em;
-  
+  margin:auto auto auto 0;
+  font-size: 0.7em;
   display: none;
-  font-weight: 300;
-
 }
 
 
@@ -210,6 +228,7 @@ section {
 .grid-container {
   display: grid;
   align-items: center;
+  justify-content: center;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 1px 1px;
@@ -219,13 +238,19 @@ section {
 
 .grid-container > li {
   text-align: center;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  margin: auto;
+  font-size: 1.3em;
   list-style-type: none;
+  font-family: Agrandir-WideLight;
 }
 
 .references-container {
   margin: auto;
   background-color: white;
-  width: 65vw;
+  width: 40vw;
   padding: 40px 20px;
   border-radius: 25px;
   height: 50%;
@@ -238,15 +263,22 @@ section {
 }
 
 .references-container h1 {
- color: #7dff00;
+  color: #7dff00;
     text-decoration: underline;
-    font-size: 1.7em;
+    font-size: 1.5em;
     letter-spacing: 3px;
+    font-family: Agrandir-WideLight;
 }
 
 .references-container p,
 h4 {
   color: #3e3b3b;
+  font-style: italic;
+  font-family: Agrandir-WideLight;
+}
+
+.arrow-png-menuqr {
+  width: 1.2em;
 }
 
 #arrow-right {
@@ -254,10 +286,9 @@ h4 {
   right: 10px;
   color:white;
   margin: auto;
-  width: 10px;
   z-index: 3;
-  font-size: 1.3em;
-  transform: translate(-20px, 93vh);
+  font-size: 1.2em;
+  transform: translate(-10px, 90vh);
   cursor: pointer;
 }
 
@@ -283,12 +314,9 @@ h4 {
   }
 
   .header-QR-mobile {
-    font-size: 2.4em !important;
+    font-size: 2em !important;
     color:white;
-     margin-right: auto;
-     margin-left:6%;
-     margin-top: auto;
-     margin-bottom:auto;
+     margin: auto 5%;
       display: none;
   }
 
@@ -296,7 +324,7 @@ h4 {
    display: flex;
    flex-direction: column;
    width: 30%;
-   margin: auto;
+   margin: auto auto auto 15%;
    text-align:left;
  }
  .QR-desktop *{
@@ -328,7 +356,7 @@ h4 {
 
 
 .nosotres-texto {
-  font-family: OPTIImprovNewWideNine;
+  font-family: Agrandir-GrandHeavy;
   color: black;
   word-wrap: break-word;
   letter-spacing: 0.08em;
@@ -372,7 +400,7 @@ h4 {
 }
 
 #Contacto h3 {
-  font-family: Grotta;
+  font-family: Agrandir-WideLight;
   font-size: 1.1em;
 }
 
@@ -393,12 +421,14 @@ h4 {
   width: 100vw;
   height: 100vh;
 }
+
 .marquee-wrap,
 .marquee-wrap ul {
   margin-left: 0;
   padding-left: 0;
   list-style-type: none;
 }
+
 .marquee-wrap > li {
   display: flex;
   align-items: center;
@@ -413,6 +443,8 @@ h4 {
   -o-transition: all 3000ms linear 0ms;
   transition: all 3000ms linear 0ms;
   white-space: nowrap;
+  font-family: Agrandir-WideLight;
+  color: lawngreen;
 }
 
 @keyframes text-scroller {
@@ -420,25 +452,28 @@ h4 {
     transform: translateX(calc(var(--scroller-size) * -0.5));
   }
 }
+
+.border {
+  border-top: 2px solid lawngreen;
+}
+
 .marquee-wrap > li:nth-child(2) {
   animation-direction: reverse;
-  color: blue;
 }
 
 .marquee-wrap > li:nth-child(4) {
   animation-direction: reverse;
-  color: blue;
 }
 
 .marquee-wrap > li:nth-child(6) {
   animation-direction: reverse;
-  color: blue;
+  border-bottom: 2px solid lawngreen;
 }
 
 .marquee-wrap > li > ul li {
   display: inline-block;
   padding: 0.5vh 4vw;
-  font-size: 13.2vh;
+  font-size: 11.6vh;
   text-transform: uppercase;
 }
 
@@ -450,12 +485,6 @@ h4 {
   :root {
     --scroller-size: 200vw;
   }
-}
-
-.marquee-wrap li {
-  font-family: Grotta;
-  color: lawngreen;
-  border-bottom: 1px solid lawngreen;
 }
 
 /*  //////////////////////////////////////////QUERY MOBIL////////////////////////////////////////////////////// */
@@ -488,25 +517,19 @@ h4 {
   
   
   }
-   .header-QR {
-      font-size: 2.6em !important;
-      margin: auto;
-  
-    }
    
     .grid-container {
       display: flex;
       flex-direction: column;
       justify-content: center;
       margin: 0 auto;
-      list-style: url("./Assets/plus-list.png");
+      list-style: url("./Assets/plus-list.png") !important;
     }
   
     .grid-container > li {
       align-self: baseline;
       margin:7px;
-      font-size: 1.3em;
-  
+      font-size: 1em;
     }
 
 
@@ -524,6 +547,7 @@ h4 {
     
   #Contacto > div {
       display: flex;
+      font-size: 0.75em
     }
   .createdby {
   grid-area: createdby;
@@ -570,6 +594,21 @@ justify-content: flex-end;
 .allrights {
   grid-area: allrights;
   align-self: flex-start;
+  margin-top: 15%
+}
+
+.header-QR {
+  margin: auto auto auto 14%;
+  font-size: 2em !important;
+ }
+
+ .references-container {
+  width: 60vw;
+}
+
+.references-container h1 {
+    font-size: 1.5em;
+    letter-spacing: 3px;
 }
 }
 
@@ -646,7 +685,14 @@ and (-webkit-min-device-pixel-ratio: 2) {
    }
  .QR-text-mobile, .header-QR-mobile{
    display: inline;
+   font-family: Agrandir-WideLight;
  }
+
+ .header-QR {
+  margin: auto auto auto 14%;
+  font-size: 2em !important;
+ }
+
  #Contacto {
   display: grid;
   grid-template-columns: 1fr 1fr;
