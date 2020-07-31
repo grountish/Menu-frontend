@@ -32,7 +32,9 @@ function Places() {
  
 
   return (
-      <div className="App">
+    <div className="App version-movil">
+      <div className="contenedor-movil">
+      <div className="App-desktop-container">
          <Router>
           <Helmet>
             <style>{`body { background-color: ${foundPlace[0].backgroundColor}; min-height:100vh; font-family: ${foundPlace[0].font}; color: ${foundPlace[0].color}}`}</style>
@@ -61,7 +63,7 @@ function Places() {
             </div>
           )}
         </Router>
-      </div>
+      </div></div></div>
     );
   }
 
