@@ -176,7 +176,7 @@ a:visited {
   font-size: 1.6em;
   padding-bottom: 2px;
   margin: 1%;
-  border-bottom: 1px solid white; 
+  border-bottom: 1px solid white;
   cursor: pointer;
   text-decoration: none;
 }
@@ -192,4 +192,65 @@ a:visited {
 
 .buscador p {
   margin-left: 2%;
+}
+
+@media (min-width: 1025px) {
+  .version-movil {
+    z-index: 999999999;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 309px;
+    height: 550px;
+    transform: translate(-50%) translateY(-50%);
+    background-image: url(./Assets/movil.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+  }
+
+  .contenedor-movil {
+    margin: auto;
+    margin-top: 50px;
+    width: 245px;
+    height: 485px;
+    overflow-y: scroll;
+  }
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  .box {
+    height: 103px !important;
+  }
+  .headerCategory {
+    font-size: 45px !important;
+  }
+/* 
+  <div className="food-box">
+  <div className="left-box">
+    <h4>{nameFood()}</h4>
+    <p>{descriptionFood()}</p>
+  </div>
+<h4 className="h4-precio">€{this.props.precio}</h4> */
+
+.left-box h4 {
+ font-size: 30px;
+}
+.left-box p{
+  font-size: 22px;
+ }
+.food-box .h4-precio{
+  padding-top: 7px;
+  font-size: 24px ;
+}
+  .App-desktop-container {
+    width: 100%;
+    margin: auto;
+    overflow: auto;
+  }
+  .isoTipo {
+    width: 100%;
+  }
 }

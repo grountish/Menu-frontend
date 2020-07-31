@@ -133,8 +133,11 @@ export default class Sketch extends React.Component {
     
     render() {
         return (
-        <section ref={this.myRef} className="Inicio" id="Inicio">
+            <div id="Inicio" >
+                <section ref={this.myRef} className="Inicio" >
         </section>
+            </div>
+        
         )
     }
 }
