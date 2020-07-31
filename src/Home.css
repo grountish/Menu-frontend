@@ -324,8 +324,12 @@ h4 {
   height: 100vh;
   max-width: 90vw;
   align-self: baseline;
+ 
 }
-
+@keyframes example {
+  from {color:white}
+  to {color:black}
+}
 
 .nosotres-texto {
   font-family: OPTIImprovNewWideNine;
@@ -334,7 +338,11 @@ h4 {
   letter-spacing: 0.08em;
   line-height: 1em;
   font-size: 3em;
+  animation-name: example;
+  animation-duration: 0.6s;
 }
+
+
 
 /*  ///////////////////////////////////////////////////// CONTACTO  ///////////////////////////////// */
 /*  //////////////////////////////////////////////////////////////////////////////////////////////// */
@@ -471,6 +479,7 @@ h4 {
     font-size: 1.5em;
     margin: 10% 2%;
     padding: 10% 2%;
+
   }
 
   .contact-logo {
