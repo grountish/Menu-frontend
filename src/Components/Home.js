@@ -1,4 +1,4 @@
-import React,{ useState, useEffect } from "react";
+import React,{ useState} from "react";
 import Sketch from "./Sketch.jsx";
 import Navbar from "./Navbar.js";
 import Nosotres from "./Nosotres.jsx"
@@ -18,7 +18,7 @@ const Home = () => {
 
 
   return (
-<div>
+<div className="home">
       <Navbar setNavAct={()=>setNavActFunction(navAct)} />
       <div style={{minHeight:'100vh'}}>
       {
