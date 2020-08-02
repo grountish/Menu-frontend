@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Plus from './../Assets/plus.png'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 const Navbar = (props) => {
@@ -16,7 +15,7 @@ const Navbar = (props) => {
 
   return (
     <div className="nav-content">
-      <nav className={navClass ? "nav-active" : "nav"}>
+      <nav onClick={() => settingNav()} className={navClass ? "nav-active" : "nav"}>
         <div className="nav-links">
           <ul>
             <li>
@@ -25,6 +24,7 @@ const Navbar = (props) => {
             <li>
               <AnchorLink onClick={() => hidenav()} href="#Nosotros">Quiénes somos</AnchorLink>
             </li>
+          
             <li>
               <AnchorLink onClick={() => hidenav()} href="#Servicios">Servicios</AnchorLink>
             </li>
@@ -37,8 +37,10 @@ const Navbar = (props) => {
           </ul>
         </div>
       </nav>
-      <div className="toggle-btn" onClick={() => settingNav()}> {navClass ? <span style={{ fontFamily: "OPTIImprovNewWideNine", fontSize: "0.7em" }}></span> : <img style={{width:'30px'}} src={Plus} alt="a"/>}
-        
+      <div className="toggle-btn" onClick={() => settingNav()}> 
+       
+       <span className={navClass ? "abierto1" : "cerrado1" } ></span> 
+       <span className={navClass ? "abierto1" : "cerrado2"}></span> 
       </div>
     </div>
   );

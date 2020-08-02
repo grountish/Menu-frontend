@@ -35,7 +35,9 @@ function Places() {
  
 
   return (
-      <div className="places">
+    <div className="App version-movil">
+      <div className="contenedor-movil">
+      <div className="App-desktop-container">
          <Router>
          <Upselling />
           <Helmet>
@@ -65,7 +67,7 @@ function Places() {
             </div>
           )}
         </Router>
-      </div>
+      </div></div></div>
     );
   }
 

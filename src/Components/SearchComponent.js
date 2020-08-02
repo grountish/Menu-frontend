@@ -7,7 +7,7 @@ import "./../App.css";
 const param = window.location.pathname.slice(1)
 let placeName = param.split("/")[0]
 const foundPlace = foods.places.filter(x => x.place === param || x.place === placeName)
-console.log(foundPlace);
+
 const arrayOfMenu = [];
 foundPlace[0].categorias.map(x => arrayOfMenu.push(x.data))
 const flattened = arrayOfMenu.flat()
@@ -55,7 +55,6 @@ export default class SearchComponent extends Component {
       filterFoods: filteredFoods,
     });
 
-  console.log(foundPlace[0].color)
 
   };
 
@@ -101,6 +100,7 @@ export default class SearchComponent extends Component {
         <Searchbar
           filterOnChange={this.filterOnChange}
           inputValue={this.state.inputValue}
+          lang={this.props.lang}
         />
         <div className="iconos-filter">
           <div className="iconos-filter-text" onClick={() => this.filterByTag("vega")}>
