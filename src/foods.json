@@ -6,7 +6,7 @@
     "backgroundColor": "black",
     "font": "Tommaso",
     "color": "#ede1d1",
-    "categorias": [{
+    "categorias": [ {
       "nombre": "cerveses",
       "nombre_en":"beer",
       "nombre_es":"cervezas",
@@ -228,6 +228,218 @@
           "tags_es": "cerveza celiaco"
         }
       ]
+    },{
+      "nombre": "Aperitius",
+      "nombre_en":"Appetizers",
+      "nombre_es":"Aperitivos",
+      "imagen": "https://entrenosotros.consum.es/public/Image/2019/6/Tapas-CONSUM---Grande.png.jpg",
+      "data": [{
+          "nombre": "Patats xips",
+          "nombre_en": "Potatoe chips",
+          "nombre_es": "Patatas chips",
+          "descripcion": "",
+          "descripcion_en": "",
+          "descripcion_es": "",
+          "precio": "1.9 / 2.1",
+          "tags": ""
+        },
+        {
+          "nombre": "Musclos",
+          "nombre_en": "Mussels",
+          "nombre_es": "Mejillones",
+          "descripcion": "",
+          "descripcion_en": "",
+          "descripcion_es": "",
+          "precio": "4.9 / 5.1",
+          "tags": ""
+        },
+        {
+          "nombre": "Cloïses fines",
+          "nombre_en": "Fine clams",
+          "nombre_es": "Almejas finas",
+          "descripcion": "",
+          "descripcion_en": "",
+          "descripcion_es": "",
+          "precio": "9.9 / 10.1",
+          "tags": ""
+        },
+        {
+          "nombre": "Navalles",
+          "nombre_en": "Razor clams",
+          "nombre_es": "Navajas",
+          "descripcion": "",
+          "descripcion_en": "",
+          "descripcion_es": "",
+          "precio": "9.9 / 10.1",
+          "tags": ""
+        },
+        {
+          "nombre": "Escopinyes",
+          "nombre_en": "Cockles",
+          "nombre_es": "Berberechos",
+          "descripcion": "",
+          "descripcion_en": "",
+          "descripcion_es": "",
+          "precio": "10.3 / 10.5",
+          "tags": ""
+        },
+        {
+          "nombre": "Gilda de anxova",
+          "nombre_en": "Anchovy gilda",
+          "nombre_es": "Gilda de anchoa",
+          "descripcion": "",
+          "descripcion_en": "",
+          "descripcion_es": "",
+          "precio": "1.9 / 2.1",
+          "tags": ""
+        },
+        {
+          "nombre": "Gilda de seitó",
+          "nombre_en": "Anchovy gilda",
+          "nombre_es": "Gilda de boquerón",
+          "descripcion": "",
+          "descripcion_en": "",
+          "descripcion_es": "",
+          "precio": "1.9 / 2.1",
+          "tags": ""
+        },
+        {
+          "nombre": "Seitons amb vinagre",
+          "nombre_en": "Anchovies with vinegar",
+          "nombre_es": "Boquerones con vinagre",
+          "descripcion": "",
+          "descripcion_en": "",
+          "descripcion_es": "",
+          "precio": "3.8 / 4",
+          "tags": ""
+        },
+        {
+          "nombre": "Zamburiña",
+          "nombre_en": "Scallop",
+          "nombre_es": "Zamburiña",
+          "descripcion": "",
+          "descripcion_en": "",
+          "descripcion_es": "",
+          "precio": "5.9 / 6.2",
+          "tags": ""
+          },
+        {
+          "nombre": "Olives estil La Rovira",
+          "nombre_en": "La Rovira Olives",
+          "nombre_es": "Olivas La Rovira",
+          "descripcion": "",
+          "descripcion_en": "",
+          "descripcion_es": "",
+          "precio": "2.6 / 2.8",
+          "tags": ""
+          },
+        {
+          "nombre": "Variat d'olives",
+          "nombre_en": "Olives",
+          "nombre_es": "Variedad de olivas",
+          "descripcion": "",
+          "descripcion_en": "",
+          "descripcion_es": "",
+          "precio": "3 / 3.2",
+          "tags": ""
+          },
+        {
+          "nombre": "Banderilla",
+          "nombre_en": "Banderilla",
+          "nombre_es": "Banderilla",
+          "descripcion": "",
+          "descripcion_en": "",
+          "descripcion_es": "",
+          "precio": "1 / 1.2",
+          "tags": ""
+         },
+        {
+          "nombre": "Pebrotet farcit de formatge",
+          "nombre_en": "Peppers with cheese",
+          "nombre_es": "Pimientos relleno de queso",
+          "descripcion": "",
+          "descripcion_en": "",
+          "descripcion_es": "",
+          "precio": "1 / 1.2",
+          "tags": ""
+        },
+        {
+          "nombre": "Pebrotet farcit de tonyina",
+          "nombre_en": "Peppers with tuna",
+          "nombre_es": "Pimientos rellenos de atún",
+          "descripcion": "",
+          "descripcion_en": "",
+          "descripcion_es": "",
+          "precio": "1 / 1.2",
+          "tags": ""
+        },
+        {
+          "nombre": "Pebrotet farcit de tonyina",
+          "nombre_en": "Peppers with tuna",
+          "nombre_es": "Pimientos rellenos de atún",
+          "descripcion": "",
+          "descripcion_en": "",
+          "descripcion_es": "",
+          "precio": "1 / 1.2",
+          "tags": ""
+        },
+        {
+          "nombre": "Escarxofa marinada",
+          "nombre_en": "Marinated artichoke",
+          "nombre_es": "Alcachofa marinada",
+          "descripcion": "Unitat",
+          "descripcion_en": "Unity",
+          "descripcion_es": "Unidad",
+          "precio": "1.2 / 1.4",
+          "tags": ""
+        },
+        {
+          "nombre": "Albergínia de tonyina",
+          "nombre_en": "Tuna aubergines",
+          "nombre_es": "Berenjenas de atún",
+          "descripcion": "Unitat",
+          "descripcion_en": "Unity",
+          "descripcion_es": "Unidad",
+          "precio": "2.8 / 3",
+          "tags": ""
+        }
+    ]
+    },{
+      "nombre": "amanides",
+      "nombre_en":"salads",
+      "nombre_es":"ensaladas",
+      "imagen": "https://entrenosotros.consum.es/public/Image/2019/6/Tapas-CONSUM---Grande.png.jpg",
+      "data": [{
+          "nombre": "Amanida Sors",
+          "nombre_en": "Sors salad",
+          "nombre_es": "Ensalada Sors",
+          "descripcion": "Amanida de burrata amb rúcula, tomaquet sec i pinyons ",
+          "descripcion_en": "Burrata salad with arugula, sun-dried tomato and pine nuts",
+          "descripcion_es": "Ensalada de burrata con rúcula, tomate seco y piñones",
+          "precio": "8 / 8,2",
+          "tags": "ensalada salad amanida"
+        },
+        {
+          "nombre": "Amanida Vilafranca",
+          "nombre_en": "Vilafranca Salad",
+          "nombre_es": "Ensalada Vilafranca",
+          "descripcion": "Mesclum, cogombe, pastanaga, ceba, fruits secs i vinagreta de mostassa",
+          "descripcion_en": "Mesclum, cucumber, carrot, onion, nuts and mustard vinaigrette",
+          "descripcion_es": "Mesclum, pepino, zanahoria, cebolla, frutos secos y vinagreta de mostazas",
+          "precio": "6,5 / 6,7",
+          "tags": "ensalada salad amanida"
+        },
+        {
+          "nombre": "Amanida Encarnaciò",
+          "nombre_en": "Encarnaciò salad",
+          "nombre_es": "Ensalada Encarnacò",
+          "descripcion": "Amanida de tomàquet de pagès, ventresca de tonyina i ceba marinada",
+          "descripcion_en": "Peasant tomato salad, tuna belly and marinated onion",
+          "descripcion_es": "Ensalada de tomate de campo, ventresca de atún y cebolla marinada",
+          "precio":"8,2 / 8,4",
+          "tags": "tapeta vegetaria tapa vegetarian vegetariano"
+        }
+      ]
     }, {
       "nombre": "plantxats",
       "nombre_en":"sandwiches",
@@ -376,16 +588,6 @@
           "descripcion_en": "1 anchovies gilda, 1 seitó gilda, 1 f, 1 cheese stuffed pepper, 1 tuna stuffed pepper, 1 marinated artichoke",
           "descripcion_es": "1 gilda anchoa, 1 gilda boquerón, 1 banderilla, 1 pimiento relleno de queso, 1 pimiento relleno de atún, 1 alcachofa marinada",
           "precio": 8,
-          "tags": "tapeta celiac tapa celiaco"
-        },
-        {
-          "nombre": "Assortit d'olives",
-          "nombre_en": "Assorted Olives",
-          "nombre_es": "Variado de Olivas",
-          "descripcion": "La Rovira",
-          "descripcion_en": "La Rovira",
-          "descripcion_es": "La Rovira",
-          "precio": 3,
           "tags": "tapeta celiac tapa celiaco"
         },
         {
