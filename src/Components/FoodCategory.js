@@ -22,7 +22,7 @@ export default class FoodCategory extends Component {
       <div
         className="box"
         style={{
-          height: `calc(73vh/${foundPlace[0].categorias.length})`,
+          height: `calc(70vh/${foundPlace[0].categorias.length})`,
           alignItems: "center",
           display: "flex",
         }}
@@ -30,11 +30,10 @@ export default class FoodCategory extends Component {
         <h1
           className="headerCategory"
           style={{
-            fontSize: `calc(65vh/${foundPlace[0].categorias.length}/2.5)`,
+            fontSize: `calc(62vh/${foundPlace[0].categorias.length}/2.5)`,
             margin: "auto",
             color: foundPlace[0].color,
-          }}
-        >
+          }}>
           {nameFood()}
         </h1>
       </div>

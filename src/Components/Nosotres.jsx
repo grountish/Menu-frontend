@@ -13,5 +13,4 @@ const Nosotres = () => {
       </section>
     )
 }
-
 export default Nosotres;

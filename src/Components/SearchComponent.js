@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import foods from "../foods.json";
 import Foodbox from "./Foodbox";
 import Searchbar from "./Searchbar";
-
 import "./../App.css";
 
 const param = window.location.pathname.slice(1)
