@@ -54,12 +54,12 @@
 .search-bar {
   align-items: center;
   text-align: center;
-  margin: auto;
+  margin: auto; 
   display: block;
   margin: 0 1rem;
 }
 
-.places input {
+.input {
   color: whitesmoke;
   font-size: 1.2rem;
   padding: 10px;
@@ -181,6 +181,7 @@
   margin: 2%;
   text-align: center;
   justify-content: center;
+  background-color: black !important;
 }
 
 .buscador p {

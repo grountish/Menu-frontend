@@ -22,12 +22,12 @@ export default function MenuQr() {
             {" "}
             <div className="QR-desktop">
               <h1 className="header-QR-desktop">
-                MI <br /> QARTA
+                CARTA INTERACTIVA
               </h1>
               <p className="QR-text-desktop">
                 {" "}
-                Si las cartas QR llegaron para protegernos del Covid-19, Mi
-                Qarta llegó para ofrecer un servicio interactivo que hará que
+                Si las cartas QR llegaron para protegernos del Covid-19, 
+                nuestra carta interactiva llegó para ofrecer un servicio interactivo que hará que
                 tus clientes no sólo te recuerden por tus deliciosos platos.
                 Destácate con los filtros de preferencias y selección de idiomas
                 con esta opción que además cuida nuestro planeta.
@@ -41,7 +41,7 @@ export default function MenuQr() {
           </div>
           <div className="buttons-caption-qr-container">
             <h1 className="header-QR-mobile">
-              MI <br /> QARTA
+              CARTA <br/> INTERACTIVA
             </h1>
             <a className="button-qr" href="https://collabo.studio/larovira">
               Ver Demo
@@ -69,7 +69,7 @@ export default function MenuQr() {
           <div className="buttons-caption-qr-container">
             <h1 className="header-QR">
               BENEFICIOS
-              <br /> MI QARTA
+              <br /> CARTA <br/> INTERACTIVA
             </h1>
           </div>
         </div>

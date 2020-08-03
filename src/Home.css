@@ -337,10 +337,11 @@ h4 {
   }
 
   .header-QR-mobile {
-    font-size: 2em !important;
+    font-size: 1.1em !important;
     color:white;
-     margin: auto 5%;
-      display: none;
+    font-family: Agrandir-GrandHeavy !important;
+    margin: auto 5%;
+    display: none;
   }
 
  .QR-desktop{
@@ -738,7 +739,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
 
  .header-QR {
   margin: auto auto auto 14%;
-  font-size: 2em !important;
+  font-size: 1.2em !important;
  }
 
  #Contacto {

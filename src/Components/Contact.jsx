@@ -11,7 +11,7 @@ export default function Contact() {
       <div className="div-vacio1"></div>
       <div className="studio">
         <h3>Studio</h3>
-        <h3 className="grey">Calle No existe 1234</h3>
+        <h3 className="grey">Torrent de les flors 158</h3>
         <h3 className="grey">08024</h3>
         <h3 className="grey">Barcelona</h3>
       </div>

@@ -53,7 +53,6 @@ function Places() {
             <img src={foundPlace[0].iso} alt="logo" className="isoTipo" />
           </Link>
           <div
-            type="button"
             className="search-bar"
             onClick={() => setBuscar(!buscar)}
           >
