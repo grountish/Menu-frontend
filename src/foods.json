@@ -5,7 +5,7 @@
     "iso": "https://res.cloudinary.com/grountish/image/upload/v1595088760/larovira_diiku0.png",
     "backgroundColor": "black",
     "font": "Tommaso",
-    "color": "#ede1d1",
+    "color": "#FFF",
     "categorias": [ {
       "nombre": "cerveses",
       "nombre_en":"beer",
