@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Modal from "react-bootstrap/Modal";
 import "bootstrap/dist/css/bootstrap.min.css";
-import guineu from './../Assets/guineu.png'
+import guineu from './../Assets/bertus-white-ipa.jpg'
 
 const Upselling = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -27,7 +27,7 @@ const Upselling = () => {
             <Modal.Title>Guineu Txiripa</Modal.Title>
           </Modal.Header>
           <Modal.Body> <img src={guineu} className="guineu" alt=""/></Modal.Body>
-          <p style={{width: '50%', textAlign: 'center'}}>La IPA más introductiva de Guineu, que busca un buen equilibrio y bebibilidad. Se trata de una IPA, ligera, dotada de sutil amargura. Con final seco acompañado de un retrogusto cítrico. Notaremos un ligero punto a toques afrutados provenientes del Simcoe.</p>
+          <p style={{width: '50%', textAlign: 'center'}}>Cerveza de estilo IPA elaborada con trigo, junto a tres tipos de malta y varios lúpulos cítricos americanos. <br/> Ideal para acompañarla con unas bravas La Rovira o un bocadillo Martí!</p>
           <Modal.Footer>
            <div className="buttonDivUpselling"><button className="buttonUpselling" style={{color: 'black'}} onClick={hideModal}>cerrar</button></div> 
           </Modal.Footer></div>
