@@ -4,6 +4,10 @@
     src: url("./Assets/Tommaso.ttf");
 }
 
+button, input {
+    font-family: inherit;
+}
+
 .places ul {
     padding: 0;
 }
@@ -206,20 +210,22 @@ a:visited {
 /*------------------------- MODAL--------------------------*/
 .buttonDivUpselling {
     text-align: center;
-    margin-top: 5vh
 }
 
 .buttonUpselling {
     background: transparent;
-    border: 1px solid #ede1d1;
     border-radius: 3px;
-    color: #ede1d1;
-    font-size: 22px;
-    letter-spacing: 1px;
-    font-weight: 700;
-    line-height: 1;
+}
+
+.buttonClose {
+    font-size: 25px;
+    padding: 8px 16px;
+}
+
+.buttonSugerencia {
+    margin-top: 20px;
+    font-size: 20px;
     padding: 5px 13px;
-    text-transform: uppercase;
 }
 
 .guineu {
@@ -228,10 +234,58 @@ a:visited {
     margin: 0 auto !important;
 }
 
+.parentModal {
+    position: absolute;
+    display: flex;
+    margin: 0 13px;
+    top: 50vh;
+    transform: translate(0, -50%);
+    height: 60%;
+    animation: fadeIn ease forwards 0.7s;
+}
+
+.fadeOut {
+    animation: fadeOut ease forwards 0.5s;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+  
+    to {
+      opacity: 0;
+    }
+  }  
+
+.overlayModal {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+}
+
 .mymodal {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    color: black;
+    margin: auto;
+}
+
+.modalDivider {
+    width: 30%;
+    margin: 30px auto;
 }

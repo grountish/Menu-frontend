@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import foods from "../foods.json";
 
 const param = window.location.pathname.slice(1);
-const foundPlace = foods.places.filter((x) => x.place === param);
+const foundPlace = foods.places.find((x) => x.place === param);
 
 export default class FoodCategory extends Component {
   render() {
@@ -22,7 +22,7 @@ export default class FoodCategory extends Component {
       <div
         className="box"
         style={{
-          height: `calc(70vh/${foundPlace[0].categorias.length})`,
+          height: `calc(70vh/${foundPlace.categorias.length})`,
           alignItems: "center",
           display: "flex",
         }}
@@ -30,9 +30,9 @@ export default class FoodCategory extends Component {
         <h1
           className="headerCategory"
           style={{
-            fontSize: `calc(62vh/${foundPlace[0].categorias.length}/2.5)`,
+            fontSize: `calc(62vh/${foundPlace.categorias.length}/2.5)`,
             margin: "auto",
-            color: foundPlace[0].color,
+            color: foundPlace.color,
           }}>
           {nameFood()}
         </h1>

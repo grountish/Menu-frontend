@@ -21,7 +21,8 @@ export default class Searchbar extends Component {
           placeholder="Buscar..."
           style={{
             background: foundPlace[0].backgroundColor,
-            color: foundPlace[0].color
+            color: foundPlace[0].color,
+            zIndex: '-1'
           }}
         />
       </div>
