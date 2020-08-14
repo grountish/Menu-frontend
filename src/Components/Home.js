@@ -2,7 +2,6 @@ import React,{ useState} from "react";
 import Sketch from "./Sketch.jsx";
 import Navbar from "./Navbar.js";
 import Nosotres from "./Nosotres.jsx"
-import MenuQr from "./MenuQr.jsx"
 import Contact from "./Contact.jsx"
 import Services from "./Services.jsx"
 import "./../../src/Home.css";
@@ -29,7 +28,6 @@ const Home = () => {
       </div>
       <Nosotres />
       <Services />
-      <MenuQr />
       <Contact />
     </div>
   );
