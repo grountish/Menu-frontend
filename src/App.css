@@ -58,6 +58,14 @@
     display: block;
     margin: 0 1rem;
 }
+#checkboxes {
+    display: flex;
+    flex-direction: column;
+    width: 117px;
+    margin: 0 auto;
+    height: 99px;
+    overflow-y: scroll;
+  }
 
 .input {
     color: whitesmoke;

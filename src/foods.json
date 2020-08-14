@@ -417,7 +417,8 @@
           "descripcion_en": "Burrata salad with arugula, sun-dried tomato and pine nuts",
           "descripcion_es": "Ensalada de burrata con rúcula, tomate seco y piñones",
           "precio": "8 / 8,2",
-          "tags": "ensalada salad amanida"
+          "tags": "ensalada salad amanida",
+          "alergenos":[1,5]
         },
         {
           "nombre": "Amanida Vilafranca",
@@ -427,7 +428,8 @@
           "descripcion_en": "Mesclum, cucumber, carrot, onion, nuts and mustard vinaigrette",
           "descripcion_es": "Mesclum, pepino, zanahoria, cebolla, frutos secos y vinagreta de mostazas",
           "precio": "6,5 / 6,7",
-          "tags": "ensalada salad amanida"
+          "tags": "ensalada salad amanida",
+          "alergenos":[2]
         },
         {
           "nombre": "Amanida Encarnaciò",
@@ -437,7 +439,8 @@
           "descripcion_en": "Peasant tomato salad, tuna belly and marinated onion",
           "descripcion_es": "Ensalada de tomate de campo, ventresca de atún y cebolla marinada",
           "precio":"8,2 / 8,4",
-          "tags": "tapeta vegetaria tapa vegetarian vegetariano"
+          "tags": "tapeta vegetaria tapa vegetarian vegetariano",
+          "alergenos":[2]
         }
       ]
     }, {
@@ -455,7 +458,8 @@
           "precio": 7.5,
           "tags": "plantxat sandwitch bocadillo",
           "tags_en": "plantxat sandwitch bocadillo",
-          "tags_es": "plantxat sandwitch bocadillo"
+          "tags_es": "plantxat sandwitch bocadillo",
+          "alergenos":[3]
         },
         {
           "nombre": "Verdi",
