@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import CategoryList from "../Components/CategoryList";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Foodlist from "../Components/Foodlist";
+import { DataContext } from './../Context/Context'
 import SearchComponent from "../Components/SearchComponent";
 import foods from "../foods.json";
 import Helmet from "react-helmet";
@@ -13,13 +14,19 @@ import Upselling from "../Components/Upselling";
 
 const param = window.location.pathname.slice(1);
 const foundPlace =
-  foods.places.find((x) => x.place === param) || foods.places[0];
+foods.places.find((x) => x.place === param) || foods.places[0];
 const option1 = foundPlace.place || "";
 
 function Places() {
   const [buscar, setBuscar] = useState(false);
   const [lang, setLang] = useState("ca");
   const [isOpen, setIsOpen] = useState(false);
+  const [isOpenPopUp, setIsOpenPopUp] = useState(false);
+  const [allergyList, setAllergyList] = useState([])
+
+  const showAllergenPopUp = () => {
+    setIsOpenPopUp(!isOpenPopUp);
+  };
 
   const showModal = () => {
     setIsOpen(!isOpen);
@@ -35,7 +42,7 @@ function Places() {
       case "es":
         return "Buscar";
       default:
-        return this.props.nombre;
+        return "Buscar";
     }
   };
 
@@ -44,7 +51,9 @@ function Places() {
       <div className="contenedor-movil">
         <div className="App-desktop-container">
           <Router>
+          <DataContext.Provider value={{lang, buscar, showAllergenPopUp, isOpenPopUp, allergyList, setAllergyList}} >
             <Upselling isOpen={isOpen} showModal={showModal} />
+           
             <Helmet>
               <style>{`body { background-color: ${foundPlace.backgroundColor}; min-height:100vh; font-family: ${foundPlace.font}; color: ${foundPlace.color}}`}</style>
             </Helmet>
@@ -106,6 +115,7 @@ function Places() {
                 />
               </div>
             )}
+            </DataContext.Provider>
           </Router>
         </div>
       </div>

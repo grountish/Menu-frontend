@@ -62,15 +62,6 @@ button, input {
     display: block;
     margin: 0 1rem;
 }
-#checkboxes {
-    display: flex;
-    flex-direction: column;
-    width: 117px;
-    margin: 0 auto;
-    height: 99px;
-    overflow-y: scroll;
-  }
-
 .input {
     color: whitesmoke;
     font-size: 1.2rem;
@@ -106,6 +97,29 @@ button, input {
     margin: auto;
     width: 2.5rem;
 }
+
+/*   ---- ---- allergen popup ---- ------ */
+
+input[type="checkbox"] {
+    /* display: none; */
+    opacity: 0;
+}
+
+label{
+    padding: 5px 10px !important;
+    border: 1px solid black;
+    margin: 14px 10px !important;
+    min-height: 20px !important;
+    border-radius: 14px; 
+  }
+
+#checkboxes {
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
 
 /*   ---- ---FOOD BOX  ---- ------ */
 .food-box {
@@ -242,6 +256,20 @@ a:visited {
     transform: translate(0, -50%);
     height: 60%;
     animation: fadeIn ease forwards 0.7s;
+}
+
+.parentPopUp {
+    position: absolute;
+    display: flex;
+    margin: 0 13px;
+    top: 50vh;
+    transform: translate(0, -50%);
+    height: 60%;
+    animation: fadeIn ease forwards 0.7s;
+}
+
+.fadeOutPopUp {
+    animation: fadeOut ease forwards 0.5s;
 }
 
 .fadeOut {

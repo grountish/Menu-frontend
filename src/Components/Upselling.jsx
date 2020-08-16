@@ -19,8 +19,8 @@ const Upselling = ({ isOpen, showModal }) => {
   return (
     <>
       {isOpen ? (
-        <div className="overlayModal" onClick={toggleAnimation} style={{backgroundColor: foundPlace.overlayColor}}>
-          <div className={modalClass} style={{backgroundColor: foundPlace.modalBackgroundColor}} show={isOpen}>
+        <div className="overlayModal"  style={{backgroundColor: foundPlace.overlayColor}}>
+          <div className={modalClass} style={{backgroundColor: foundPlace.modalBackgroundColor}}>
             <div className="mymodal" style={{color: foundPlace.backgroundColor}}>
               <h1>Guineu Txiripa</h1>
               <hr className="modalDivider" />

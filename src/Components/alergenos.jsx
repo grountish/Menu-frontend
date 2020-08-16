@@ -1,44 +1,42 @@
-import React, { useState } from "react";
-
-
-
+import React, { useState, useContext } from "react";
+import foods from './../foods.json'
+import { DataContext } from './../Context/Context'
+const param = window.location.pathname.slice(1);
+const foundPlace = foods.places.find((x) => x.place === param);
 const arrayOfMenu = [];
-foundPlace[0].categorias.map(x => arrayOfMenu.push(x.data))
-const flattened = arrayOfMenu.flat()
+foundPlace.categorias.map((x) => arrayOfMenu.push(x.data));
+const flattened = arrayOfMenu.flat();
 
 const Alergenos = () => {
-    const [List, useList] = useState([]);
+
+  const { allergyList, setAllergyList } = useContext(DataContext)
 
 
-  listHandler = (e) => {
+  const listHandler = (e) => {
+    
     const { checked, name } = e.target;
+    console.log(checked, name);
     const iterablesAlerg = flattened.filter((x) => x.alergenos !== undefined);
     const elements = iterablesAlerg.filter(
       (el) => el.alergenos.indexOf(+name) === -1
     );
-    let newL = [...this.state.alergList];
+    let newL = [...allergyList];
     if (checked) {
       if (newL.length <= 0) {
         newL.push(elements);
       } else {
-        newL = [...this.state.alergList].filter(
-          (x) => x.alergenos.indexOf(+name) === -1
-        );
+        // returning a list of all the elements in the menu that do not contain that particular allergen
+        newL = [...allergyList].filter((x) => x.alergenos.indexOf(+name) === -1);
       }
-      this.setState({
-        alergList: [...new Set(newL.flat())],
-      });
+      setAllergyList([...new Set(newL.flat())]);
     } else {
       const elemsToPush = iterablesAlerg.filter(
         (el) => el.alergenos.indexOf(+name) !== -1
       );
       newL.push(elemsToPush);
-      this.setState({
-        alergList: [...new Set(newL.flat())],
-      });
+      setAllergyList([...new Set(newL.flat())]);
     }
   };
-
 
   return (
     <form>
@@ -47,7 +45,7 @@ const Alergenos = () => {
           <label htmlFor="1">
             <input
               type="checkbox"
-              onChange={(e) => this.listHandler(e)}
+              onChange={(e) => listHandler(e)}
               name="1"
             />
             Contiene Gluten
@@ -55,7 +53,7 @@ const Alergenos = () => {
           <label htmlFor="2">
             <input
               type="checkbox"
-              onChange={(e) => this.listHandler(e)}
+              onChange={(e) => listHandler(e)}
               name="2"
             />
             Crustáceos
@@ -63,7 +61,7 @@ const Alergenos = () => {
           <label htmlFor="3">
             <input
               type="checkbox"
-              onChange={(e) => this.listHandler(e)}
+              onChange={(e) => listHandler(e)}
               name="3"
             />
             Huevos
@@ -71,7 +69,7 @@ const Alergenos = () => {
           <label htmlFor="4">
             <input
               type="checkbox"
-              onChange={(e) => this.listHandler(e)}
+              onChange={(e) => listHandler(e)}
               name="4"
             />
             Pescado
@@ -79,7 +77,7 @@ const Alergenos = () => {
           <label htmlFor="5">
             <input
               type="checkbox"
-              onChange={(e) => this.listHandler(e)}
+              onChange={(e) => listHandler(e)}
               name="5"
             />
             Cacahuete
@@ -87,7 +85,7 @@ const Alergenos = () => {
           <label htmlFor="6">
             <input
               type="checkbox"
-              onChange={(e) => this.listHandler(e)}
+              onChange={(e) => listHandler(e)}
               name="6"
             />
             Soja
@@ -95,7 +93,7 @@ const Alergenos = () => {
           <label htmlFor="7">
             <input
               type="checkbox"
-              onChange={(e) => this.listHandler(e)}
+              onChange={(e) => listHandler(e)}
               name="7"
             />
             Lacteos
@@ -103,7 +101,7 @@ const Alergenos = () => {
           <label htmlFor="8">
             <input
               type="checkbox"
-              onChange={(e) => this.listHandler(e)}
+              onChange={(e) => listHandler(e)}
               name="8"
             />
             Frutos de Cáscara
@@ -111,7 +109,7 @@ const Alergenos = () => {
           <label htmlFor="9">
             <input
               type="checkbox"
-              onChange={(e) => this.listHandler(e)}
+              onChange={(e) => listHandler(e)}
               name="9"
             />
             Apio
@@ -119,7 +117,7 @@ const Alergenos = () => {
           <label htmlFor="10">
             <input
               type="checkbox"
-              onChange={(e) => this.listHandler(e)}
+              onChange={(e) => listHandler(e)}
               name="10"
             />
             Mostaza
@@ -127,7 +125,7 @@ const Alergenos = () => {
           <label htmlFor="11">
             <input
               type="checkbox"
-              onChange={(e) => this.listHandler(e)}
+              onChange={(e) => listHandler(e)}
               name="11"
             />
             Granos de Sésamo
@@ -135,7 +133,7 @@ const Alergenos = () => {
           <label htmlFor="12">
             <input
               type="checkbox"
-              onChange={(e) => this.listHandler(e)}
+              onChange={(e) => listHandler(e)}
               name="12"
             />
             Dióxido de azufre y sulfitos
@@ -143,7 +141,7 @@ const Alergenos = () => {
           <label htmlFor="13">
             <input
               type="checkbox"
-              onChange={(e) => this.listHandler(e)}
+              onChange={(e) => listHandler(e)}
               name="13"
             />
             Moluscos
@@ -151,18 +149,13 @@ const Alergenos = () => {
           <label htmlFor="14">
             <input
               type="checkbox"
-              onChange={(e) => this.listHandler(e)}
+              onChange={(e) => listHandler(e)}
               name="14"
             />
             Altramuces
           </label>
         </div>
       </div>
-      {
-        this.state.alergList.length > 0
-        ? this.state.alergList.map(x=><h1 key={x.nombre}>{x.nombre}</h1>)
-        : null
-      }
     </form>
   );
 };

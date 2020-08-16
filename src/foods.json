@@ -374,7 +374,8 @@
           "descripcion_en": "",
           "descripcion_es": "",
           "precio": "1 / 1.2",
-          "tags": ""
+          "tags": "",
+          "alergenos":[1,2]
         },
         {
           "nombre": "Pebrotet farcit de tonyina",
@@ -384,7 +385,8 @@
           "descripcion_en": "",
           "descripcion_es": "",
           "precio": "1 / 1.2",
-          "tags": ""
+          "tags": "",
+          "alergenos":[3]
         },
         {
           "nombre": "Escarxofa marinada",

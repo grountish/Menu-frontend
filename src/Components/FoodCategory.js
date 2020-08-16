@@ -1,23 +1,23 @@
-import React, { Component } from "react";
+import React from "react";
 import foods from "../foods.json";
 
 const param = window.location.pathname.slice(1);
 const foundPlace = foods.places.find((x) => x.place === param);
 
-export default class FoodCategory extends Component {
-  render() {
+
+const FoodCategory = ({lang, nombre, nombre_en, nombre_es}) => {
+
     const nameFood = () => {
-      switch (this.props.lang) {
+      switch (lang) {
         case "ca":
-          return this.props.nombre;
+          return nombre;
         case "en":
-          return this.props.nombre_en;
+          return nombre_en;
         case "es":
-          return this.props.nombre_es;
-        default: return this.props.nombre;
-       
-      }
-    };
+          return nombre_es;
+        default: return nombre;
+    }
+  }
     return (
       <div
         className="box"
@@ -39,4 +39,6 @@ export default class FoodCategory extends Component {
       </div>
     );
   }
-}
+
+
+export default FoodCategory;

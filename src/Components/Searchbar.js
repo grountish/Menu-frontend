@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import foods from "../foods.json";
 
 const param = window.location.pathname.slice(1)
@@ -6,18 +6,15 @@ let placeName = param.split("/")[0]
 const foundPlace = foods.places.filter(x => x.place === param || x.place === placeName)
 
 
-export default class Searchbar extends Component {
-
-  
-  render() {
+const SearchBar = ({inputValue, filterOnChange}) => {
     return (
       <div>
         <input
           className="input"
           autoFocus={true}
           type="text"
-          value={this.props.inputValue}
-          onChange={this.props.filterOnChange}
+          value={inputValue}
+          onChange={filterOnChange}
           placeholder="Buscar..."
           style={{
             background: foundPlace[0].backgroundColor,
@@ -28,4 +25,5 @@ export default class Searchbar extends Component {
       </div>
     );
   }
-}
+  
+export default SearchBar;
