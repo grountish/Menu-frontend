@@ -3,6 +3,20 @@
     font-family: Tommaso;
     src: url("./Assets/Tommaso.ttf");
 }
+body{
+    animation: fadeIn ease forwards 1.3s;
+
+}
+.fadeIn{
+    animation: fadeIn ease  0.4s;
+
+}
+button, input {
+    font-family: inherit;
+}
+a{
+    color:inherit;
+}
 
 .places ul {
     padding: 0;
@@ -58,14 +72,6 @@
     display: block;
     margin: 0 1rem;
 }
-#checkboxes {
-    display: flex;
-    flex-direction: column;
-    width: 117px;
-    margin: 0 auto;
-    height: 99px;
-    overflow-y: scroll;
-  }
 
 .input {
     color: whitesmoke;
@@ -154,6 +160,8 @@
 
 .headerCategory {
     text-transform: uppercase !important;
+    font-weight: 500;
+    letter-spacing: 1.2px;
 }
 
 .languages {
@@ -191,6 +199,11 @@
     background-color: black !important;
 }
 
+.homeAndSearch{
+    display:flex;
+    justify-content:space-evenly;
+}
+
 .buscador p {
     margin-left: 2%;
 }
@@ -206,20 +219,22 @@ a:visited {
 /*------------------------- MODAL--------------------------*/
 .buttonDivUpselling {
     text-align: center;
-    margin-top: 5vh
 }
 
 .buttonUpselling {
     background: transparent;
-    border: 1px solid #ede1d1;
     border-radius: 3px;
-    color: #ede1d1;
-    font-size: 22px;
-    letter-spacing: 1px;
-    font-weight: 700;
-    line-height: 1;
+}
+
+.buttonClose {
+    font-size: 7vw;
+    padding: .3rem .9rem;
+}
+
+.buttonSugerencia {
+    margin-top: 20px;
+    font-size: 20px;
     padding: 5px 13px;
-    text-transform: uppercase;
 }
 
 .guineu {
@@ -228,10 +243,256 @@ a:visited {
     margin: 0 auto !important;
 }
 
+.parentModal {
+    position: absolute;
+    display: flex;
+    margin: 0 13px;
+    top: 50vh;
+    transform: translate(0, -50%);
+    height: 75vh;
+    width: 90vw;
+    animation: fadeIn ease forwards 0.7s;
+}
+
+.fadeOutPopUp {
+    animation: fadeOut ease forwards 0.5s;
+}
+
+.fadeOut {
+    animation: fadeOut ease forwards 0.5s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+.overlayModal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
 .mymodal {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: black;
+    margin: auto;
+}
+
+.mymodal h1 {
+    font-size: 1.7em;
+    letter-spacing: .05em
+}
+
+.mymodal p {
+    font-size: 1em;
+    letter-spacing: .03em
+}
+
+.modalDivider {
+    width: 30%;
+    margin: 30px auto;
+}
+
+/*   ---- ---- allergen popup ---- ------ */
+.myPopUp {
+    margin: 10% auto;
+}
+
+.parentPopUp {
+    position: absolute;
+    display: flex;
+    margin: 0 13px;
+    top: 50vh;
+    transform: translate(0, -50%);
+    height: 83vh;
+    width: 93vw;
+    animation: fadeIn ease forwards 0.7s;
+}
+
+label {
+    padding: 0 10px;
+}
+
+.iconBoxContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    letter-spacing: 0.03em
+}
+
+.iconBoxContainerChecked {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    opacity: 0.4;
+}
+
+.iconBoxContainerChecked img {
+    width: 3.8rem
+}
+
+.iconBoxContainerChecked p {
+    font-size: 1.3em;
+    letter-spacing: 0.05em
+}
+
+.iconBoxContainer p {
+    font-size: 1.3em;
+}
+
+.allergenIcons {
+    width: 4rem;
+}
+
+.multiselect {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90vw;
+    height: 52vh;
+    justify-content: center;
+}
+
+.titleContainerPopUp {
+    padding-bottom: 5%;
+    text-align: center;
+}
+
+.titleContainerPopUp h3 {
+    font-size: 2.2em;
+    margin-bottom: 0.2em;
+    letter-spacing: 0.04em;
+}
+
+.titleContainerPopUp p {
+    font-size: 1.5em;
+    letter-spacing: 0.04em;
+}
+
+/*//////////////////queries bb////////////////*/
+
+@media only screen 
+    and (device-width : 375px) { 
+
+.allergenIcons {
+    width: 3.3rem;
+}
+
+
+.iconBoxContainerChecked img {
+    width: 3.3rem
+}
+
+
+.iconBoxContainerChecked p {
+    font-size: 1.2em;
+}
+
+.multiselect {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90vw;
+    height: 50vh;
+    justify-content: center;
+}
+
+
+.parentPopUp {
+    position: absolute;
+    display: flex;
+    margin: 0 13px;
+    top: 50vh;
+    transform: translate(0, -50%);
+    height: 90vh;
+    width: 93vw;
+    animation: fadeIn ease forwards 0.7s;
+}
+}
+
+
+@media only screen 
+    and (max-width : 360px) { 
+
+.allergenIcons {
+    width: 3rem;
+}
+
+.iconBoxContainerChecked img {
+    width: 2.8rem
+}
+
+.iconBoxContainerChecked p {
+    font-size: 1em;
+}
+
+
+.multiselect {
+    display: flex;
+    flex-wrap: wrap;
+    width: 93vw;
+    height: 50vh;
+    justify-content: center;
+}
+
+
+.parentPopUp {
+    position: absolute;
+    display: flex;
+    margin: 0 13px;
+    top: 50vh;
+    transform: translate(0, -50%);
+    height: 90vh;
+    width: 93vw;
+    animation: fadeIn ease forwards 0.7s;
+}
+
+.iconBoxContainer p {
+    font-size: 1em;
+}
+
+
+.titleContainerPopUp h3 {
+    font-size: 2em;
+    margin-bottom: 0.2em;
+    letter-spacing: 0.03em;
+}
+
+.titleContainerPopUp p {
+    font-size: 1.1em;
+    letter-spacing: 0.03em;
+}
+
+.titleContainerPopUp h3 {
+    font-size: 2.3em;
+    margin-bottom: 0.2em;
+    letter-spacing: 0.04em;
+}
+
+.titleContainerPopUp p {
+    font-size: 1.4em;
+    letter-spacing: 0.04em;
+}
+
 }

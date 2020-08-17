@@ -1,28 +1,26 @@
-import React, { Component } from "react";
-import foods from "../foods.json";
+import React, { useContext } from "react";
+import { DataContext } from './../Context/Context'
 
-const param = window.location.pathname.slice(1);
-const foundPlace = foods.places.filter((x) => x.place === param);
 
-export default class FoodCategory extends Component {
-  render() {
+const FoodCategory = ({ lang, nombre, nombre_en, nombre_es }) => {
+
+  const {foundPlace} = useContext(DataContext)
     const nameFood = () => {
-      switch (this.props.lang) {
+      switch (lang) {
         case "ca":
-          return this.props.nombre;
+          return nombre;
         case "en":
-          return this.props.nombre_en;
+          return nombre_en;
         case "es":
-          return this.props.nombre_es;
-        default: return this.props.nombre;
-       
-      }
-    };
+          return nombre_es;
+        default: return nombre;
+    }
+  }
     return (
       <div
         className="box"
         style={{
-          height: `calc(70vh/${foundPlace[0].categorias.length})`,
+          height: `calc(70vh/${foundPlace.categorias.length})`,
           alignItems: "center",
           display: "flex",
         }}
@@ -30,13 +28,15 @@ export default class FoodCategory extends Component {
         <h1
           className="headerCategory"
           style={{
-            fontSize: `calc(62vh/${foundPlace[0].categorias.length}/2.5)`,
+            fontSize: `calc(62vh/${foundPlace.categorias.length}/2.5)`,
             margin: "auto",
-            color: foundPlace[0].color,
+            color: foundPlace.color,
           }}>
           {nameFood()}
         </h1>
       </div>
     );
   }
-}
+
+
+export default FoodCategory;

@@ -1,20 +1,14 @@
-import React, { Component } from "react";
+import React, { useContext } from "react";
 import foods from "../foods.json";
 import FoodCategory from "./FoodCategory";
 import { Link } from "react-router-dom";
+import { DataContext } from './../Context/Context'
 
-export default class Foodlist extends Component {
-  state = {
-    foods: foods.places,
-    lang: "",
-  };
-
-  render() {
-    let placeName = this.props.match.params.place;
-    const foundPlace = foods.places.find((x) => x.place === placeName);
+const FoodList = ({ lang }) => {
+  const {foundPlace} = useContext(DataContext)
 
     return (
-      <div className="centered">
+      <div className="centered fadeIn">
         <ul className="list-food">
           {foundPlace.categorias.map((category, index) => {
             return (
@@ -23,12 +17,13 @@ export default class Foodlist extends Component {
                 key={index}
                 to={`${foundPlace.place}/category/${category.nombre}`}
               >
-                <FoodCategory {...category} lang={this.props.lang} />
+                <FoodCategory {...category} lang={lang} />
               </Link>
             );
           })}
         </ul>
       </div>
     );
-  }
 }
+
+export default FoodList;

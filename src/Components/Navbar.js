@@ -24,10 +24,6 @@ const Navbar = (props) => {
             <li>
               <AnchorLink onClick={() => hidenav()} href="#Nosotros">Quiénes somos</AnchorLink>
             </li>
-          
-            <li>
-              <AnchorLink onClick={() => hidenav()} href="#Servicios">Servicios</AnchorLink>
-            </li>
             <li>
               <AnchorLink onClick={() => hidenav()} href="#MenuQR">Carta Interactiva</AnchorLink>
             </li>
