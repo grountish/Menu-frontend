@@ -8,7 +8,7 @@ const FoodList = ({ lang }) => {
   const {foundPlace} = useContext(DataContext)
 
     return (
-      <div className="centered">
+      <div className="centered fadeIn">
         <ul className="list-food">
           {foundPlace.categorias.map((category, index) => {
             return (

@@ -99,7 +99,7 @@ const SearchComponent = (props) => {
   };
 
   return (
-    <div className="centered">
+    <div className="centered fadeIn">
       <Searchbar
         filterOnChange={filterOnChange}
         inputValue={inputValue}

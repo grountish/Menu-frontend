@@ -3,7 +3,14 @@
     font-family: Tommaso;
     src: url("./Assets/Tommaso.ttf");
 }
+body{
+    animation: fadeIn ease forwards 1.3s;
 
+}
+.fadeIn{
+    animation: fadeIn ease forwards 0.4s;
+
+}
 button, input {
     font-family: inherit;
 }

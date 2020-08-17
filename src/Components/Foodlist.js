@@ -24,7 +24,7 @@ const FoodList = ({ lang, match }) => {
     }
   };
   return (
-    <div className="centered">
+    <div className="centered fadeIn">
       <div className="list-add">
         <ul className="list-food">
           <h4 className="title-category">{nameFood()}</h4>
