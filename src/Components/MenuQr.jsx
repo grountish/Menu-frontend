@@ -1,6 +1,7 @@
 import React from "react";
 import mobileqr from "./../Assets/mobil-qr.png";
 import flecha from "./../Assets/flecha.png";
+
 export default function MenuQr() {
   const scrollToX = () => {
     const carrouselContainer = document.getElementById("carrousel-container");

@@ -1,40 +1,54 @@
-import React, { useState } from 'react'
-import Modal from "react-bootstrap/Modal";
-import "bootstrap/dist/css/bootstrap.min.css";
-import guineu from './../Assets/bertus-white-ipa.jpg'
+import React, { useState, useContext } from "react";
+import guineu from "./../Assets/bertus-white-ipa.jpg";
+import { DataContext } from './../Context/Context'
 
-const Upselling = () => {
-    const [isOpen, setIsOpen] = useState(false);
-  
-    const showModal = () => {
-      setIsOpen(true);
-    };
-  
-    const hideModal = () => {
-      setIsOpen(false);
-    };
-  
-    return (
-      <>
-      <div className="buttonDivUpselling"><button className="buttonUpselling" onClick={showModal}>Sugerencia del día</button></div>
-        
-        <Modal
-          show={isOpen}
-          onHide={hideModal}
-        >
-        <div className="mymodal">         
-        <Modal.Header>
-            <Modal.Title>Guineu Txiripa</Modal.Title>
-          </Modal.Header>
-          <Modal.Body> <img src={guineu} className="guineu" alt=""/></Modal.Body>
-          <p style={{width: '50%', textAlign: 'center'}}>Cerveza de estilo IPA elaborada con trigo, junto a tres tipos de malta y varios lúpulos cítricos americanos. <br/> Ideal para acompañarla con unas bravas La Rovira o un bocadillo Martí!</p>
-          <Modal.Footer>
-           <div className="buttonDivUpselling"><button className="buttonUpselling" style={{color: 'black'}} onClick={hideModal}>cerrar</button></div> 
-          </Modal.Footer></div>
 
-        </Modal>
-        </>
-    );
-  };
+const Upselling = ({ isOpen, showModal }) => {
+  const { foundPlace } = useContext(DataContext)
+  const [modalClass, setmodalClass] = useState("parentModal")
+  
+  const toggleAnimation = () => {
+    setTimeout(() => {
+      showModal()
+      setmodalClass("parentModal fadeIn")
+    }, 300);
+    setmodalClass("parentModal fadeOut")
+  }
 
-  export default Upselling;
+  return (
+    <>
+      {isOpen ? (
+        <div className="overlayModal"  style={{backgroundColor: foundPlace.overlayColor}}>
+          <div className={modalClass} style={{backgroundColor: foundPlace.modalBackgroundColor}}>
+            <div className="mymodal" style={{color: foundPlace.backgroundColor}}>
+              <h1>Guineu Txiripa</h1>
+              <hr className="modalDivider" />
+              <div>
+                <img src={guineu} className="guineu" alt="" />
+              </div>
+              <p style={{ width: "50%", textAlign: "center" }}>
+                Cerveza de estilo IPA elaborada con trigo, junto a tres tipos de
+                malta y varios lúpulos cítricos americanos. <br /> Ideal para
+                acompañarla con unas bravas La Rovira o un bocadillo Martí!
+              </p>
+              <hr className="modalDivider" />
+              <div>
+                <div className="buttonDivUpselling" style={{ border: foundPlace.borderButton, color: foundPlace.color}}>
+                  <button
+                    className="buttonUpselling buttonClose"
+                    style={{ color: foundPlace.backgroundColor}}
+                    onClick={toggleAnimation}
+                  >
+                    cerrar
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      ) : null}
+    </>
+  );
+};
+
+export default Upselling;
