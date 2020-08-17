@@ -1,11 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import guineu from "./../Assets/bertus-white-ipa.jpg";
-import foods from './../foods.json'
+import { DataContext } from './../Context/Context'
 
-const param = window.location.pathname.slice(1);
-const foundPlace = foods.places.find((x) => x.place === param);
 
 const Upselling = ({ isOpen, showModal }) => {
+  const { foundPlace } = useContext(DataContext)
   const [modalClass, setmodalClass] = useState("parentModal")
   
   const toggleAnimation = () => {

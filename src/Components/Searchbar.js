@@ -1,12 +1,9 @@
-import React from "react";
-import foods from "../foods.json";
-
-const param = window.location.pathname.slice(1)
-let placeName = param.split("/")[0]
-const foundPlace = foods.places.filter(x => x.place === param || x.place === placeName)
+import React, { useContext } from "react";
+import { DataContext } from "./../Context/Context";
 
 
 const SearchBar = ({inputValue, filterOnChange}) => {
+  const { foundPlace } = useContext(DataContext);
     return (
       <div>
         <input
@@ -17,8 +14,8 @@ const SearchBar = ({inputValue, filterOnChange}) => {
           onChange={filterOnChange}
           placeholder="Buscar..."
           style={{
-            background: foundPlace[0].backgroundColor,
-            color: foundPlace[0].color,
+            background: foundPlace.backgroundColor,
+            color: foundPlace.color,
             zIndex: '-1'
           }}
         />

@@ -1,12 +1,10 @@
-import React from "react";
-import foods from "../foods.json";
-
-const param = window.location.pathname.slice(1);
-const foundPlace = foods.places.find((x) => x.place === param);
+import React, { useContext } from "react";
+import { DataContext } from './../Context/Context'
 
 
-const FoodCategory = ({lang, nombre, nombre_en, nombre_es}) => {
+const FoodCategory = ({ lang, nombre, nombre_en, nombre_es }) => {
 
+  const {foundPlace} = useContext(DataContext)
     const nameFood = () => {
       switch (lang) {
         case "ca":

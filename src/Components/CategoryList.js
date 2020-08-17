@@ -1,12 +1,11 @@
-import React, { useState } from "react";
+import React, { useContext } from "react";
 import foods from "../foods.json";
 import FoodCategory from "./FoodCategory";
 import { Link } from "react-router-dom";
+import { DataContext } from './../Context/Context'
 
-const FoodList = ({lang, match}) => {
-  
-  let placeName = match.params.place;
-    const foundPlace = foods.places.find((x) => x.place === placeName);
+const FoodList = ({ lang }) => {
+  const {foundPlace} = useContext(DataContext)
 
     return (
       <div className="centered">
