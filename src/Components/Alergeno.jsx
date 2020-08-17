@@ -6,7 +6,6 @@ const [checked, setChecked] = useState(false)
   const clickHandler = (isChecked, number) => {
       setChecked(!checked)
       props.listHandler(isChecked, number)
-      console.log(isChecked, number);
   }
   
   const nameAlergeno = () => {

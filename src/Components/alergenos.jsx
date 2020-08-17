@@ -11,7 +11,6 @@ const Alergenos = () => {
   const flattened = arrayOfMenu.flat();
 
   const listHandler = (isChecked, number) => {
-    console.log(isChecked, number);
     const iterablesAlerg = flattened.filter((x) => x.alergenos !== undefined);
     const elements = iterablesAlerg.filter(
       (el) => el.alergenos.indexOf(+number) === -1

@@ -1,37 +1,22 @@
 import React, { useState, useContext } from "react";
-import foods from "../foods.json";
 import Foodbox from "./Foodbox";
 import Searchbar from "./Searchbar";
 import { DataContext } from "./../Context/Context";
 import AlergenosPopUp from "./AlergenosPopUp";
-import "./../App.css";
 
-let flattened;
-const param = window.location.pathname.slice(1);
-let placeName = param.split("/")[0];
-const foundPlace = foods.places.filter(
-  (x) => x.place === param || x.place === placeName
-);
-const arrayOfMenu = [];
-foundPlace[0].categorias.map((x) => arrayOfMenu.push(x.data));
-flattened = arrayOfMenu.flat();
 
-const SearchComponent = (props) => {
+const SearchComponent = () => {
   const [inputValue, setInputValue] = useState("");
+  const { lang, nombre, allergyList, flattened, foundPlace } = useContext(DataContext);
   const [filterFoods, setFilterFoods] = useState(flattened);
-  const { lang, nombre, allergyList } = useContext(DataContext);
 
   const [isOpenPopUp, setIsOpenPopUp] = useState();
   const [displayAllergList, setdisplayAllergList] = useState(false);
 
   const showAllergenPopUp = () => {
-    console.log(!isOpenPopUp);
     setIsOpenPopUp(!isOpenPopUp);
     setdisplayAllergList(true);
   };
-
-  console.log(allergyList);
-
   const filterOnChange = (e) => {
     setInputValue(e.target.value);
 
@@ -109,8 +94,8 @@ const SearchComponent = (props) => {
         <div className="iconos-filter-text" onClick={() => filterByTag("vega")}>
           <svg
             className="icono-svg"
-            stroke={foundPlace[0].color}
-            fill={foundPlace[0].color}
+            stroke={foundPlace.color}
+            fill={foundPlace.color}
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 48 48"
           >
@@ -129,8 +114,8 @@ const SearchComponent = (props) => {
         >
           <svg
             className="icono-svg"
-            stroke={foundPlace[0].color}
-            fill={foundPlace[0].color}
+            stroke={foundPlace.color}
+            fill={foundPlace.color}
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 48 48"
           >
@@ -182,8 +167,8 @@ const SearchComponent = (props) => {
         <div className="iconos-filter-text" onClick={showAllergenPopUp}>
           <svg
             className="icono-svg"
-            stroke={foundPlace[0].color}
-            fill={foundPlace[0].color}
+            stroke={foundPlace.color}
+            fill={foundPlace.color}
             viewBox="0 0 48 48"
           >
             <defs></defs>

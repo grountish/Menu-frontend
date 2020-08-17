@@ -8,7 +8,7 @@ body{
 
 }
 .fadeIn{
-    animation: fadeIn ease forwards 0.4s;
+    animation: fadeIn ease  0.4s;
 
 }
 button, input {

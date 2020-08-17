@@ -1,11 +1,12 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { DataContext } from "./../Context/Context";
 
 
 const SearchBar = ({inputValue, filterOnChange}) => {
-  const { foundPlace } = useContext(DataContext);
+  const { foundPlace, isOpen } = useContext(DataContext);
+  const [focus, setFocus] = useState('-1')
     return (
-      <div>
+      <div onClick={()=>setFocus('1')} onBlur={()=>setFocus('-1')}>
         <input
           className="input"
           autoFocus={true}
@@ -16,7 +17,7 @@ const SearchBar = ({inputValue, filterOnChange}) => {
           style={{
             background: foundPlace.backgroundColor,
             color: foundPlace.color,
-            zIndex: '-1'
+            zIndex: focus 
           }}
         />
       </div>

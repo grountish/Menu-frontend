@@ -13,9 +13,11 @@ import "./../App.css";
 import Upselling from "../Components/Upselling";
 
 const param = window.location.pathname.slice(1);
-const foundPlace =
-  foods.places.find((x) => x.place === param) || foods.places[0];
+const foundPlace =foods.places.find((x) => x.place === param) || foods.places[0];
 const option1 = foundPlace.place || "";
+const arrayOfMenu = [];
+foundPlace.categorias.map((x) => arrayOfMenu.push(x.data));
+let flattened = arrayOfMenu.flat();
 
 function Places() {
   const [buscar, setBuscar] = useState(false);
@@ -28,12 +30,11 @@ function Places() {
     setIsOpen(!isOpen);
   };
 
-  const categoryAndSearchSwitcher =()=>{
-    setBuscar(false)
+  const categoryAndSearchSwitcher = () => {
+    setBuscar(false);
     setShowBack(false);
-  }
+  };
 
-  console.log(window.location.pathname.split("/"));
   const search = () => {
     switch (lang) {
       case "ca":
@@ -60,6 +61,8 @@ function Places() {
                 setAllergyList,
                 param,
                 foundPlace,
+                flattened,
+                isOpen
               }}
             >
               <Upselling isOpen={isOpen} showModal={showModal} />
@@ -105,9 +108,7 @@ function Places() {
               </Link>
               <div className="homeAndSearch">
                 {showBack ? (
-                  <div
-                    onClick={categoryAndSearchSwitcher}
-                  >
+                  <div onClick={categoryAndSearchSwitcher}>
                     {" "}
                     <Link to={`/${option1}`}>
                       <h1>⌂</h1>
@@ -119,7 +120,7 @@ function Places() {
                   {buscar ? (
                     <div className="buscador">
                       <FontAwesomeIcon icon={faAngleLeft} />
-                      <p>{lang === "en" ? "Back" : "Volver"}</p>
+                      <p>{lang === "en" ? " Back" : " Volver"}</p>
                     </div>
                   ) : (
                     <div className="buscador">
