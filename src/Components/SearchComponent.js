@@ -8,12 +8,15 @@ let flattened;
 const param = window.location.pathname.slice(1);
 let placeName = param.split("/")[0];
 let eachCategory = param.split("/")[2];
+
 const foundPlace = foods.places.filter(
   (x) => x.place === param || x.place === placeName
 );
 if (eachCategory) {
+  console.log(eachCategory);
   flattened = foundPlace[0].categorias.eachCategory;
 } else {
+  console.log(eachCategory);
   const arrayOfMenu = [];
   foundPlace[0].categorias.map((x) => arrayOfMenu.push(x.data));
   flattened = arrayOfMenu.flat();
