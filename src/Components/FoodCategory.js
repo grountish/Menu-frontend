@@ -23,6 +23,8 @@ const FoodCategory = ({ lang, nombre, nombre_en, nombre_es }) => {
           height: `calc(70vh/${foundPlace.categorias.length})`,
           alignItems: "center",
           display: "flex",
+          borderTop: `1px solid ${foundPlace.color}`,
+          borderBottom: `1px solid ${foundPlace.color}`
         }}
       >
         <h1

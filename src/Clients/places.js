@@ -11,6 +11,9 @@ import { faAngleLeft } from "@fortawesome/free-solid-svg-icons";
 import { AiOutlineSearch } from "react-icons/ai";
 import "./../App.css";
 import Upselling from "../Components/Upselling";
+import home from './../Assets/home.svg'
+
+
 
 const param = window.location.pathname.slice(1);
 const foundPlace =foods.places.find((x) => x.place === param) || foods.places[0];
@@ -70,7 +73,14 @@ function Places() {
               <Helmet>
                 <style>{`body { background-color: ${foundPlace.backgroundColor}; min-height:100vh; font-family: ${foundPlace.font}; color: ${foundPlace.color}}`}</style>
               </Helmet>
-              <div className="buttonDivUpselling">
+                {showBack ? (
+                  <div onClick={categoryAndSearchSwitcher}>
+                    {" "}
+                    <Link to={`/${option1}`}>
+                      <img className="homeIcon" src={home} alt=""/>
+                    </Link>
+                  </div>
+                ) : <div className="buttonDivUpselling">
                 <button
                   style={{
                     border: foundPlace.borderButton,
@@ -81,7 +91,7 @@ function Places() {
                 >
                   Sugerencia del día
                 </button>
-              </div>
+              </div>}
               <div className="languages">
                 <div
                   className={lang === "ca" ? "perLanguage-act" : "perLanguage"}
@@ -102,25 +112,13 @@ function Places() {
                   ES
                 </div>
               </div>
-              <Link to={`/${option1}`}>
-                {" "}
                 <img src={foundPlace.iso} alt="logo" className="isoTipo" />
-              </Link>
               <div className="homeAndSearch">
-                {showBack ? (
-                  <div onClick={categoryAndSearchSwitcher}>
-                    {" "}
-                    <Link to={`/${option1}`}>
-                      <h1>⌂</h1>
-                    </Link>
-                  </div>
-                ) : null}
-
                 <div className="search-bar" onClick={() => setBuscar(!buscar)}>
                   {buscar ? (
                     <div className="buscador">
                       <FontAwesomeIcon icon={faAngleLeft} />
-                      <p>{lang === "en" ? " Back" : " Volver"}</p>
+                      <p>{lang === "en" ? "Back" : "Volver"}</p>
                     </div>
                   ) : (
                     <div className="buscador">

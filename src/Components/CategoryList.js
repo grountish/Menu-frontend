@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-import foods from "../foods.json";
 import FoodCategory from "./FoodCategory";
 import { Link } from "react-router-dom";
 import { DataContext } from './../Context/Context'
@@ -13,7 +12,7 @@ const FoodList = ({ lang }) => {
           {foundPlace.categorias.map((category, index) => {
             return (
               <Link
-                style={{ color: foods.color }}
+                style={{ color: foundPlace.color }}
                 key={index}
                 to={`${foundPlace.place}/category/${category.nombre}`}
               >
