@@ -5,8 +5,35 @@ import { DataContext } from './../Context/Context'
 
 const AlergenosPopUp = (props) => {
   const [modalPopUpClass, setmodalPopUpClass] = useState("parentPopUp")
-  const { foundPlace } = useContext(DataContext)
+  const { foundPlace, lang } = useContext(DataContext)
  
+  const titlePopUp = () => {
+    switch (lang) {
+      case "ca":
+        return "¿Tens alguna al·lèrgia?";
+      case "en":
+        return "Do you have any allergies?";
+      case "es":
+        return "¿Tienes alguna alergia?";
+      default: return "¿Tens alguna al·lèrgia?";
+     
+    }
+  };
+
+  const subtitlePopUp = () => {
+    switch (lang) {
+      case "ca":
+        return "Digueu-nos-ho, només us mostrem els plats adequats per a vosaltres";
+      case "en":
+        return "Let us know, so we only show you what is adequate for you";
+      case "es":
+        return "Indicanos asi solo te mostramos platos aptos para ti";
+      default: return "Indicanos asi solo te mostramos platos aptos para ti";
+     
+    }
+  };
+
+
   const togglePopUp = () => {
     setTimeout(() => {
       props.showAllergenPopUp();
@@ -22,8 +49,8 @@ const AlergenosPopUp = (props) => {
           <div className={modalPopUpClass} style={{backgroundColor: foundPlace.modalBackgroundColor}} >
             <div className="myPopUp" style={{color: foundPlace.backgroundColor}}>
             <div className="titleContainerPopUp">
-                <h3>¿Tienes alguna alergia?</h3>
-                <p>Indícanos asi solo te mostramos <br/> platos aptos para ti</p>            
+                <h3>{titlePopUp()}</h3>
+                <p>{subtitlePopUp()}</p>            
             </div>
 
                 <Alergenos />

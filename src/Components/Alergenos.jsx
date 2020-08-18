@@ -1,10 +1,11 @@
 import React, { useContext } from "react";
-import { DataContext } from "../Context/Context";
+import { DataContext } from "./../Context/Context";
 import AlergenosData from "./AlergenosData";
 import Alergeno from "./Alergeno";
 
 const Alergenos = () => {
   const { allergyList, setAllergyList, foundPlace, lang } = useContext(DataContext);
+
   const arrayOfMenu = [];
   foundPlace.categorias.map((x) => arrayOfMenu.push(x.data));
   const flattened = arrayOfMenu.flat();

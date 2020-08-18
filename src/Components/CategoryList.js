@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-import foods from "../foods.json";
 import FoodCategory from "./FoodCategory";
 import { Link } from "react-router-dom";
 import { DataContext } from './../Context/Context'

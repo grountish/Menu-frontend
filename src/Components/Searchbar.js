@@ -17,7 +17,8 @@ const SearchBar = ({inputValue, filterOnChange}) => {
           style={{
             background: foundPlace.backgroundColor,
             color: foundPlace.color,
-            zIndex: focus 
+            zIndex: focus,
+            borderBottom: `1px solid ${foundPlace.color}`
           }}
         />
       </div>

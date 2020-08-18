@@ -17,7 +17,6 @@ const [checked, setChecked] = useState(false)
       case "es":
         return props.name_es;
       default: return props.name;
-     
     }
   };
 

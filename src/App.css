@@ -22,6 +22,13 @@ a{
     padding: 0;
 }
 
+.homeIcon {
+    width: 7%;
+    margin: 4% auto;
+    text-align: center;
+    display: block;
+}
+
 .places h1 {
     margin: 0.4rem 0.2rem 0.8rem 0.2rem;
     font-weight: 100;
@@ -42,8 +49,8 @@ a{
 
 .box {
     width: 100% !important;
-    border-top: 1px solid whitesmoke;
-    border-bottom: 1px solid whitesmoke;
+    display: block;
+    margin: auto;
 }
 
 .isoTipo {
@@ -74,17 +81,14 @@ a{
 }
 
 .input {
-    color: whitesmoke;
     font-size: 1.2rem;
     padding: 10px;
     padding-bottom: 0.2rem;
-    background-color: black;
     position: relative;
     width: 80%;
     display: block;
     margin: auto;
     border: none;
-    border-bottom: 1px solid oldlace;
     outline: none;
 }
 
@@ -114,7 +118,6 @@ a{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    /* border-bottom: 1px solid whitesmoke; */
     margin: 0.2rem;
     padding: 0.5rem;
 }
@@ -122,7 +125,6 @@ a{
 .food-box h4 {
     font-family: Tommaso !important;
     font-style: normal !important;
-    color: #ede1d1;
     margin: 0;
     padding-left: 0.2rem;
     font-size: 2.3rem !important;
@@ -147,7 +149,6 @@ a{
     font-style: normal !important;
     text-align: right;
     font-size: 1.6rem !important;
-    color: #ede1d1;
     margin: 0.7rem;
     margin-bottom: 0.5rem;
     font-weight: 300;
@@ -175,7 +176,6 @@ a{
     font-size: 1.6em;
     padding-bottom: 2px;
     margin: 1%;
-    /* border-bottom: 1px solid white; */
     cursor: pointer;
     text-decoration: none;
 }
@@ -184,19 +184,15 @@ a{
     font-size: 1.6em;
     padding-bottom: 2px;
     margin: 1%;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid;
     cursor: pointer;
     text-decoration: none;
 }
 
 .buscador {
     display: flex;
-    flex-flow: row;
     font-size: 1.7em;
     margin: 2%;
-    text-align: center;
-    justify-content: center;
-    background-color: black !important;
 }
 
 .homeAndSearch{
@@ -249,8 +245,8 @@ a:visited {
     margin: 0 13px;
     top: 50vh;
     transform: translate(0, -50%);
-    height: 75vh;
-    width: 90vw;
+    height: 90vh;
+    width: 93vw;
     animation: fadeIn ease forwards 0.7s;
 }
 
@@ -302,18 +298,21 @@ a:visited {
 }
 
 .mymodal h1 {
-    font-size: 1.7em;
+    font-size: 2.4em;
     letter-spacing: .05em
 }
 
 .mymodal p {
-    font-size: 1em;
-    letter-spacing: .03em
+    font-size: 1.3em;
+    margin-top: 10%;
+    letter-spacing: .03em;
+    width: 50%;
+    text-align: center;
 }
 
 .modalDivider {
     width: 30%;
-    margin: 30px auto;
+    margin: 15px auto;
 }
 
 /*   ---- ---- allergen popup ---- ------ */
@@ -388,6 +387,9 @@ label {
 
 .titleContainerPopUp p {
     font-size: 1.5em;
+    width: 70%;
+    margin: auto;
+    text-align: center;
     letter-spacing: 0.04em;
 }
 
@@ -416,6 +418,19 @@ label {
     width: 90vw;
     height: 50vh;
     justify-content: center;
+}
+
+.mymodal h1 {
+    font-size: 2.5em;
+    letter-spacing: .05em
+}
+
+.mymodal p {
+    font-size: 1.4em;
+    margin-top: 10%;
+    letter-spacing: .03em;
+    width: 50%;
+    text-align: center;
 }
 
 
@@ -496,3 +511,4 @@ label {
 }
 
 }
+

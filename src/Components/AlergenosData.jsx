@@ -74,7 +74,7 @@ const AlergenosData = [
     number: 9,
     name: "Crustacis",
     name_eng:'Crustaceans',
-    name_es:'Crustaceos',
+    name_es:'Crustáceos',
     source: Crustaceos,
   },
   {
@@ -88,7 +88,7 @@ const AlergenosData = [
     number: 11,
     name: "Sesamo",
     name_eng:'Sesame',
-    name_es:'Sesamo',
+    name_es:'Sésamo',
     source: Sesamo,
   },
   {

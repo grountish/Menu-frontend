@@ -1,10 +1,8 @@
 import React, { useState, useContext } from "react";
-import guineu from "./../Assets/bertus-white-ipa.jpg";
 import { DataContext } from './../Context/Context'
 
-
 const Upselling = ({ isOpen, showModal }) => {
-  const { foundPlace } = useContext(DataContext)
+  const { foundPlace, lang } = useContext(DataContext)
   const [modalClass, setmodalClass] = useState("parentModal")
   
   const toggleAnimation = () => {
@@ -15,21 +13,36 @@ const Upselling = ({ isOpen, showModal }) => {
     setmodalClass("parentModal fadeOut")
   }
 
+
+  const switchLang = (parameter) => {
+    let parameterEs = `${parameter}_es`;
+    let parameterEn = `${parameter}_en`;
+    switch (lang) {
+      case "ca":
+        return foundPlace[parameter];
+      case "en":
+        return foundPlace[parameterEn];
+      case "es":
+        return foundPlace[parameterEs];
+      default:
+        return foundPlace[parameter]
+    }
+  };
+
+
   return (
     <>
       {isOpen ? (
         <div className="overlayModal"  style={{backgroundColor: foundPlace.overlayColor}}>
           <div className={modalClass} style={{backgroundColor: foundPlace.modalBackgroundColor}}>
             <div className="mymodal" style={{color: foundPlace.backgroundColor}}>
-              <h1>Guineu Txiripa</h1>
+              <h1>{switchLang('sugerenciaDelDiaTitulo')}</h1>
               <hr className="modalDivider" />
               <div>
-                <img src={guineu} className="guineu" alt="" />
+                <img src={foundPlace.sugerenciaDelDiaImg} className="guineu" alt="" />
               </div>
-              <p style={{ width: "50%", textAlign: "center" }}>
-                Cerveza de estilo IPA elaborada con trigo, junto a tres tipos de
-                malta y varios lúpulos cítricos americanos. <br /> Ideal para
-                acompañarla con unas bravas La Rovira o un bocadillo Martí!
+              <p>
+              {switchLang('sugerenciaDelDiaDescripcion')}
               </p>
               <hr className="modalDivider" />
               <div>
@@ -39,7 +52,7 @@ const Upselling = ({ isOpen, showModal }) => {
                     style={{ color: foundPlace.backgroundColor}}
                     onClick={toggleAnimation}
                   >
-                    cerrar
+                    {switchLang('sugerenciaDelDiaBoton')}
                   </button>
                 </div>
               </div>
