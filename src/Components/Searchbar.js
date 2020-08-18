@@ -3,7 +3,7 @@ import { DataContext } from "./../Context/Context";
 
 
 const SearchBar = ({inputValue, filterOnChange}) => {
-  const { foundPlace, isOpen } = useContext(DataContext);
+  const { foundPlace } = useContext(DataContext);
   const [focus, setFocus] = useState('-1')
     return (
       <div onClick={()=>setFocus('1')} onBlur={()=>setFocus('-1')}>

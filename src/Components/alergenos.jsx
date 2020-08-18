@@ -5,7 +5,6 @@ import Alergeno from "./Alergeno";
 
 const Alergenos = () => {
   const { allergyList, setAllergyList, foundPlace, lang } = useContext(DataContext);
-
   const arrayOfMenu = [];
   foundPlace.categorias.map((x) => arrayOfMenu.push(x.data));
   const flattened = arrayOfMenu.flat();

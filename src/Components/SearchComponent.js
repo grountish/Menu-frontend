@@ -2,28 +2,8 @@ import React, { useState, useContext } from "react";
 import Foodbox from "./Foodbox";
 import Searchbar from "./Searchbar";
 import { DataContext } from "./../Context/Context";
-import AlergenosPopUp from "./AlergenosPopUp";
+import AlergenosPopUp from "./../Components/AlergenosPopUp";
 
-<<<<<<< HEAD
-let flattened;
-const param = window.location.pathname.slice(1);
-let placeName = param.split("/")[0];
-let eachCategory = param.split("/")[2];
-
-const foundPlace = foods.places.filter(
-  (x) => x.place === param || x.place === placeName
-);
-if (eachCategory) {
-  console.log(eachCategory);
-  flattened = foundPlace[0].categorias.eachCategory;
-} else {
-  console.log(eachCategory);
-  const arrayOfMenu = [];
-  foundPlace[0].categorias.map((x) => arrayOfMenu.push(x.data));
-  flattened = arrayOfMenu.flat();
-}
-=======
->>>>>>> 93e31aab2628d8be45fcf7fd801facceb1b61c3f
 
 const SearchComponent = () => {
   const [inputValue, setInputValue] = useState("");
