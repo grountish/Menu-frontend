@@ -1,5 +1,5 @@
 import React, { useState, useContext  } from "react";
-import Alergenos from "./../Components/alergenos";
+import Alergenos from "./Alergenos";
 import { DataContext } from './../Context/Context'
 
 
