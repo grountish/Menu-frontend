@@ -7,7 +7,7 @@ import AlergenosPopUp from "./../Components/AlergenosPopUp";
 
 const SearchComponent = () => {
   const [inputValue, setInputValue] = useState("");
-  const { lang, nombre, allergyList, flattened, foundPlace } = useContext(DataContext);
+  const { lang, allergyList, flattened, foundPlace } = useContext(DataContext);
   const [filterFoods, setFilterFoods] = useState(flattened);
 
   const [isOpenPopUp, setIsOpenPopUp] = useState();

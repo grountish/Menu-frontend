@@ -15,7 +15,6 @@ import Upselling from "../Components/Upselling";
 import home from './../Assets/home.svg'
 
 
-
 const param = window.location.pathname.slice(1);
 const foundPlace =foods.places.find((x) => x.place === param) || foods.places[0];
 const option1 = foundPlace.place || "";
@@ -39,16 +38,18 @@ function Places() {
     setShowBack(false);
   };
 
-  const search = () => {
+  const switchLang = (parameter) => {
+   const nombreEs = `${parameter}_es`
+   const nombreEn = `${parameter}_en`
     switch (lang) {
       case "ca":
-        return "Buscar";
+        return foundPlace[parameter];
       case "en":
-        return "Search";
+        return foundPlace[nombreEn];
       case "es":
-        return "Buscar";
+        return foundPlace[nombreEs];
       default:
-        return "Buscar";
+        return foundPlace[parameter];
     }
   };
 
@@ -90,10 +91,12 @@ function Places() {
                   className="buttonUpselling buttonSugerencia"
                   onClick={showModal}
                 >
-                  Sugerencia del día
+                  {switchLang("sugerenciaButton")}
                 </button>
               </div>}
-              <div className="languages">
+              {
+                foundPlace.hasLang
+                ? <div className="languages">
                 <div
                   className={lang === "ca" ? "perLanguage-act" : "perLanguage"}
                   onClick={() => setLang("ca")}
@@ -113,6 +116,9 @@ function Places() {
                   ES
                 </div>
               </div>
+              : null
+              }
+              
                 <img src={foundPlace.iso} alt="logo" className="isoTipo" />
               <div className="homeAndSearch">
                 <div className="search-bar" onClick={() => setBuscar(!buscar)}>
@@ -124,7 +130,7 @@ function Places() {
                   ) : (
                     <div className="buscador">
                       <AiOutlineSearch />
-                      <p>{search()}</p>
+                      <p>{lang === "en" ? "Search" : "Buscar"}</p>
                     </div>
                   )}
                 </div>
@@ -142,6 +148,12 @@ function Places() {
                     path="/:place"
                     render={(props) => <DivisionList {...props} lang={lang} />}
                   />
+                
+                  <Route
+                    exact
+                    path="/:place/category/:categoryName"
+                    render={(props) => <Foodlist {...props} lang={lang} />}
+                  />
                   <Route
                     exact
                     path="/:place/division/:divisionName"
@@ -154,6 +166,7 @@ function Places() {
                   />
                 </div>
               )}
+             
             </DataContext.Provider>
           </Router>
         </div>
