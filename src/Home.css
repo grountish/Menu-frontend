@@ -28,7 +28,7 @@
 }
 
 body {
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 .home {
@@ -725,7 +725,18 @@ and (-webkit-min-device-pixel-ratio: 2) {
 /* //////////////////////// MEDIA QUERY 600  ////*/
 
 @media screen and (max-width: 600px) {
-
+  .text-nos{
+    font-size: 5.1vw !important;
+    font-weight: 900;
+    color: lawngreen !important;
+  }
+  .section-nos{
+    max-height: 2rem !important;
+    width: 200vw;
+   display: flex;
+   overflow: hidden;
+  
+  }
   .QR-desktop, .button-qr  {
      display: none;
    }
@@ -789,4 +800,29 @@ a:link {
 
 a:visited {
   text-decoration: none;
+}
+.section-nos{
+  max-height: 20vh;
+  width: 200vw;
+ display: flex;
+ overflow: hidden;
+ border: 1px solid lawngreen;
+ padding: 5px 0;
+
+}
+.text-nos{
+  font-family: Grotta;
+  font-size: 5vw;
+  font-weight: 900;
+  color: lawngreen !important;
+}
+#quehacemos{
+  overflow: hidden;
+}
+.logo-letter{
+  width: 60px;
+  transition: transform 0.6s, filter 1s;
+}
+.logo-letter:hover{
+  filter: sepia(100%) hue-rotate(257deg) saturate(1000%) invert(100%) drop-shadow(5px 5px 5px #149914);
 }
