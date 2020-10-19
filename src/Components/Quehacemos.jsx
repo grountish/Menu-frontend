@@ -8,7 +8,7 @@ const Quehacemos = () => {
     <div id="quehacemos">
       <section className="section-nos">
         <div className="text-nos">
-          <h1 style={{ transform: `translate(${-10 + (scroll.y / 100)}%,0)` }}> BRANDING DISEÑO GRÁFICO NAMING DIRECCIÓN DE ARTE BRANDING DESARROLLO WEB</h1>
+          <h1 style={{ transform: `translate(${-20 + (scroll.y / 100)}%,0)` }}> BRANDING DISEÑO GRÁFICO NAMING DIRECCIÓN DE ARTE BRANDING DESARROLLO WEB</h1>
         </div>
       </section>
 
