@@ -1,24 +1,30 @@
 {
   "files": {
-    "main.css": "/static/css/main.460c9f91.chunk.css",
-    "main.js": "/static/js/main.3e7357b7.chunk.js",
-    "main.js.map": "/static/js/main.3e7357b7.chunk.js.map",
+    "main.css": "/static/css/main.31c6a235.chunk.css",
+    "main.js": "/static/js/main.59bebe2c.chunk.js",
+    "main.js.map": "/static/js/main.59bebe2c.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.0ac97744.js",
     "runtime-main.js.map": "/static/js/runtime-main.0ac97744.js.map",
-    "static/js/2.33048502.chunk.js": "/static/js/2.33048502.chunk.js",
-    "static/js/2.33048502.chunk.js.map": "/static/js/2.33048502.chunk.js.map",
+    "static/js/2.18848e40.chunk.js": "/static/js/2.18848e40.chunk.js",
+    "static/js/2.18848e40.chunk.js.map": "/static/js/2.18848e40.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.b9368a1adddc9f840c10ad687ababd75.js": "/precache-manifest.b9368a1adddc9f840c10ad687ababd75.js",
+    "precache-manifest.b56e253ff8ac08ba0e42d3b0c05b0819.js": "/precache-manifest.b56e253ff8ac08ba0e42d3b0c05b0819.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.460c9f91.chunk.css.map": "/static/css/main.460c9f91.chunk.css.map",
-    "static/js/2.33048502.chunk.js.LICENSE.txt": "/static/js/2.33048502.chunk.js.LICENSE.txt",
-    "static/media/Home.css": "/static/media/plus-list.fc2ae078.png",
-    "static/media/logo-blanco.png": "/static/media/logo-blanco.7b882aef.png"
+    "static/css/main.31c6a235.chunk.css.map": "/static/css/main.31c6a235.chunk.css.map",
+    "static/js/2.18848e40.chunk.js.LICENSE.txt": "/static/js/2.18848e40.chunk.js.LICENSE.txt",
+    "static/media/Home.css": "/static/media/Grotta-Regular.9158340e.ttf",
+    "static/media/bardot.jpg": "/static/media/bardot.b18c36d6.jpg",
+    "static/media/c4a.jpg": "/static/media/c4a.120891bd.jpg",
+    "static/media/clarr.jpg": "/static/media/clarr.07e380d8.jpg",
+    "static/media/excerc.jpg": "/static/media/excerc.01c919de.jpg",
+    "static/media/lavija.jpg": "/static/media/lavija.cf627b9b.jpg",
+    "static/media/logo-blanco.png": "/static/media/logo-blanco.7b882aef.png",
+    "static/media/slide1.jpg": "/static/media/slide1.90ec145c.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.0ac97744.js",
-    "static/js/2.33048502.chunk.js",
-    "static/css/main.460c9f91.chunk.css",
-    "static/js/main.3e7357b7.chunk.js"
+    "static/js/2.18848e40.chunk.js",
+    "static/css/main.31c6a235.chunk.css",
+    "static/js/main.59bebe2c.chunk.js"
   ]
 }

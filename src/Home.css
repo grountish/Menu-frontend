@@ -448,13 +448,7 @@ grid-area: allrights;
 
 /*  //////////////////////////////////////////LINK PREDETERMINED STYLE OVERWRITE////////////////////////////////////////////////////// */
 
-a:link {
-  text-decoration: none;
-}
 
-a:visited {
-  text-decoration: none;
-}
 .section-nos{
   max-height: 20vh;
   width: 300vw;
@@ -472,4 +466,54 @@ a:visited {
 }
 #quehacemos{
   overflow: hidden;
+}
+.mouseFol{
+  font-size: 40px;
+  color: #000000;
+  position: relative;
+  width: 100px;
+}
+.mousecontainer{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 4;
+  height: 3vh;
+}
+.portfolio-container{
+  height: 100vh;
+}
+.portfolio{
+  width: 100%;
+ 
+  display: flex;
+  flex-direction: row;
+}
+.portfolio-header{
+  text-align: center;
+  margin: 6%;
+}
+.lista-portfolio{
+  width: 50vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: baseline;
+}
+.display-portfolio *{
+  width: 50vw;
+}
+.work-name{
+  max-height: 30px;
+  margin: 1%;
+}
+
+a:link {
+  text-decoration: none !important;
+  color: inherit;
+}
+
+a:visited {
+  text-decoration: none !important;
+  color: inherit;
 }

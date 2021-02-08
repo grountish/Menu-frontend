@@ -1,8 +1,8 @@
 import React from 'react'
-
 const Nosotres = () => {
-    return (
-        <section id="Nosotros" className="Nosotros">
+
+    return (<>
+       <section id="Nosotros" className="Nosotros">
         <p className="nosotres-texto">
           Collabo studio surge como unión de un colectivo diverso dedicado al
           desarrollo creativo. De las áreas de dirección de arte, estrategia,
@@ -11,6 +11,8 @@ const Nosotres = () => {
           con alto impacto digital.
         </p>
       </section>
+    </>
+       
     )
 }
 export default Nosotres;
